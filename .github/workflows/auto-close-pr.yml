@@ -4,6 +4,9 @@ on:
   pull_request_target:
     types: [opened]
 
+env:
+  ALLOWED_USERS: "remrearas"
+
 jobs:
   auto-close:
     runs-on: ubuntu-latest
@@ -11,71 +14,80 @@ jobs:
       contents: read
       pull-requests: write
       issues: write
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check if PR is from external contributor or bot
-        id: check
+      - name: Check and close unauthorized PR
+        env:
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_AUTHOR_TYPE: ${{ github.event.pull_request.user.type }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          PR_AUTHOR="${{ github.event.pull_request.user.login }}"
-          PR_AUTHOR_TYPE="${{ github.event.pull_request.user.type }}"
-
-          ALLOWED_USERS="remrearas"
-          BLOCKED_BOTS="copilot-swe-agent copilot"
-
-          # Block known bots regardless
-          for bot in $BLOCKED_BOTS; do
-            if [ "$PR_AUTHOR" = "$bot" ]; then
-              echo "external=true" >> $GITHUB_OUTPUT
-              echo "reason=bot" >> $GITHUB_OUTPUT
-              exit 0
+          # Check if author is in allowed list
+          IS_ALLOWED=false
+          for user in $ALLOWED_USERS; do
+            if [ "$PR_AUTHOR" = "$user" ]; then
+              IS_ALLOWED=true
+              break
             fi
           done
 
-          # Block any Bot-type account not in allowed list
-          if [ "$PR_AUTHOR_TYPE" = "Bot" ]; then
-            echo "external=true" >> $GITHUB_OUTPUT
-            echo "reason=bot" >> $GITHUB_OUTPUT
+          if [ "$IS_ALLOWED" = "true" ]; then
+            echo "✅ Authorized user: $PR_AUTHOR"
             exit 0
           fi
 
-          # Block external users
-          for user in $ALLOWED_USERS; do
-            if [ "$PR_AUTHOR" = "$user" ]; then
-              echo "external=false" >> $GITHUB_OUTPUT
-              exit 0
+          # Block ALL bot accounts - no exceptions
+          # This catches: copilot-swe-agent[bot], dependabot[bot],
+          # github-actions[bot], renovate[bot], and any future bot
+          IS_BOT=false
+
+          # Check GitHub account type
+          if [ "$PR_AUTHOR_TYPE" = "Bot" ]; then
+            IS_BOT=true
+          fi
+
+          # Check for [bot] suffix pattern (covers all GitHub App bots)
+          if [[ "$PR_AUTHOR" == *"[bot]"* ]]; then
+            IS_BOT=true
+          fi
+
+          # Explicit Copilot and known bot blocklist
+          BLOCKED_BOTS="copilot-swe-agent copilot copilot-swe-agent[bot] github-actions github-actions[bot] dependabot dependabot[bot] dependabot-bot renovate renovate[bot]"
+          for bot in $BLOCKED_BOTS; do
+            if [ "$PR_AUTHOR" = "$bot" ]; then
+              IS_BOT=true
+              break
             fi
           done
 
-          echo "external=true" >> $GITHUB_OUTPUT
-          echo "reason=external" >> $GITHUB_OUTPUT
+          # Determine message
+          if [ "$IS_BOT" = "true" ]; then
+            MESSAGE="🚫 Bot-generated PRs are not accepted in this repository. This PR has been automatically closed."
+          else
+            # Read external PR template for human contributors
+            if [ -f ".github/external_pull_request_template.md" ]; then
+              MESSAGE=$(cat .github/external_pull_request_template.md)
+            else
+              MESSAGE="🚫 External contributions are not accepted in this repository. This PR has been automatically closed."
+            fi
+          fi
 
-      - name: Read PR template
-        if: steps.check.outputs.external == 'true'
-        id: template
-        run: |
-          TEMPLATE=$(cat .github/external_pull_request_template.md)
-          echo "content<<EOF" >> $GITHUB_OUTPUT
-          echo "$TEMPLATE" >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          echo "🚫 Closing PR #$PR_NUMBER from unauthorized author: $PR_AUTHOR (type: $PR_AUTHOR_TYPE)"
 
-      - name: Close external PR
-        if: steps.check.outputs.external == 'true'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              body: `${{ steps.template.outputs.content }}`
-            });
+          # Post comment (using jq for safe JSON encoding of template content)
+          jq -n --arg body "$MESSAGE" '{body: $body}' | \
+          curl -s -X POST \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/issues/${PR_NUMBER}/comments" \
+            -d @-
 
-            await github.rest.pulls.update({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: context.issue.number,
-              state: 'closed'
-            });
+          # Close PR
+          curl -s -X PATCH \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pulls/${PR_NUMBER}" \
+            -d '{"state": "closed"}'
