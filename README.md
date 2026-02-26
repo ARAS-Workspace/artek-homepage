@@ -169,3 +169,5 @@ Bu proje **AGPL-3.0** lisansı altında yayınlanmıştır. Bu, projeyi fork ede
  **© 2025 Artek İnovasyon Arge Sanayi ve Ticaret Limited Şirketi, Tüm hakları saklıdır.**
 
 </div>
+
+
