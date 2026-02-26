@@ -15,9 +15,6 @@ jobs:
       pull-requests: write
       issues: write
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Check and close unauthorized PR
         env:
           PR_AUTHOR: ${{ github.event.pull_request.user.login }}
@@ -63,27 +60,21 @@ jobs:
             fi
           done
 
-          # Determine message
+          # Determine message and close
           if [ "$IS_BOT" = "true" ]; then
             MESSAGE="🚫 Bot-generated PRs are not accepted in this repository. This PR has been automatically closed."
           else
-            # Read external PR template for human contributors
-            if [ -f ".github/external_pull_request_template.md" ]; then
-              MESSAGE=$(cat .github/external_pull_request_template.md)
-            else
-              MESSAGE="🚫 External contributions are not accepted in this repository. This PR has been automatically closed."
-            fi
+            MESSAGE="🚫 External contributions are not accepted in this repository. This PR has been automatically closed."
           fi
 
           echo "🚫 Closing PR #$PR_NUMBER from unauthorized author: $PR_AUTHOR (type: $PR_AUTHOR_TYPE)"
 
-          # Post comment (using jq for safe JSON encoding of template content)
-          jq -n --arg body "$MESSAGE" '{body: $body}' | \
+          # Post comment
           curl -s -X POST \
             -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${{ github.repository }}/issues/${PR_NUMBER}/comments" \
-            -d @-
+            -d "{\"body\": \"$MESSAGE\"}"
 
           # Close PR
           curl -s -X PATCH \
