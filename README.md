@@ -78,23 +78,6 @@ artek-homepage/
 
 ---
 
-## 🎖️ Teşekkürler
-
-Bu proje, aşağıdaki harika açık kaynak projeler olmadan mümkün olamazdı:
-
-- **[React](https://react.dev/)**
-- **[React Router](https://reactrouter.com/)**
-- **[Carbon Design System](https://carbondesignsystem.com/)**
-- **[Cloudflare Workers](https://workers.cloudflare.com/)**
-- **[Claude AI](https://www.anthropic.com/claude)**
-- **[Vite](https://vite.dev/)**
-- **[TypeScript](https://www.typescriptlang.org/)**
-- **[Vitest](https://vitest.dev/)**
-- **[Playwright](https://playwright.dev/)**
-- **[Ethers.js](https://docs.ethers.org/)**
-
----
-
 ## 🤝 Neden Açık Kaynak?
 
 Bilgiyi gizleyen tüketir, paylaşan çoğaltır. Tarih boyunca insanlığın en büyük sıçramaları,

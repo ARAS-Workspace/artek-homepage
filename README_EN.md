@@ -79,23 +79,6 @@ artek-homepage/
 
 ---
 
-## 🎖️ Acknowledgments
-
-This project would not be possible without the following amazing open source projects:
-
-- **[React](https://react.dev/)**
-- **[React Router](https://reactrouter.com/)**
-- **[Carbon Design System](https://carbondesignsystem.com/)**
-- **[Cloudflare Workers](https://workers.cloudflare.com/)**
-- **[Claude AI](https://www.anthropic.com/claude)**
-- **[Vite](https://vite.dev/)**
-- **[TypeScript](https://www.typescriptlang.org/)**
-- **[Vitest](https://vitest.dev/)**
-- **[Playwright](https://playwright.dev/)**
-- **[Ethers.js](https://docs.ethers.org/)**
-
----
-
 ## 🤝 Why Open Source?
 
 Those who conceal knowledge consume it, those who share it multiply it. Throughout history, humanity's greatest leaps have occurred when ideas could flow freely. Open source is the modern expression of this ancient truth.
