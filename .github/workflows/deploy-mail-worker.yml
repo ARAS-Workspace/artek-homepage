@@ -1,6 +1,10 @@
 name: Deploy Mail Worker
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'workers/mail-worker/**'
   workflow_dispatch:
 
 jobs:

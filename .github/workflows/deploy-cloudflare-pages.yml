@@ -1,6 +1,10 @@
 name: Deploy to Cloudflare Pages
 
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'workers/mail-worker/**'
   workflow_dispatch:
 
 jobs:
