@@ -145,8 +145,10 @@ function processRouteObject(routeNode, parentPath, routes) {
     }
   });
 
-  // Add current route (skip dynamic routes with : params)
-  if (currentPath && !currentPath.includes(':')) {
+  // Dynamic segments (e.g. /:locale) — strip and treat children as if mounted under the parent
+  if (currentPath.includes(':')) {
+    currentPath = currentPath.replace(/\/:[^/]+/g, '') || '/';
+  } else if (currentPath) {
     routes.add(currentPath);
   }
 

@@ -27,7 +27,7 @@
  */
 
 // React
-import React, { useMemo, useState, useEffect, Suspense, lazy } from 'react';
+import React, { useMemo } from 'react';
 
 // External libraries
 import { Content } from '@carbon/react';
@@ -37,20 +37,13 @@ import { Outlet } from 'react-router-dom';
 import Footer from '@shared/components/layout/Footer';
 import AppHeaderSideNav from '@shared/components/layout/HeaderSideNav';
 import { NavbarContent } from '@shared/components/layout/HeaderGlobals';
-import { useLocale, useTheme, useIsClient, useIsAIRendering } from '@shared/hooks';
+import { useLocale, useTheme } from '@shared/hooks';
 import { Locale } from '@shared/translations';
 
 // Local data
 import headerContentTr from '@content/layout/tr/header.json';
 import headerContentEn from '@content/layout/en/header.json';
 import { getSideNavContent } from '@pages/services/consultancy/_data/sideNav';
-
-// Lazy load AI Chat - Code splitting for better performance
-const ARTEKChatAssistant = lazy(() =>
-  import('@shared/components/ai-chat').then((module) => ({
-    default: module.ARTEKChatAssistant,
-  }))
-);
 
 const HEADER_CONTENT_MAP: Record<Locale, NavbarContent> = {
   tr: headerContentTr as NavbarContent,
@@ -64,18 +57,15 @@ interface ConsultancyLayoutProps {
 /**
  * ConsultancyLayout Component
  *
- * TR: Danışmanlık sayfaları için side navigation ve AI Chat asistan içeren layout bileşeni.
- * Header, side nav, content area, AI chat assistant ve footer içerir.
+ * TR: Danışmanlık sayfaları için side navigation içeren layout bileşeni.
+ * Header, side nav, content area ve footer içerir.
  *
- * EN: Layout component with side navigation and AI Chat assistant for consultancy pages.
- * Contains header, side nav, content area, AI chat assistant and footer.
+ * EN: Layout component with side navigation for consultancy pages.
+ * Contains header, side nav, content area and footer.
  */
 const ConsultancyLayout: React.FC<ConsultancyLayoutProps> = ({ navContent: navContentProp }) => {
   const { locale } = useLocale();
   const { theme, toggleTheme, isThemeTransitioning } = useTheme();
-  const isClient = useIsClient();
-  const isAIRendering = useIsAIRendering();
-  const [shouldLoadChat, setShouldLoadChat] = useState(false);
 
   const navContent = useMemo(() => {
     return navContentProp || HEADER_CONTENT_MAP[locale];
@@ -84,17 +74,6 @@ const ConsultancyLayout: React.FC<ConsultancyLayoutProps> = ({ navContent: navCo
   const sideNavContent = useMemo(() => {
     return getSideNavContent(locale);
   }, [locale]);
-
-  // This prevents Carbon AI Chat initialization issues and hydration mismatches
-  useEffect(() => {
-    if (!isClient || isAIRendering) return;
-
-    const timer = setTimeout(() => {
-      setShouldLoadChat(true);
-    }, 2000); // 2 second delay for idle loading
-
-    return () => clearTimeout(timer);
-  }, [isClient, isAIRendering]);
 
   return (
     <>
@@ -109,13 +88,6 @@ const ConsultancyLayout: React.FC<ConsultancyLayoutProps> = ({ navContent: navCo
         <Outlet />
       </Content>
       <Footer />
-
-      {/* Lazy loaded AI Chat with idle loading strategy */}
-      {shouldLoadChat && (
-        <Suspense fallback={null}>
-          <ARTEKChatAssistant />
-        </Suspense>
-      )}
     </>
   );
 };

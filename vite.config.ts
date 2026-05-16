@@ -26,7 +26,7 @@ export default defineConfig({
       include: /\.(js|mjs|json|css|html|svg)$/,
       threshold: 1024, // Only compress files > 1KB
     }),
-    // Custom plugin to set UTF-8 charset for markdown and JSONL files
+    // Custom plugin to set UTF-8 charset for Markdown and JSONL files
     {
       name: 'data-files-charset',
       configureServer(server) {
@@ -52,9 +52,6 @@ export default defineConfig({
     },
   ],
   assetsInclude: ['**/*.jsonl', '**/*.md'],
-  optimizeDeps: {
-    include: ['react-helmet-async'],
-  },
   server: {
     port: 5173,
     open: false,

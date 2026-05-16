@@ -72,8 +72,12 @@ export const LocaleProvider: React.FC<{ children: ReactNode }> = ({ children }) 
     }
   });
 
+  // Keep <html lang> in sync with locale (independent of SEO mount)
+  document.documentElement.lang = locale;
+
   const changeLocale = useCallback((newLocale: Locale) => {
     setLocale(newLocale);
+    document.documentElement.lang = newLocale;
 
     // Set cookie (single source of truth)
     try {

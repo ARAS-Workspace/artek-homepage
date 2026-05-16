@@ -57,3 +57,10 @@ jobs:
       - name: Deploy to Cloudflare Workers
         working-directory: workers/mail-worker
         run: npm run deploy
+
+      - name: Cleanup workspace
+        if: always()
+        working-directory: workers/mail-worker
+        run: |
+          rm -f .env
+          rm -rf .wrangler node_modules

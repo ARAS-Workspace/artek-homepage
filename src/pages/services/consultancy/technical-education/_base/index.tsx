@@ -14,6 +14,7 @@ import ContentEn from '../index.en.mdx';
 
 import { useLocale } from '@shared/hooks';
 import { getSiteConfig } from '@shared/config/seoConfig';
+import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 
 import { createBreadcrumbSchema, createProfessionalServiceSchema } from '../../_data/schemas';
 import type { SimpleFaqItem } from '@shared/components/ui/SimpleFaq.tsx';
@@ -82,25 +83,13 @@ const TechnicalEducation: React.FC = () => {
         },
       })),
     };
-    const aiDataSchema = {
-      '@context': 'https://artek.tc/ai-schema',
-      '@type': 'AIKnowledgeBase',
-      datasets: [
-        {
-          name: 'technical-education-faq',
-          jsonContent: faqContent,
-          keyMaps:
-            locale === 'tr'
-              ? { question: 'Soru', answer: 'Cevap' }
-              : { question: 'Question', answer: 'Answer' },
-          description:
-            locale === 'tr'
-              ? 'Teknik Eğitim Danışmanlığı SSS'
-              : 'Technical Education Consultancy FAQ',
-        },
-      ],
-    };
-    return [breadcrumbListSchema, webPageSchema, professionalServiceSchema, faqPageSchema, aiDataSchema];
+    return [
+      ...createDefaultSiteSchemas(locale),
+      breadcrumbListSchema,
+      webPageSchema,
+      professionalServiceSchema,
+      faqPageSchema,
+    ];
   }, [faqContent, locale, siteConfig, seoConfig.description]);
 
   return (

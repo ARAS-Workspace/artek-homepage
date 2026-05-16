@@ -12,6 +12,7 @@ import seoConfigEn from '../data/seo/en/data.json';
 
 import { useLocale } from '@shared/hooks';
 import { getSiteConfig } from '@shared/config/seoConfig';
+import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 import { createBreadcrumbSchema } from '@pages/services/consultancy/_data/schemas';
 
 const SEO_MAP = {
@@ -94,36 +95,12 @@ const CentersStatisticsDesignCenters: React.FC = () => {
       temporalCoverage: '2024',
       spatialCoverage: locale === 'tr' ? 'Türkiye' : 'Turkey',
     };
-    const aiDataSchema = {
-      '@context': 'https://artek.tc/ai-schema',
-      '@type': 'AIKnowledgeBase',
-      datasets: [
-        {
-          name: 'design-centers-statistics',
-          file:
-            locale === 'tr'
-              ? '/data/center-statistics/design-centers/rag-data.md'
-              : '/data/center-statistics/design-centers/rag-data-en.md',
-          description:
-            locale === 'tr'
-              ? 'Tasarım Merkezleri İstatistikleri - Genel bilgiler, personel, proje, patent, sektörel ve bölgesel dağılım'
-              : 'Design Centers Statistics - General info, personnel, projects, patents, sectoral and regional distribution',
-        },
-        {
-          name: 'design-centers-list',
-          file:
-            locale === 'tr'
-              ? '/data/center-statistics/design-centers/rag-centers-data.md'
-              : '/data/center-statistics/design-centers/rag-centers-data-en.md',
-          description:
-            locale === 'tr'
-              ? 'Tasarım Merkezleri Tam Listesi - Tüm merkezlerin isimleri, bulundukları iller ve sektör bilgileri'
-              : 'Complete List of Design Centers - Names, cities and sectors of all centers',
-        },
-      ],
-    };
-
-    return [breadcrumbListSchema, webPageSchema, datasetSchema, aiDataSchema];
+    return [
+      ...createDefaultSiteSchemas(locale),
+      breadcrumbListSchema,
+      webPageSchema,
+      datasetSchema,
+    ];
   }, [locale, siteConfig, seoConfig.description]);
 
   return (

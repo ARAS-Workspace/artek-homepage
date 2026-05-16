@@ -26,12 +26,11 @@
  */
 
 import React, { useEffect, useMemo } from 'react';
-import { Helmet } from 'react-helmet-async';
+
 import { getSiteConfig } from '@shared/config/seoConfig';
 import { generateTitle, generateUrl, generateImageUrl } from '@shared/utils/seo-utils';
-import { useLocale } from '@shared/hooks';
+import { useLocale, useHead } from '@shared/hooks';
 import { useSEO } from '@shared/contexts/SEOContext';
-import { createOrganizationSchema, createLocalBusinessSchema } from '@shared/utils/schema-helpers';
 
 export interface SEOProps {
   /** Page title (without site name) */
@@ -52,28 +51,10 @@ export interface SEOProps {
   modifiedTime?: string;
   /** Canonical URL override */
   canonical?: string;
-  /** Optional schemas to include (from context or prop) */
+  /** JSON-LD schemas to inject (callers add Organization/LocalBusiness explicitly via createDefaultSiteSchemas) */
   schemas?: any[];
 }
 
-/**
- * SEO Component
- *
- * Features:
- * - Centralized configuration via seo.config.ts
- * - Automatic title/URL generation
- * - Open Graph & Twitter Cards
- * - JSON-LD structured data
- *
- * @example
- * ```tsx
- * <SEO
- *   title="İstatistikler"
- *   description="Ar-Ge merkezi istatistikleri"
- *   path="/statistics"
- * />
- * ```
- */
 const SEO: React.FC<SEOProps> = ({
   title,
   description,
@@ -84,122 +65,85 @@ const SEO: React.FC<SEOProps> = ({
   publishedTime,
   modifiedTime,
   canonical,
-  schemas: propSchemas = [],
+  schemas = [],
 }) => {
   const { locale } = useLocale();
-  const { metadata, updateMetadata } = useSEO();
+  const { updateMetadata } = useSEO();
 
-  // Get locale-specific site config
   const siteConfig = getSiteConfig(locale);
-
-  // Use site config description as default
   const finalDescription = description || siteConfig.description;
-
-  // Generate computed values with locale
   const fullTitle = generateTitle(title, locale);
-  // Auto-detect current path if not provided (for canonical URL)
-  const currentPath = path || (typeof window !== 'undefined' ? window.location.pathname : undefined);
+  const currentPath =
+    path || (typeof window !== 'undefined' ? window.location.pathname : undefined);
   const fullUrl = canonical || generateUrl(currentPath, locale);
   const fullImage = generateImageUrl(image, locale);
+  const robotsContent = noIndex ? 'noindex, nofollow' : 'index, follow';
 
-  // Update SEO context whenever metadata changes (including locale)
   useEffect(() => {
     updateMetadata({
       title: fullTitle,
       description: finalDescription,
       path: path || window.location.pathname,
-      locale, // Include current locale in metadata
+      locale,
     });
   }, [fullTitle, finalDescription, path, locale, updateMetadata]);
 
-  // Robots directive
-  const robotsContent = noIndex ? 'noindex, nofollow' : 'index, follow';
+  const meta = useMemo(() => {
+    const tags = [
+      { name: 'title', content: fullTitle },
+      { name: 'description', content: finalDescription },
+      { name: 'author', content: siteConfig.author.name },
+      { name: 'robots', content: robotsContent },
+      { httpEquiv: 'content-language', content: locale },
+      { property: 'og:type', content: type },
+      { property: 'og:url', content: fullUrl },
+      { property: 'og:title', content: fullTitle },
+      { property: 'og:description', content: finalDescription },
+      { property: 'og:image', content: fullImage },
+      { property: 'og:site_name', content: siteConfig.name },
+      { property: 'og:locale', content: siteConfig.locale },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:url', content: fullUrl },
+      { name: 'twitter:title', content: fullTitle },
+      { name: 'twitter:description', content: finalDescription },
+      { name: 'twitter:image', content: fullImage },
+    ];
 
-  // Built-in global schemas (automatically included on every page)
-  const builtInSchemas = useMemo(() => {
-    // 1. Organization Schema - Global identity
-    const organizationSchema = createOrganizationSchema(siteConfig.logo, locale);
+    if (type === 'article') {
+      if (publishedTime) tags.push({ property: 'article:published_time', content: publishedTime });
+      if (modifiedTime) tags.push({ property: 'article:modified_time', content: modifiedTime });
+      tags.push({ property: 'article:author', content: siteConfig.author.name });
+    }
 
-    // 2. LocalBusiness Schema - Office location and contact info
-    const localBusinessSchema = createLocalBusinessSchema(siteConfig.localBusiness, locale);
+    if (siteConfig.social.twitter) {
+      tags.push({ name: 'twitter:site', content: siteConfig.social.twitter });
+    }
 
-    return [organizationSchema, localBusinessSchema];
-  }, [locale, siteConfig]);
+    return tags;
+  }, [
+    fullTitle,
+    finalDescription,
+    fullUrl,
+    fullImage,
+    type,
+    robotsContent,
+    locale,
+    siteConfig,
+    publishedTime,
+    modifiedTime,
+  ]);
 
-  // Merge built-in schemas + context schemas + prop schemas
-  const allSchemas = [...builtInSchemas, ...(metadata.schemas || []), ...propSchemas];
+  const links = useMemo(() => [{ rel: 'canonical', href: fullUrl }], [fullUrl]);
 
-  return (
-    <Helmet>
-      {/* Primary Meta Tags */}
-      <title>{fullTitle}</title>
-      <meta name="title" content={fullTitle} />
-      <meta name="description" content={finalDescription} />
-      <meta name="author" content={siteConfig.author.name} />
+  useHead({
+    title: fullTitle,
+    lang: locale,
+    meta,
+    links,
+    schemas,
+  });
 
-      {/* Robots */}
-      <meta name="robots" content={robotsContent} />
-
-      {/* Canonical URL */}
-      <link rel="canonical" href={fullUrl} />
-
-      {/* Language */}
-      <meta httpEquiv="content-language" content={locale} />
-      <html lang={locale} />
-
-      {/* Open Graph / Facebook
-          Protocol created by Facebook (Meta) for rich social sharing previews
-          Reference: https://developers.facebook.com/docs/sharing/webmasters/
-          Best Practices (2025):
-          - og:title: Keep under 60 chars (desktop) / 40 chars (mobile)
-          - og:description: 150-200 chars (Facebook displays up to 300)
-          - og:image: Minimum 1200x630px, up to 2MB for Retina displays
-          - Posts with images get 100% more engagement (2024 INMA study)
-          Test your tags: https://developers.facebook.com/tools/debug/
-      */}
-      <meta property="og:type" content={type} />
-      <meta property="og:url" content={fullUrl} />
-      <meta property="og:title" content={fullTitle} />
-      <meta property="og:description" content={finalDescription} />
-      <meta property="og:image" content={fullImage} />
-      <meta property="og:site_name" content={siteConfig.name} />
-      <meta property="og:locale" content={siteConfig.locale} />
-
-      {/* Article specific Open Graph tags */}
-      {type === 'article' && (
-        <>
-          {publishedTime && <meta property="article:published_time" content={publishedTime} />}
-          {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
-          <meta property="article:author" content={siteConfig.author.name} />
-        </>
-      )}
-
-      {/* X (Twitter) Card
-          Despite platform rebrand to X, meta tags still use 'twitter:' prefix (2025)
-          Reference: https://developer.x.com/en/docs/x-for-websites/cards/overview/markup
-          Cards enable large image previews when URLs are shared on X/Twitter
-          Falls back to Open Graph tags if twitter: tags are not provided
-          Status: Fully functional and officially supported by X platform
-          No changes announced - continue using twitter: prefix
-          Card Validator: https://cards-dev.twitter.com/validator (still works)
-      */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={fullUrl} />
-      <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={finalDescription} />
-      <meta name="twitter:image" content={fullImage} />
-      {siteConfig.social.twitter && (
-        <meta name="twitter:site" content={siteConfig.social.twitter} />
-      )}
-
-      {/* JSON-LD Structured Data - Rendered from context/props */}
-      {allSchemas.map((schema: any, index: number) => (
-        <script key={schema['@id'] || index} type="application/ld+json">
-          {JSON.stringify(schema)}
-        </script>
-      ))}
-    </Helmet>
-  );
+  return null;
 };
 
 export default SEO;

@@ -5,6 +5,7 @@ import Services, { type ServicesContent } from '@shared/components/ui/Services';
 import Faq, { type FaqContent } from '@shared/components/ui/Faq';
 import { useLocale } from '@shared/hooks';
 import { getSiteConfig } from '@shared/config/seoConfig';
+import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 
 // Section content - TR
 import heroContentTr from './data/sections/tr/hero.json';
@@ -76,48 +77,8 @@ const HomePage: React.FC = () => {
       })),
     };
 
-    const aiDataSchema = {
-      '@context': 'https://artek.tc/ai-schema',
-      '@type': 'AIKnowledgeBase',
-      datasets: [
-        {
-          name: 'home-hero',
-          jsonContent: {
-            title: heroContent.title,
-            description: heroContent.description,
-          },
-          keyMaps:
-            locale === 'tr'
-              ? { title: 'Hero Başlığı', description: 'Açıklama' }
-              : { title: 'Hero Title', description: 'Description' },
-          description: locale === 'tr' ? 'Anasayfa Hero' : 'Homepage Hero',
-        },
-        {
-          name: 'home-faq',
-          jsonContent: faqContent.faqs,
-          keyMaps:
-            locale === 'tr'
-              ? { question: 'Soru', answer: 'Cevap' }
-              : { question: 'Question', answer: 'Answer' },
-          description: locale === 'tr' ? 'Anasayfa SSS' : 'Homepage FAQ',
-        },
-        {
-          name: 'home-services',
-          jsonContent: servicesContent.services.map((s) => ({
-            title: s.title,
-            description: s.description,
-          })),
-          keyMaps:
-            locale === 'tr'
-              ? { title: 'Hizmet Başlığı', description: 'Açıklama' }
-              : { title: 'Service Title', description: 'Description' },
-          description: locale === 'tr' ? 'Anasayfa Hizmetler' : 'Homepage Services',
-        },
-      ],
-    };
-
-    return [videoObjectSchema, faqPageSchema, aiDataSchema];
-  }, [heroContent, servicesContent, faqContent, siteConfig, locale]);
+    return [...createDefaultSiteSchemas(locale), videoObjectSchema, faqPageSchema];
+  }, [heroContent, faqContent, siteConfig, locale]);
 
   return (
     <>

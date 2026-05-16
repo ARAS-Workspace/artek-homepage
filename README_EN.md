@@ -21,7 +21,7 @@ The entire system runs on `Cloudflare Pages` and `Workers` in production environ
 The `ARTEK Homepage` project architecture can be explained comprehensively with three main concepts:
 
 - **React Frontend** is the user interaction layer and manages the user interface.
-- **Workers** layer consists of the system's backend services: *AI Worker* and *Mail Worker*.
+- **Workers** layer consists of the system's backend service: *Mail Worker*.
 - **Scripts & Tools** consists of tools supporting development and production processes.
 
 ```mermaid
@@ -32,7 +32,6 @@ The `ARTEK Homepage` project architecture can be explained comprehensively with 
     Homepage --> Workers[Workers]
     Homepage --> Scripts[Scripts & Tools]
 
-    Workers --> AIWorker[AI Worker]
     Workers --> MailWorker[Mail Worker]
 ```
 
@@ -42,24 +41,14 @@ The `ARTEK Homepage` project architecture can be explained comprehensively with 
 flowchart TB
     User["User"] -- Request --> CFPages["Cloudflare Pages <br> _worker.js"]
     CFPages -- Serve Static Build --> Frontend["React Frontend"]
-    Frontend -- Chat Request --> AIWorker["AI Worker"]
     Frontend -- Contact Form --> MailWorker["Mail Worker"]
-    AIWorker -- Prompt + Context --> Claude["Claude Sonnet 4"]
-    Claude -- knowledge_search Tool --> AutoRAG["Cloudflare AI Search<br>AutoRAG"]
-    AutoRAG -- Retrieved Context --> Claude
-    AIWorker -- Store Conversation --> D1[("D1 Database")]
-    AIWorker -- Rate Limiting --> KV[("KV Storage")]
     MailWorker -- Send Email --> Resend["Resend API"]
-    Claude -- AI Response --> AIWorker
-    AIWorker -- Chat Response --> Frontend
     Frontend -- Update UI --> CFPages
     CFPages -- Response --> User
 
     style CFPages fill:#F38020,stroke:#333,stroke-width:2px,color:#000000
     style Frontend fill:#BBDEFB,stroke:#333,stroke-width:2px,color:#000000
-    style AIWorker fill:#F38020,stroke:#333,stroke-width:2px,color:#000000
     style MailWorker fill:#F38020,stroke:#333,stroke-width:2px,color:#000000
-    style Claude fill:#8B5CF6,stroke:#333,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -77,10 +66,6 @@ artek-homepage/
 │   │   └── translations/
 │   └── router/
 ├── workers/
-│   ├── ai-worker/
-│   │   ├── src/
-│   │   ├── migrations/
-│   │   └── wrangler.jsonc
 │   └── mail-worker/
 │       ├── src/
 │       └── wrangler.jsonc

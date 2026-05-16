@@ -31,8 +31,6 @@ import React from 'react';
 // External libraries
 import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@carbon/react';
 
-// Internal modules
-import { useLocale, useIsAIRendering } from '@shared/hooks';
 
 // Styles
 import './styles/ContentTabs.scss';
@@ -62,32 +60,9 @@ interface ContentTabsProps {
  * />
  */
 const ContentTabs: React.FC<ContentTabsProps> = ({ tabs, contained = true, className = '' }) => {
-  const isAIRendering = useIsAIRendering();
-  const { locale } = useLocale();
-
   if (!tabs || tabs.length === 0) {
     console.warn('ContentTabs: No tabs provided');
     return null;
-  }
-
-  // Pre-rendering / RAG placeholder - provides context for AI agents (render4ai, ai-worker)
-  if (isAIRendering) {
-    return (
-      <div
-        style={{
-          minHeight: '200px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          textAlign: 'center',
-        }}
-        aria-hidden="true"
-      >
-        {locale === 'tr'
-          ? "Bu alan üzerinde sekmeli içerik bileşeni bulunmaktadır. İçerik, kullanıcı etkileşimli öğeler içerebilir ve sekmelerle birbirinden ayrılmıştır. Bu alanda farklı bileşen veya bileşen grupları bir arada bulunabilir. Bu içeriği anlamak için frontmatter'da bulunan metadata üzerinde datasets: anahtarının değerlerini okuyarak verilerin yollarını takip etmen gerekir."
-          : 'This area contains a tabbed content component. The content may include interactive user elements and is separated by tabs. This area may contain different components or component groups together. To understand this content, you need to follow the paths of the data by reading the values of the datasets: key in the frontmatter metadata.'}
-      </div>
-    );
   }
 
   return (

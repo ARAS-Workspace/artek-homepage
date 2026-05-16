@@ -26,6 +26,7 @@
  */
 
 import { getSiteConfig } from '@shared/config/seoConfig';
+import type { Locale } from '@shared/translations';
 
 /**
  * LocalBusiness schema data
@@ -145,4 +146,19 @@ export const createLocalBusinessSchema = (data: LocalBusinessData, locale: 'tr' 
     }),
     sameAs: Object.values(siteConfig.social).filter(Boolean),
   };
+};
+
+/**
+ * Creates the default site-wide schema pair (Organization + LocalBusiness).
+ * Call this explicitly in pages that should expose the global business identity.
+ *
+ * @param locale - Language code ('tr' or 'en')
+ * @returns Array of [Organization, LocalBusiness] schemas
+ */
+export const createDefaultSiteSchemas = (locale: Locale = 'tr') => {
+  const siteConfig = getSiteConfig(locale);
+  return [
+    createOrganizationSchema(siteConfig.logo, locale),
+    createLocalBusinessSchema(siteConfig.localBusiness, locale),
+  ];
 };

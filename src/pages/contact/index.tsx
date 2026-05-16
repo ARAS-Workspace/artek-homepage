@@ -2,9 +2,9 @@ import React, { lazy, Suspense, useMemo } from 'react';
 import SEO from '@shared/components/content/SEO';
 import { Grid, Column, SkeletonPlaceholder } from '@carbon/react';
 import { Email, Phone, Location } from '@carbon/icons-react';
-import { useLocale, useIsClient, useIsAIRendering } from '@shared/hooks';
+import { useLocale, useIsClient } from '@shared/hooks';
 import { translate } from '@shared/translations';
-import { getSiteConfig } from '@shared/config/seoConfig';
+import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 
 // SEO configurations
 import seoConfigTr from './data/seo/tr/data.json';
@@ -27,13 +27,9 @@ const SEO_MAP = {
 
 const ContactPage: React.FC = () => {
   const isClient = useIsClient(); // Pre-rendering aware hook
-  const isAIRendering = useIsAIRendering();
 
   const { locale } = useLocale();
   const t = translate(locale);
-
-  // Get site config for current locale
-  const siteConfig = getSiteConfig(locale);
 
   // SEO configuration
   const seoConfig = useMemo(
@@ -43,49 +39,7 @@ const ContactPage: React.FC = () => {
     [locale]
   );
 
-  // Page-specific schemas
-  const schemas = useMemo(() => {
-    const { localBusiness } = siteConfig;
-
-    const aiDataSchema = {
-      '@context': 'https://artek.tc/ai-schema',
-      '@type': 'AIKnowledgeBase',
-      datasets: [
-        {
-          name: 'contact-info',
-          jsonContent: {
-            telephone: localBusiness.telephone,
-            street: localBusiness.address.street,
-            city: localBusiness.address.city,
-            region: localBusiness.address.region,
-            postalCode: localBusiness.address.postalCode,
-            country: localBusiness.address.country,
-          },
-          keyMaps:
-            locale === 'tr'
-              ? {
-                  telephone: 'Telefon',
-                  street: 'Sokak/Cadde',
-                  city: 'Şehir',
-                  region: 'Bölge',
-                  postalCode: 'Posta Kodu',
-                  country: 'Ülke',
-                }
-              : {
-                  telephone: 'Telephone',
-                  street: 'Street',
-                  city: 'City',
-                  region: 'Region',
-                  postalCode: 'Postal Code',
-                  country: 'Country',
-                },
-          description: locale === 'tr' ? 'İletişim Bilgileri' : 'Contact Information',
-        },
-      ],
-    };
-
-    return [aiDataSchema];
-  }, [siteConfig, locale]);
+  const schemas = useMemo(() => createDefaultSiteSchemas(locale), [locale]);
 
   return (
     <>
@@ -99,8 +53,8 @@ const ContactPage: React.FC = () => {
 
           <Column lg={16} md={8} sm={4}>
             <div className="map-container">
-              {/* Skip GoogleMap during pre-rendering and AI rendering */}
-              {isClient && !isAIRendering ? (
+              {/* Skip GoogleMap during pre-rendering */}
+              {isClient ? (
                 <Suspense
                   fallback={
                     <div style={{ height: '450px', borderRadius: '4px', overflow: 'hidden' }}>
@@ -135,7 +89,7 @@ const ContactPage: React.FC = () => {
           </Column>
 
           <Column lg={10} md={8} sm={4}>
-            {isClient && !isAIRendering ? (
+            {isClient ? (
               <ContactForm locale={locale} translations={t.contactPage} />
             ) : (
               <div className="contact-form">

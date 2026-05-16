@@ -27,9 +27,8 @@
 
 export { useLocale, LocaleProvider } from './useLocale';
 export { useIsClient } from './useIsClient';
-export { useIsAIRendering } from './useIsAIRendering';
 export { useTheme, ThemeProvider } from './useTheme';
 export type { AppTheme } from './useTheme';
 export { useCarbonTheme, type CarbonTheme } from './useCarbonTheme';
-export { usePersistedChatHistory, type Message, type HistoryItem } from './usePersistedChatHistory';
 export { useFootnoteNavigation, FootnoteNavigationProvider } from './useFootnoteNavigation';
+export { useHead } from './useHead';

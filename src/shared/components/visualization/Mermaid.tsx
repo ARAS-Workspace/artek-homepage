@@ -47,7 +47,7 @@ import {
 import mermaid from 'mermaid';
 
 // Internal modules
-import { useIsAIRendering, useIsClient, useLocale } from '@shared/hooks';
+import { useIsClient, useLocale } from '@shared/hooks';
 import { translate } from '@shared/translations';
 
 // Local components
@@ -597,7 +597,6 @@ const MermaidInner: React.FC<MermaidProps> = ({ chart }) => {
  */
 const Mermaid: React.FC<MermaidProps> = ({ chart }) => {
   const isClient = useIsClient();
-  const isAIRendering = useIsAIRendering();
   const { locale } = useLocale();
   const t = translate(locale);
 
@@ -616,24 +615,6 @@ const Mermaid: React.FC<MermaidProps> = ({ chart }) => {
             <LoadingSpinner></LoadingSpinner>
           </div>
         </div>
-      </div>
-    );
-  }
-  if (isAIRendering) {
-    return (
-      <div
-        style={{
-          height: '500px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          textAlign: 'center',
-        }}
-        aria-hidden="true"
-      >
-        {locale === 'tr'
-          ? "Bu alan üzerinde Mermaid diyagram bileşeni bulunmaktadır. Bu bileşenin içerdiği verinin tam yolu frontmatter'da bulunan metadata üzerinde datasets: anahtarının değerleridir. Bu alandaki içeriği anlamak için datasets: alanındaki verilerin yollarını takip etmen gerekir."
-          : 'This area contains a Mermaid diagram component. The full path to the data contained in this component is the values of the datasets: key in the frontmatter metadata. To understand the content in this area, you need to follow the paths of the data in the datasets: field.'}
       </div>
     );
   }

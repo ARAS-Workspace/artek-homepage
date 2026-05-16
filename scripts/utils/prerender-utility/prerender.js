@@ -342,32 +342,8 @@ async function prerenderAll(config) {
 }
 
 /**
- * Calculate priority based on route depth
- * @param {string} route
- * @returns {string}
- */
-function calculatePriority(route) {
-  if (route === '/') return '1.0';
-  const depth = route.split('/').filter(Boolean).length;
-  if (depth === 1) return '0.8';
-  if (depth === 2) return '0.6';
-  return '0.4';
-}
-
-/**
- * Calculate change frequency based on route depth
- * @param {string} route
- * @returns {string}
- */
-function calculateChangeFreq(route) {
-  if (route === '/') return 'weekly';
-  const depth = route.split('/').filter(Boolean).length;
-  if (depth <= 2) return 'monthly';
-  return 'yearly';
-}
-
-/**
  * Generate sitemap.xml from routes and config
+ * Emits hreflang alternates so search engines can pair locale variants.
  * @param {Config} config
  */
 function generateSitemap(config) {
@@ -377,19 +353,28 @@ function generateSitemap(config) {
 
   const urls = config.routes.filter((route) => !excluded.includes(route)).map((route) => {
     const loc = route === '/' ? productionUrl + '/' : `${productionUrl}${route}`;
+
+    // hreflang alternates: ?locale=xx → Worker serves the matching prerendered HTML
+    const alternates = config.locales.map((altLocale) => {
+      const altLoc = `${loc}?locale=${altLocale}`;
+      return `    <xhtml:link rel="alternate" hreflang="${altLocale}" href="${altLoc}" />`;
+    });
+    const defaultLoc = `${loc}?locale=${config.default_locale}`;
+    alternates.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${defaultLoc}" />`);
+
     return [
       '  <url>',
       `    <loc>${loc}</loc>`,
       `    <lastmod>${today}</lastmod>`,
-      `    <changefreq>${calculateChangeFreq(route)}</changefreq>`,
-      `    <priority>${calculatePriority(route)}</priority>`,
+      ...alternates,
       '  </url>',
     ].join('\n');
   });
 
   const sitemap = [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
+    '        xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ...urls,
     '</urlset>',
     '',

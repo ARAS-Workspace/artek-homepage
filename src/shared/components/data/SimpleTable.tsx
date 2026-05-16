@@ -63,16 +63,16 @@ const SimpleTable: React.FC<SimpleTableProps> = ({ children }) => {
 
     const thead = childrenArray.find(
       (child: any) => React.isValidElement(child) && child.type === 'thead'
-    ) as React.ReactElement | undefined;
+    ) as React.ReactElement<any> | undefined;
 
     const tbody = childrenArray.find(
       (child: any) => React.isValidElement(child) && child.type === 'tbody'
-    ) as React.ReactElement | undefined;
+    ) as React.ReactElement<any> | undefined;
 
     // Extract headers from thead > tr > th
     const headers: Array<{ key: string; header: string }> = [];
     if (thead) {
-      const headerRow = React.Children.only(thead.props.children) as React.ReactElement;
+      const headerRow = React.Children.only(thead.props.children) as React.ReactElement<any>;
       const headerCells = React.Children.toArray(headerRow.props.children);
 
       headerCells.forEach((cell: any, index) => {

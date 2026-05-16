@@ -12,6 +12,7 @@ import seoConfigEn from '../data/seo/en/data.json';
 
 import { useLocale } from '@shared/hooks';
 import { getSiteConfig } from '@shared/config/seoConfig';
+import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 import { createBreadcrumbSchema } from '@pages/services/consultancy/_data/schemas';
 
 const SEO_MAP = {
@@ -94,36 +95,12 @@ const CentersStatisticsRDCenters: React.FC = () => {
       temporalCoverage: '2024',
       spatialCoverage: locale === 'tr' ? 'Türkiye' : 'Turkey',
     };
-    const aiDataSchema = {
-      '@context': 'https://artek.tc/ai-schema',
-      '@type': 'AIKnowledgeBase',
-      datasets: [
-        {
-          name: 'rd-centers-statistics',
-          file:
-            locale === 'tr'
-              ? '/data/center-statistics/rd-centers/rag-data.md'
-              : '/data/center-statistics/rd-centers/rag-data-en.md',
-          description:
-            locale === 'tr'
-              ? 'Ar-Ge Merkezleri İstatistikleri - Genel bilgiler, personel, proje, patent, sektörel ve bölgesel dağılım'
-              : 'R&D Centers Statistics - General info, personnel, projects, patents, sectoral and regional distribution',
-        },
-        {
-          name: 'rd-centers-list',
-          file:
-            locale === 'tr'
-              ? '/data/center-statistics/rd-centers/rag-centers-data.md'
-              : '/data/center-statistics/rd-centers/rag-centers-data-en.md',
-          description:
-            locale === 'tr'
-              ? 'Ar-Ge Merkezleri Tam Listesi - Tüm merkezlerin isimleri, bulundukları iller ve sektör bilgileri'
-              : 'Complete List of R&D Centers - Names, cities and sectors of all centers',
-        },
-      ],
-    };
-
-    return [breadcrumbListSchema, webPageSchema, datasetSchema, aiDataSchema];
+    return [
+      ...createDefaultSiteSchemas(locale),
+      breadcrumbListSchema,
+      webPageSchema,
+      datasetSchema,
+    ];
   }, [locale, siteConfig, seoConfig.description]);
 
   return (

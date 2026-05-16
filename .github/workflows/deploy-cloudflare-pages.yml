@@ -33,13 +33,6 @@ jobs:
           VITE_GOOGLE_MAP_ID=${{ secrets.GOOGLE_MAP_ID }}
 
           # ========================================
-          # ARTEK AI Configuration
-          # ========================================
-          VITE_ARTEK_AI_MODE=prod
-          VITE_ARTEK_AI_URL=${{ secrets.ARTEK_AI_URL }}
-          VITE_ARTEK_AI_TURNSTILE_SITE_KEY=${{ secrets.ARTEK_AI_TURNSTILE_SITE_KEY }}
-
-          # ========================================
           # Contact Form Configuration
           # ========================================
           VITE_MAIL_WORKER_MODE=prod
@@ -48,7 +41,7 @@ jobs:
           EOF
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install
 
       - name: Generate Development Certificate
         run: node scripts/generate_development_certificate.js
@@ -65,34 +58,8 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx wrangler pages deploy dist --project-name=artek
 
-      - name: Generate timestamp
-        if: success()
-        id: timestamp
-        run: echo "value=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
-
-      - name: Upload dist artifact
-        if: success()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
-        with:
-          name: artek-dist-${{ steps.timestamp.outputs.value }}
-          path: dist/
-          retention-days: 30
-
-      - name: Generate knowledgebase with render4ai
-        if: success()
-        run: npm run render4ai
-
-      - name: Upload knowledgebase to R2
-        if: success()
+      - name: Cleanup workspace
+        if: always()
         run: |
-          echo "Uploading knowledgebase to R2 bucket: artek-rendered-homepage"
-          rclone copy knowledgebase/ r2:artek-rendered-homepage --progress
-          echo "✓ Knowledgebase upload completed"
-
-      - name: Upload knowledgebase artifact
-        if: success()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
-        with:
-          name: artek-knowledgebase-${{ steps.timestamp.outputs.value }}
-          path: knowledgebase/
-          retention-days: 30
+          rm -f .env.production
+          rm -rf certs dist .wrangler node_modules

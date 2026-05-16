@@ -29,7 +29,7 @@
 import React, { useMemo } from 'react';
 
 // Internal hooks
-import { useLocale, useCarbonTheme, useIsAIRendering } from '@shared/hooks';
+import { useLocale, useCarbonTheme } from '@shared/hooks';
 
 export interface ArtekBilingualLogoProps {
   className?: string;
@@ -42,7 +42,6 @@ const ArtekBilingualLogo: React.FC<ArtekBilingualLogoProps> = ({
   width = '100%',
   height = 'auto',
 }) => {
-  const isAIRendering = useIsAIRendering();
   const { locale } = useLocale();
   const currentTheme = useCarbonTheme();
 
@@ -63,27 +62,6 @@ const ArtekBilingualLogo: React.FC<ArtekBilingualLogoProps> = ({
     }),
     [width, height]
   );
-
-  if (isAIRendering) {
-    const placeholderHeight = height === 'auto' ? '64px' : height;
-    return (
-      <div
-        style={{
-          width,
-          height: placeholderHeight,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          textAlign: 'center',
-        }}
-        aria-hidden="true"
-      >
-        {locale === 'tr'
-          ? "Bu alanda ARTEK şirket logosu ve 'Yenilik, Strateji, Sonuç.' sloganı yer almaktadır."
-          : "This area contains the ARTEK company logo and the slogan 'Innovation, Strategy, Results.'"}
-      </div>
-    );
-  }
 
   return (
     <svg

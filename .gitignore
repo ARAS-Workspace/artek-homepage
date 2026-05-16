@@ -17,7 +17,6 @@ routes.yaml
 
 # Build outputs
 dist/
-knowledgebase/
 build/
 .vite/
 *.local

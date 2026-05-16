@@ -701,16 +701,15 @@ const Mermaid: React.FC<MermaidProps> = ({ chart }) => {
 **File:** `src/pages/contact/index.tsx`
 
 ```tsx
-import { useIsClient, useIsAIRendering } from '@shared/hooks';
+import { useIsClient } from '@shared/hooks';
 
 const ContactPage: React.FC = () => {
   const isClient = useIsClient();
-  const isAIRendering = useIsAIRendering();
 
   return (
     <div className="map-container">
       {/* GoogleMap only renders on client-side */}
-      {isClient && !isAIRendering ? (
+      {isClient ? (
         <Suspense fallback={<SkeletonPlaceholder />}>
           <GoogleMapComponent
             lat={39.4414677}
@@ -741,11 +740,10 @@ const ContactPage: React.FC = () => {
 ```tsx
 const ContactPage: React.FC = () => {
   const isClient = useIsClient();
-  const isAIRendering = useIsAIRendering();
 
   return (
     <>
-      {isClient && !isAIRendering ? (
+      {isClient ? (
         <ContactForm locale={locale} translations={t.contactPage} />
       ) : (
         <div className="contact-form">

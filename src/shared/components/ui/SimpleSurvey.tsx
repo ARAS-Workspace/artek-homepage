@@ -39,7 +39,7 @@ import {
 } from '@carbon/react';
 
 // Internal modules
-import { useLocale, useIsAIRendering } from '@shared/hooks';
+import { useLocale } from '@shared/hooks';
 import { translate } from '@shared/translations';
 
 // Local components
@@ -74,7 +74,6 @@ const SimpleSurvey: React.FC<SimpleSurveyProps> = ({
   successContent,
   failureContent,
 }) => {
-  const isAIRendering = useIsAIRendering();
   const { locale } = useLocale();
   const t = translate(locale);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
@@ -134,25 +133,6 @@ const SimpleSurvey: React.FC<SimpleSurveyProps> = ({
     setAnswers(new Array(questions.length).fill(null));
     setSurveyStatus('in_progress');
   };
-
-  if (isAIRendering) {
-    return (
-      <div
-        style={{
-          minHeight: '200px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          textAlign: 'center',
-        }}
-        aria-hidden="true"
-      >
-        {locale === 'tr'
-          ? "Bu alan üzerinde basit anket bileşeni bulunmaktadır. Bu bileşenin içerdiği verinin tam yolu frontmatter'da bulunan metadata üzerinde datasets: anahtarının değerleridir. Bu alandaki içeriği anlamak için datasets: alanındaki verilerin yollarını takip etmen gerekir."
-          : 'This area contains a simple survey component. The full path to the data contained in this component is the values of the datasets: key in the frontmatter metadata. To understand the content in this area, you need to follow the paths of the data in the datasets: field.'}
-      </div>
-    );
-  }
 
   const renderResult = () => {
     if (surveyStatus === 'success') {

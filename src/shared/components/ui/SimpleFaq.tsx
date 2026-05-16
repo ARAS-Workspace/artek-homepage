@@ -31,8 +31,6 @@ import React, { useState, useMemo } from 'react';
 // External libraries
 import { Grid, Column, Accordion, AccordionItem, PaginationNav } from '@carbon/react';
 
-// Internal modules
-import { useLocale, useIsAIRendering } from '@shared/hooks';
 
 // Styles
 import './styles/SimpleFaq.scss';
@@ -47,8 +45,6 @@ export interface SimpleFaqProps {
 }
 
 const SimpleFaq: React.FC<SimpleFaqProps> = ({ content }) => {
-  const isAIRendering = useIsAIRendering();
-  const { locale } = useLocale();
   const PAGE_SIZE = 10;
 
   const [currentPage, setCurrentPage] = useState(0); // PaginationNav 0-indexed kullanır
@@ -66,29 +62,6 @@ const SimpleFaq: React.FC<SimpleFaqProps> = ({ content }) => {
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
   };
-
-  if (isAIRendering) {
-    return (
-      <Grid>
-        <Column xlg={16} lg={16} md={8} sm={4}>
-          <div
-            style={{
-              minHeight: '300px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              textAlign: 'center',
-            }}
-            aria-hidden="true"
-          >
-            {locale === 'tr'
-              ? `Bu alan üzerinde ${content.length} adet soru-cevap içeren SSS (Sıkça Sorulan Sorular) bileşeni bulunmaktadır. Bu bileşenin içerdiği verinin tam yolu frontmatter'da bulunan metadata üzerinde datasets: anahtarının değerleridir. Bu alandaki içeriği anlamak için datasets: alanındaki verilerin yollarını takip etmen gerekir.`
-              : `This area contains a FAQ (Frequently Asked Questions) component with ${content.length} questions and answers. The full path to the data contained in this component is the values of the datasets: key in the frontmatter metadata. To understand the content in this area, you need to follow the paths of the data in the datasets: field.`}
-          </div>
-        </Column>
-      </Grid>
-    );
-  }
 
   return (
     <Grid>

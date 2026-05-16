@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Tile, Grid, Column } from '@carbon/react';
 import { Education, TaskTools, DocumentTasks, type CarbonIconType } from '@carbon/icons-react';
-import { useLocale, useIsClient, useIsAIRendering } from '@shared/hooks';
+import { useLocale, useIsClient } from '@shared/hooks';
 import { translate } from '@shared/translations';
 import type { CenterStatistics as CenterStatisticsType } from '../utils/statisticsDataFetcher';
 import './styles/CentersStatistics.scss';
@@ -56,7 +56,6 @@ const CenterStatistics: React.FC<CenterStatisticsProps> = ({
 }) => {
   // Hooks
   const isClient = useIsClient();
-  const isAIRendering = useIsAIRendering();
   const { locale } = useLocale();
   const t = translate(locale);
 
@@ -83,31 +82,6 @@ const CenterStatistics: React.FC<CenterStatisticsProps> = ({
       setIsLoading(false);
     }
   }, [centerStatisticsDataProp]);
-
-  if (isAIRendering) {
-    return (
-      <Grid className="center-statistics-grid-container">
-        <Column lg={16} md={8} sm={4}>
-          <Tile
-            className="statistic-tile"
-            style={{
-              minHeight: '300px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              textAlign: 'center',
-            }}
-          >
-            <p aria-hidden="true">
-              {locale === 'tr'
-                ? `Bu alan üzerinde ${centerType === 'rd' ? 'Ar-Ge' : 'Tasarım'} Merkezi istatistikleri bileşeni bulunmaktadır. Bu bileşenin içerdiği verinin tam yolu frontmatter'da bulunan metadata üzerinde datasets: anahtarının değerleridir. Bu alandaki içeriği anlamak için datasets: alanındaki verilerin yollarını takip etmen gerekir.`
-                : `This area contains ${centerType === 'rd' ? 'R&D' : 'Design'} Center statistics component. The full path to the data contained in this component is the values of the datasets: key in the frontmatter metadata. To understand the content in this area, you need to follow the paths of the data in the datasets: field.`}
-            </p>
-          </Tile>
-        </Column>
-      </Grid>
-    );
-  }
 
   // Loading or no data state
   if (!isClient || isLoading || !centerStatisticsData) {

@@ -1,4 +1,0 @@
-- https://www.sanayi.gov.tr/assets/pdf/istatistik/ArGeMerkeziIstatistik2025.pdf
-- https://www.sanayi.gov.tr/assets/pdf/istatistik/TasarimMerkezi2025.pdf
-- https://www.sanayi.gov.tr/assets/doc/Ar-Gemerkezleri.xlsx
-- https://www.sanayi.gov.tr/assets/doc/Tasarimmerkeziistatistik.xlsx

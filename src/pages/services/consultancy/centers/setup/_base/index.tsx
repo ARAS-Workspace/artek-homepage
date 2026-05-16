@@ -14,6 +14,7 @@ import ContentEn from '../index.en.mdx';
 
 import { useLocale } from '@shared/hooks';
 import { getSiteConfig } from '@shared/config/seoConfig';
+import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 
 import type { SimpleFaqItem } from '@shared/components/ui/SimpleFaq.tsx';
 import faqContentTr from '../data/faq/tr/data.json';
@@ -114,62 +115,12 @@ const CentersSetup: React.FC = () => {
         },
       })),
     };
-    const aiDataSchema = {
-      '@context': 'https://artek.tc/ai-schema',
-      '@type': 'AIKnowledgeBase',
-      datasets: [
-        {
-          name: 'centers-setup-faq',
-          jsonContent: faqContent,
-          keyMaps:
-            locale === 'tr'
-              ? { question: 'Soru', answer: 'Cevap' }
-              : { question: 'Question', answer: 'Answer' },
-          description:
-            locale === 'tr'
-              ? 'Ar-Ge ve Tasarım Merkezi Kurulum Danışmanlığı SSS'
-              : 'R&D and Design Center Setup Consultancy FAQ',
-        },
-        {
-          name: 'centers-setup-flow-chart',
-          mdContent: flowChartContent,
-          description:
-            locale === 'tr'
-              ? 'Ar-Ge ve Tasarım Merkezi Kurulum Süreci Akış Şeması (Mermaid)'
-              : 'R&D and Design Center Setup Process Flow Chart (Mermaid)',
-        },
-        {
-          name: 'centers-setup-survey-design',
-          jsonContent: surveyDesignContent,
-          keyMaps:
-            locale === 'tr'
-              ? { criteria: 'Uygunluk Kriteri' }
-              : { criteria: 'Eligibility Criterion' },
-          description:
-            locale === 'tr'
-              ? 'Tasarım Merkezi Kurulum Uygunluk Anketi Soruları'
-              : 'Design Center Setup Eligibility Survey Questions',
-        },
-        {
-          name: 'centers-setup-survey-rd',
-          jsonContent: surveyRdContent,
-          keyMaps:
-            locale === 'tr'
-              ? { criteria: 'Uygunluk Kriteri' }
-              : { criteria: 'Eligibility Criterion' },
-          description:
-            locale === 'tr'
-              ? 'Ar-Ge Merkezi Kurulum Uygunluk Anketi Soruları'
-              : 'R&D Center Setup Eligibility Survey Questions',
-        },
-      ],
-    };
     return [
+      ...createDefaultSiteSchemas(locale),
       breadcrumbListSchema,
       webPageSchema,
       professionalServiceSchema,
       faqPageSchema,
-      aiDataSchema,
     ];
   }, [
     faqContent,

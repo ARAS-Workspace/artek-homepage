@@ -31,9 +31,6 @@ import React from 'react';
 // Carbon Design System
 import { InlineNotification, type InlineNotificationProps } from '@carbon/react';
 
-// Internal modules
-import { useIsAIRendering } from '@shared/hooks';
-
 /**
  * InlineNotificationWrapper Component
  *
@@ -46,19 +43,6 @@ import { useIsAIRendering } from '@shared/hooks';
  * />
  */
 export const InlineNotificationWrapper: React.FC<InlineNotificationProps> = (props) => {
-  const isAIRendering = useIsAIRendering();
-  const { kind = 'info', title, subtitle } = props;
-
-  if (isAIRendering) {
-    const content = title || subtitle || '';
-
-    return (
-      <blockquote data-notification-kind={kind}>
-        <strong>({kind})</strong> {content}
-      </blockquote>
-    );
-  }
-
   return <InlineNotification {...props} />;
 };
 

@@ -34,6 +34,7 @@ import { ArrowLeft, Construction } from '@carbon/icons-react';
 import SEO from '@shared/components/content/SEO';
 import { useLocale } from '@shared/hooks';
 import { translate } from '@shared/translations';
+import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 
 import DinoGame from '@shared/components/games/DinoGame';
 
@@ -61,9 +62,11 @@ const UnderConstructionPage: React.FC = () => {
   // SEO configuration
   const seoConfig = useMemo(() => SEO_MAP[locale] || SEO_MAP.tr, [locale]);
 
+  const schemas = useMemo(() => createDefaultSiteSchemas(locale), [locale]);
+
   return (
     <>
-      <SEO {...seoConfig} />
+      <SEO {...seoConfig} schemas={schemas} />
       <div className="under-construction-container">
         <div className="under-construction-content">
           <div className="under-construction-icon-wrapper">

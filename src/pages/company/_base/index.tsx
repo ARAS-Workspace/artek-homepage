@@ -14,6 +14,7 @@ import ContentEn from '../index.en.mdx';
 
 import { useLocale } from '@shared/hooks';
 import { getSiteConfig } from '@shared/config/seoConfig';
+import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 
 const SEO_MAP = {
   tr: seoConfigTr,
@@ -53,7 +54,7 @@ const Company: React.FC = () => {
         name: locale === 'tr' ? 'Kurumsal Bilgiler' : 'Company Information',
       },
     };
-    return [webPageSchema];
+    return [...createDefaultSiteSchemas(locale), webPageSchema];
   }, [locale, siteConfig, seoConfig.description]);
 
   return (

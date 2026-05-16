@@ -14,6 +14,7 @@ import ContentEn from '../index.en.mdx';
 
 import { useLocale } from '@shared/hooks';
 import { getSiteConfig } from '@shared/config/seoConfig';
+import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 
 import { createBreadcrumbSchema, createProfessionalServiceSchema } from '../../_data/schemas';
 import type { SimpleFaqItem } from '@shared/components/ui/SimpleFaq.tsx';
@@ -89,35 +90,12 @@ const ProjectConsultancy: React.FC = () => {
         },
       })),
     };
-    const aiDataSchema = {
-      '@context': 'https://artek.tc/ai-schema',
-      '@type': 'AIKnowledgeBase',
-      datasets: [
-        {
-          name: 'project-consultancy-faq',
-          jsonContent: faqContent,
-          keyMaps:
-            locale === 'tr'
-              ? { question: 'Soru', answer: 'Cevap' }
-              : { question: 'Question', answer: 'Answer' },
-          description: locale === 'tr' ? 'Proje Danışmanlığı SSS' : 'Project Consultancy FAQ',
-        },
-        {
-          name: 'project-consultancy-flow-chart',
-          mdContent: flowChartContent,
-          description:
-            locale === 'tr'
-              ? 'Proje Danışmanlığı Süreç Akış Şeması (Mermaid)'
-              : 'Project Consultancy Process Flow Chart (Mermaid)',
-        },
-      ],
-    };
     return [
+      ...createDefaultSiteSchemas(locale),
       breadcrumbListSchema,
       webPageSchema,
       professionalServiceSchema,
       faqPageSchema,
-      aiDataSchema,
     ];
   }, [faqContent, flowChartContent, locale, siteConfig, seoConfig.description]);
 

@@ -47,7 +47,7 @@ import {
 import { Download } from '@carbon/icons-react';
 
 // Internal modules
-import { useLocale, useIsClient, useIsAIRendering } from '@shared/hooks';
+import { useLocale, useIsClient } from '@shared/hooks';
 import { translate } from '@shared/translations';
 
 // Local components
@@ -129,7 +129,6 @@ const DataTableWithSearch: React.FC<DataTableWithSearchProps> = ({
   csvValueExtractor,
 }) => {
   const isClient = useIsClient();
-  const isAIRendering = useIsAIRendering();
   const { locale } = useLocale();
   const t = translate(locale);
 
@@ -299,25 +298,6 @@ const DataTableWithSearch: React.FC<DataTableWithSearchProps> = ({
       />
     );
   }
-  if (isAIRendering) {
-    return (
-      <div
-        style={{
-          height,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          textAlign: 'center',
-        }}
-        aria-hidden="true"
-      >
-        {locale === 'tr'
-          ? "Bu alan üzerinde aranabilir veri tablosu bileşeni bulunmaktadır. Bu bileşenin içerdiği verinin tam yolu frontmatter'da bulunan metadata üzerinde datasets: anahtarının değerleridir. Bu alandaki içeriği anlamak için datasets: alanındaki verilerin yollarını takip etmen gerekir."
-          : 'This area contains a searchable data table component. The full path to the data contained in this component is the values of the datasets: key in the frontmatter metadata. To understand the content in this area, you need to follow the paths of the data in the datasets: field.'}
-      </div>
-    );
-  }
-
   // Loading state
   if (isLoading) {
     return (

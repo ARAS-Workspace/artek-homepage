@@ -85,7 +85,6 @@ export const TableLoader: React.FC<TableLoaderProps> = ({
         rowCount={calculatedRowCount}
         showHeader={showHeader}
         showToolbar={showToolbar}
-        compact={compact}
         zebra={false}
       />
     </div>

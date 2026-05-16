@@ -4,7 +4,6 @@
 [![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare)](https://workers.cloudflare.com/)
-[![Claude AI](https://img.shields.io/badge/Claude-Sonnet%204-8B5CF6)](https://www.anthropic.com/claude)
 
 ***ARTEK Homepage***, *React* ve *Carbon Design System* ile oluşturulmuş, çoklu dil desteğine sahip modern kurumsal web sitesi projesidir.
 
@@ -21,7 +20,7 @@ Tüm sistem üretim (production) ortamında tamamen `Cloudflare Pages` ve `Worke
 `ARTEK Homepage` proje mimarisini bütünsel olarak üç ana konsept ile açıklamak mümkündür:
 
 - **React Frontend** son kullanıcı ile etkileşim katmanıdır ve kullanıcı arayüzünü yönetir.
-- **Workers** katmanı sistemin backend servisleri olan *AI Worker* ve *Mail Worker* yapılarından oluşur.
+- **Workers** katmanı sistemin backend servisi olan *Mail Worker* yapısından oluşur.
 - **Scripts & Tools** ise geliştirme ve üretim süreçlerini destekleyen araçlardan oluşur.
 
 ```mermaid
@@ -32,7 +31,6 @@ Tüm sistem üretim (production) ortamında tamamen `Cloudflare Pages` ve `Worke
     Homepage --> Workers[Workers]
     Homepage --> Scripts[Scripts & Tools]
 
-    Workers --> AIWorker[AI Worker]
     Workers --> MailWorker[Mail Worker]
 ```
 
@@ -42,24 +40,14 @@ Tüm sistem üretim (production) ortamında tamamen `Cloudflare Pages` ve `Worke
 flowchart TB
     User["User"] -- Request --> CFPages["Cloudflare Pages <br> _worker.js"]
     CFPages -- Serve Static Build --> Frontend["React Frontend"]
-    Frontend -- Chat Request --> AIWorker["AI Worker"]
     Frontend -- Contact Form --> MailWorker["Mail Worker"]
-    AIWorker -- Prompt + Context --> Claude["Claude Sonnet 4"]
-    Claude -- knowledge_search Tool --> AutoRAG["Cloudflare AI Search<br>AutoRAG"]
-    AutoRAG -- Retrieved Context --> Claude
-    AIWorker -- Store Conversation --> D1[("D1 Database")]
-    AIWorker -- Rate Limiting --> KV[("KV Storage")]
     MailWorker -- Send Email --> Resend["Resend API"]
-    Claude -- AI Response --> AIWorker
-    AIWorker -- Chat Response --> Frontend
     Frontend -- Update UI --> CFPages
     CFPages -- Response --> User
 
     style CFPages fill:#F38020,stroke:#333,stroke-width:2px,color:#000000
     style Frontend fill:#BBDEFB,stroke:#333,stroke-width:2px,color:#000000
-    style AIWorker fill:#F38020,stroke:#333,stroke-width:2px,color:#000000
     style MailWorker fill:#F38020,stroke:#333,stroke-width:2px,color:#000000
-    style Claude fill:#8B5CF6,stroke:#333,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -77,10 +65,6 @@ artek-homepage/
 │   │   └── translations/   
 │   └── router/              
 ├── workers/                  
-│   ├── ai-worker/           
-│   │   ├── src/            
-│   │   ├── migrations/     
-│   │   └── wrangler.jsonc  
 │   └── mail-worker/         
 │       ├── src/            
 │       └── wrangler.jsonc  

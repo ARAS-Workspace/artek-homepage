@@ -26,7 +26,6 @@
  */
 
 import ReactDOM from 'react-dom/client';
-import { HelmetProvider } from 'react-helmet-async';
 
 import App from './App';
 
@@ -43,8 +42,4 @@ if (!rootElement) {
 }
 const root = ReactDOM.createRoot(rootElement);
 
-root.render(
-  <HelmetProvider>
-    <App />
-  </HelmetProvider>
-);
+root.render(<App />);

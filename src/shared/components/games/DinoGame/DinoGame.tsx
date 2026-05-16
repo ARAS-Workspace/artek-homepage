@@ -31,7 +31,7 @@ import LoadingSpinner from '@shared/components/ui/LoadingSpinner';
 import { GameEngine, type GameRenderState } from './engine/GameEngine';
 import { GameState } from './types';
 import { useKeyboardInput } from './hooks/useKeyboardInput';
-import { useIsAIRendering, useLocale } from '@shared/hooks';
+import { useLocale } from '@shared/hooks';
 import { useIsClient } from '@shared/hooks';
 import { translate } from '@shared/translations';
 import { getThemeIcons, getVariantCounts } from './assets/themes/iconMap';
@@ -218,30 +218,9 @@ const LazyDinoGameComponent = lazy(() => Promise.resolve({ default: DinoGame }))
 
 const LazyDinoGame: React.FC<DinoGameProps> = (props) => {
   const isClient = useIsClient();
-  const isAIRendering = useIsAIRendering();
-  const { locale } = useLocale();
 
   if (!isClient) {
     return <LoadingSpinner />;
-  }
-  if (isAIRendering) {
-    return (
-      <div
-        className="dino-game-placeholder"
-        style={{
-          height: `${GAME_AREA.HEIGHT}px`,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          textAlign: 'center',
-        }}
-        aria-hidden="true"
-      >
-        {locale === 'tr'
-          ? 'Bu alanda danışmanlık sayfalarında bulunan etkileşimli bir mini oyun bileşeni bulunmaktadır. Oyunda koşan bir karakter, danışmanlık sürecinin metaforları olan dokümantasyon, yasal yükümlülükler ve proje planlama engellerini aşarak ilerler.'
-          : 'This area contains an interactive mini-game component found on consultancy pages. In the game, a running character overcomes obstacles that are metaphors for the consultancy process: documentation, legal obligations, and project planning challenges.'}
-      </div>
-    );
   }
 
   return (

@@ -14,6 +14,7 @@ import ContentEn from '../index.en.mdx';
 
 import { useLocale } from '@shared/hooks';
 import { getSiteConfig } from '@shared/config/seoConfig';
+import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 
 import type { SimpleFaqItem } from '@shared/components/ui/SimpleFaq.tsx';
 import faqContentTr from '../data/faq/tr/data.json';
@@ -77,30 +78,12 @@ const ConsultancyHome: React.FC = () => {
         },
       })),
     };
-    const aiDataSchema = {
-      '@context': 'https://artek.tc/ai-schema',
-      '@type': 'AIKnowledgeBase',
-      datasets: [
-        {
-          name: 'consultancy-home-faq',
-          jsonContent: faqContent,
-          keyMaps:
-            locale === 'tr'
-              ? { question: 'Soru', answer: 'Cevap' }
-              : { question: 'Question', answer: 'Answer' },
-          description:
-            locale === 'tr'
-              ? 'Teknik Danışmanlık Hizmetleri SSS'
-              : 'Technical Consultancy Services FAQ',
-        },
-      ],
-    };
     return [
+      ...createDefaultSiteSchemas(locale),
       breadcrumbListSchema,
       webPageSchema,
       professionalServiceSchema,
       faqPageSchema,
-      aiDataSchema,
     ];
   }, [faqContent, locale, siteConfig, seoConfig.description]);
 

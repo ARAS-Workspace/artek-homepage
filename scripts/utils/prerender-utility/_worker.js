@@ -1,11 +1,9 @@
 // Injected from config.yaml during build
-// noinspection JSUnresolvedVariable
+// noinspection JSUnresolvedVariable,JSUnresolvedReference
+
 const LOCALES = __LOCALES__;
-// noinspection JSUnresolvedVariable
 const DEFAULT_LOCALE = __DEFAULT_LOCALE__;
-// noinspection JSUnresolvedVariable
 const THEMES = __THEMES__;
-// noinspection JSUnresolvedVariable
 const DEFAULT_THEME = __DEFAULT_THEME__;
 
 // noinspection JSUnusedGlobalSymbols
@@ -14,76 +12,64 @@ export default {
     const url = new URL(request.url);
     const pathname = url.pathname;
 
-    // Static assets
+    // Static assets — pass through
     if (pathname.includes('.') && !pathname.endsWith('.html')) {
       return env.ASSETS.fetch(request);
     }
 
-    // Determine locale
+    // ── Locale detection (priority order) ──────────────────────────
     let locale = DEFAULT_LOCALE;
 
-    // Get cookies
-    const cookie = request.headers.get('cookie') || '';
-
-    // Priority 1: Cookie
-    const cookieLocale = cookie.match(/preferred_locale=(\w+)/)?.[1];
-
-    if (cookieLocale && LOCALES.includes(cookieLocale)) {
-      locale = cookieLocale;
-    } else {
-      // Priority 2: Accept-Language (primary language only)
-      const acceptLang = request.headers.get('accept-language') || '';
-      const primaryLang = acceptLang.split(',')[0]?.trim().toLowerCase().split('-')[0];
-
-      if (primaryLang && LOCALES.includes(primaryLang)) {
-        locale = primaryLang;
+    // 1. Query parameter: ?locale=tr (hreflang + prerender)
+    const queryLocale = url.searchParams.get('locale');
+    if (queryLocale && LOCALES.includes(queryLocale)) {
+      locale = queryLocale;
+    }
+    // 2. Cookie fallback
+    else {
+      const cookie = request.headers.get('cookie') || '';
+      const cookieLocale = cookie.match(/preferred_locale=(\w+)/)?.[1];
+      if (cookieLocale && LOCALES.includes(cookieLocale)) {
+        locale = cookieLocale;
       }
     }
 
-    // Determine theme
+    // ── Theme detection ────────────────────────────────────────────
     let theme = DEFAULT_THEME;
-
-    // Cookie: preferred_theme
+    const cookie = request.headers.get('cookie') || '';
     const cookieTheme = cookie.match(/preferred_theme=(white|g90)/)?.[1];
-
     if (cookieTheme && THEMES.includes(cookieTheme)) {
       theme = cookieTheme;
     }
 
-    // Build file paths with fallback chain
+    // ── Build file paths with fallback chain ───────────────────────
+    // Pattern: index[.theme][.locale].html
     const basePath = pathname === '/' ? '/index' : `${pathname.replace(/\/$/, '')}/index`;
     const themeSuffix = theme === DEFAULT_THEME ? '' : `.${theme}`;
     const localeSuffix = locale === DEFAULT_LOCALE ? '' : `.${locale}`;
 
     const tryPaths = [
-      `${basePath}${themeSuffix}${localeSuffix}.html`,  // Full match: index.g90.en.html
-      `${basePath}${localeSuffix}.html`,                 // Theme fallback: index.en.html
-      `${basePath}${themeSuffix}.html`,                  // Locale fallback: index.g90.html
-      `${basePath}.html`                                 // Full fallback: index.html
+      `${basePath}${themeSuffix}${localeSuffix}.html`,
+      `${basePath}${localeSuffix}.html`,
+      `${basePath}${themeSuffix}.html`,
+      `${basePath}.html`,
     ];
 
-    // Serve file
     for (const tryPath of tryPaths) {
       try {
         const response = await env.ASSETS.fetch(new URL(tryPath, url.origin));
-
         if (response.status === 200) {
-          // Set response headers
           const headers = new Headers(response.headers);
           headers.set('Content-Language', locale);
-          headers.set('Vary', 'Accept-Language, Cookie');
-
-          // Return prerendered HTML as-is (already contains data-carbon-theme)
-          return new Response(response.body, {
-            status: response.status,
-            headers
-          });
+          headers.set('Vary', 'Cookie');
+          return new Response(response.body, { status: 200, headers });
         }
-      } catch (e) {
-        // Try next path
+      } catch {
+        // try next
       }
     }
 
+    // SPA fallback
     return env.ASSETS.fetch(request);
   }
 };
