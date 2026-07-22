@@ -14,7 +14,7 @@ import ContentEn from '../index.en.mdx';
 
 import { useLocale } from '@shared/hooks';
 import { getSiteConfig } from '@shared/config/seoConfig';
-import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
+import { createDefaultSiteSchemas, createWebSiteRef } from '@shared/utils/schema-helpers';
 
 import { createBreadcrumbSchema, createProfessionalServiceSchema } from '../../_data/schemas';
 import type { SimpleFaqItem } from '@shared/components/ui/SimpleFaq.tsx';
@@ -57,14 +57,10 @@ const ProjectConsultancy: React.FC = () => {
     const webPageSchema = {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      name: siteConfig.name,
+      name: seoConfig.title,
       description: seoConfig.description,
       url: siteConfig.href,
-      isPartOf: {
-        '@type': 'WebSite',
-        name: 'ARTEK',
-        url: siteConfig.url,
-      },
+      isPartOf: createWebSiteRef(locale),
       about: {
         '@type': 'Thing',
         name: locale === 'tr' ? 'Teknik Danışmanlık' : 'Technical Consultancy',

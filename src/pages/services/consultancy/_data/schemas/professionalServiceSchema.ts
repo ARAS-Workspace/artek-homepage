@@ -78,11 +78,12 @@ export const createProfessionalServiceSchema = (
   return {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
+    '@id': `${siteConfig.url}/#professionalservice`,
     name: siteConfig.title,
     description: siteConfig.description,
-    url: siteConfig.href,
-    logo: siteConfig.logo,
-    image: siteConfig.defaultImage,
+    url: `${siteConfig.url}/services/consultancy`,
+    logo: `${siteConfig.url}${siteConfig.logo}`,
+    image: `${siteConfig.url}${siteConfig.defaultImage}`,
     telephone: siteConfig.localBusiness.telephone,
     email: siteConfig.email,
     address: {
@@ -110,8 +111,8 @@ export const createProfessionalServiceSchema = (
         },
       })),
     },
-    priceRange: '$$',
-    currenciesAccepted: 'TRY',
-    paymentAccepted: locale === 'tr' ? 'Banka Havalesi, Kredi Kartı' : 'Bank Transfer, Credit Card',
+    priceRange: siteConfig.localBusiness.priceRange,
+    currenciesAccepted: 'TRY, USD, EUR',
+    paymentAccepted: locale === 'tr' ? 'Banka Havalesi' : 'Bank Transfer',
   };
 };

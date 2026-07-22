@@ -4,6 +4,7 @@
   "description": "We provide R&D solutions across a wide range of sectors from Space-Tech and defense industry to software and biotechnology.",
   "url": "https://www.artek.tc",
   "locale": "en_US",
+  "legalName": "ARTEK İnovasyon Ar-Ge Sanayi ve Ticaret Limited Şirketi",
   "author": {
     "name": "ARTEK R&D Innovation",
     "url": "https://www.artek.tc"
@@ -11,7 +12,7 @@
   "social": {
     "twitter": null,
     "linkedin": null,
-    "github": "https://github.com/remrearas"
+    "github": null
   },
   "defaultImage": "/assets/images/og-image-en.png",
   "logo": "/assets/images/logo-en.png",
@@ -24,9 +25,9 @@
       "postalCode": "43100",
       "country": "TR"
     },
-    "telephone": "+905335253773",
+    "telephone": "+902746060457",
     "priceRange": "$$",
-    "image": "/assets/images/logo.png",
+    "image": "/assets/images/logo-en.png",
     "geo": {
       "latitude": 39.4414677,
       "longitude": 29.9819526

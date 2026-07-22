@@ -29,6 +29,13 @@ import { getSiteConfig } from '@shared/config/seoConfig';
 import type { Locale } from '@shared/translations';
 
 /**
+ * Prefix a site-relative asset path with the canonical origin —
+ * schema.org consumers (Google) expect absolute URLs in logo/image fields.
+ */
+const absoluteUrl = (path: string, origin: string) =>
+  path.startsWith('/') ? `${origin}${path}` : path;
+
+/**
  * LocalBusiness schema data
  */
 export interface LocalBusinessData {
@@ -71,18 +78,39 @@ export const createOrganizationSchema = (logoUrl: string, locale: 'tr' | 'en' = 
     '@type': 'Organization',
     '@id': `${siteConfig.url}/#organization`,
     name: siteConfig.name,
+    ...(siteConfig.legalName && { legalName: siteConfig.legalName }),
     url: siteConfig.url,
     logo: {
       '@type': 'ImageObject',
-      url: logoUrl,
+      url: absoluteUrl(logoUrl, siteConfig.url),
     },
     description: siteConfig.description,
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
+      telephone: siteConfig.localBusiness.telephone,
+      ...(siteConfig.email && { email: siteConfig.email }),
       availableLanguage: ['Turkish', 'English'],
     },
-    sameAs: Object.values(siteConfig.social).filter(Boolean),
+    ...(Object.values(siteConfig.social).some(Boolean) && {
+      sameAs: Object.values(siteConfig.social).filter(Boolean),
+    }),
+  };
+};
+
+/**
+ * Canonical WebSite reference node shared by every page's WebPage.isPartOf —
+ * single source instead of per-page inline literals.
+ *
+ * @param locale - Language code ('tr' or 'en')
+ */
+export const createWebSiteRef = (locale: 'tr' | 'en' = 'tr') => {
+  const siteConfig = getSiteConfig(locale);
+  return {
+    '@type': 'WebSite',
+    '@id': `${siteConfig.url}/#website`,
+    name: siteConfig.name,
+    url: siteConfig.url,
   };
 };
 
@@ -101,7 +129,7 @@ export const createOrganizationSchema = (logoUrl: string, locale: 'tr' | 'en' = 
  *     region: 'Kütahya',
  *     country: 'TR'
  *   },
- *   telephone: '+905335253773',
+ *   telephone: '+902746060457',
  *   openingHours: [{
  *     days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
  *     opens: '09:00',
@@ -119,8 +147,9 @@ export const createLocalBusinessSchema = (data: LocalBusinessData, locale: 'tr' 
     description: siteConfig.description,
     url: siteConfig.url,
     telephone: data.telephone,
+    ...(siteConfig.email && { email: siteConfig.email }),
     ...(data.priceRange && { priceRange: data.priceRange }),
-    ...(data.image && { image: data.image }),
+    ...(data.image && { image: absoluteUrl(data.image, siteConfig.url) }),
     address: {
       '@type': 'PostalAddress',
       streetAddress: data.address.street,
@@ -144,7 +173,9 @@ export const createLocalBusinessSchema = (data: LocalBusinessData, locale: 'tr' 
         closes: hours.closes,
       })),
     }),
-    sameAs: Object.values(siteConfig.social).filter(Boolean),
+    ...(Object.values(siteConfig.social).some(Boolean) && {
+      sameAs: Object.values(siteConfig.social).filter(Boolean),
+    }),
   };
 };
 

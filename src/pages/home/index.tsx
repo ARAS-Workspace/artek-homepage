@@ -46,7 +46,8 @@ const HomePage: React.FC = () => {
   const servicesContent = useMemo(() => SERVICES_CONTENT_MAP[locale], [locale]);
   const faqContent = useMemo(() => FAQ_CONTENT_MAP[locale], [locale]);
 
-  // Page-specific schemas (Organization & LocalBusiness are automatically added by SEO component)
+  // Page schemas — Organization & LocalBusiness come from the explicit
+  // createDefaultSiteSchemas call below (the SEO component adds nothing itself).
   const schemas = useMemo(() => {
     const baseUrl = siteConfig.url;
 

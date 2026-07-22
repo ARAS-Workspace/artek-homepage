@@ -14,7 +14,7 @@ import ContentEn from '../index.en.mdx';
 
 import { useLocale } from '@shared/hooks';
 import { getSiteConfig } from '@shared/config/seoConfig';
-import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
+import { createDefaultSiteSchemas, createWebSiteRef } from '@shared/utils/schema-helpers';
 
 import type { SimpleFaqItem } from '@shared/components/ui/SimpleFaq.tsx';
 import faqContentTr from '../data/faq/tr/data.json';
@@ -85,11 +85,7 @@ const CentersSetup: React.FC = () => {
           : 'R&D and Design Center Setup Consultancy',
       description: seoConfig.description,
       url: siteConfig.href,
-      isPartOf: {
-        '@type': 'WebSite',
-        name: 'ARTEK',
-        url: siteConfig.url,
-      },
+      isPartOf: createWebSiteRef(locale),
       about: {
         '@type': 'Thing',
         name: locale === 'tr' ? 'Merkez Kurulum Danışmanlığı' : 'Center Setup Consultancy',

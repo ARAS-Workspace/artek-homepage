@@ -34,7 +34,6 @@ import { ArrowLeft, Construction } from '@carbon/icons-react';
 import SEO from '@shared/components/content/SEO';
 import { useLocale } from '@shared/hooks';
 import { translate } from '@shared/translations';
-import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 
 import DinoGame from '@shared/components/games/DinoGame';
 
@@ -62,11 +61,10 @@ const UnderConstructionPage: React.FC = () => {
   // SEO configuration
   const seoConfig = useMemo(() => SEO_MAP[locale] || SEO_MAP.tr, [locale]);
 
-  const schemas = useMemo(() => createDefaultSiteSchemas(locale), [locale]);
-
+  // noIndex page: structured data would never be consumed, so none is emitted.
   return (
     <>
-      <SEO {...seoConfig} noIndex schemas={schemas} />
+      <SEO {...seoConfig} noIndex />
       <div className="under-construction-container">
         <div className="under-construction-content">
           <div className="under-construction-icon-wrapper">

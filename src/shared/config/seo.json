@@ -4,14 +4,15 @@
   "description": "Araştırma ve Geliştirme faaliyetlerinizde danışmanlık, proje yönetimi ve inovasyon stratejisi geliştirme. Sektörel uzmanlığımızla hedeflerinize ulaşın.",
   "url": "https://www.artek.tc",
   "locale": "tr_TR",
+  "legalName": "ARTEK İnovasyon Ar-Ge Sanayi ve Ticaret Limited Şirketi",
   "author": {
-    "name": "Artek İnovasyon Arge Sanayi ve Ticaret Limited Şirketi",
+    "name": "ARTEK İnovasyon Ar-Ge Sanayi ve Ticaret Limited Şirketi",
     "url": "https://www.artek.tc"
   },
   "social": {
     "twitter": null,
     "linkedin": null,
-    "github": "https://github.com/remrearas"
+    "github": null
   },
   "defaultImage": "/assets/images/og-image.png",
   "logo": "/assets/images/logo.png",
@@ -24,7 +25,7 @@
       "postalCode": "43100",
       "country": "TR"
     },
-    "telephone": "+905335253773",
+    "telephone": "+902746060457",
     "priceRange": "$$",
     "image": "/assets/images/logo.png",
     "geo": {

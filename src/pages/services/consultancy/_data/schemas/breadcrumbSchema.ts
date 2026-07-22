@@ -5,9 +5,10 @@ export interface BreadcrumbItem {
   path: string;
 }
 
+// Only routable paths belong here: '/services' is not a real route (it would
+// land on the error page), so the trail goes straight from home to consultancy.
 export const CONSULTANCY_BREADCRUMB_BASE: BreadcrumbItem[] = [
   { name: { tr: 'Ana Sayfa', en: 'Home' }, path: '/' },
-  { name: { tr: 'Hizmetler', en: 'Services' }, path: '/services' },
   { name: { tr: 'Danışmanlık', en: 'Consultancy' }, path: '/services/consultancy' },
 ];
 

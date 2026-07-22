@@ -41,6 +41,7 @@ export interface SiteConfig {
   url: string;
   href?: string;
   locale: string;
+  legalName?: string;
   author: {
     name: string;
     url?: string;

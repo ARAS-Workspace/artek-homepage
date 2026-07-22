@@ -4,7 +4,8 @@ import { Grid, Column, SkeletonPlaceholder } from '@carbon/react';
 import { Email, Phone, Location } from '@carbon/icons-react';
 import { useLocale, useIsClient } from '@shared/hooks';
 import { translate } from '@shared/translations';
-import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
+import { createDefaultSiteSchemas, createWebSiteRef } from '@shared/utils/schema-helpers';
+import { getSiteConfig } from '@shared/config/seoConfig';
 
 // SEO configurations
 import seoConfigTr from './data/seo/tr/data.json';
@@ -39,7 +40,22 @@ const ContactPage: React.FC = () => {
     [locale]
   );
 
-  const schemas = useMemo(() => createDefaultSiteSchemas(locale), [locale]);
+  const schemas = useMemo(() => {
+    const siteConfig = getSiteConfig(locale);
+    const webPageSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: seoConfig.title,
+      description: seoConfig.description,
+      url: siteConfig.href,
+      isPartOf: createWebSiteRef(locale),
+      about: {
+        '@type': 'Thing',
+        name: locale === 'tr' ? 'İletişim' : 'Contact',
+      },
+    };
+    return [...createDefaultSiteSchemas(locale), webPageSchema];
+  }, [locale, seoConfig.title, seoConfig.description]);
 
   return (
     <>

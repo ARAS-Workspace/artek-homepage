@@ -12,7 +12,7 @@ import seoConfigEn from '../data/seo/en/data.json';
 
 import { useLocale } from '@shared/hooks';
 import { getSiteConfig } from '@shared/config/seoConfig';
-import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
+import { createDefaultSiteSchemas, createWebSiteRef } from '@shared/utils/schema-helpers';
 import { createBreadcrumbSchema } from '@pages/services/consultancy/_data/schemas';
 
 const SEO_MAP = {
@@ -44,10 +44,6 @@ const CentersStatisticsDesignCenters: React.FC = () => {
   const schemas = useMemo(() => {
     const breadcrumbListSchema = createBreadcrumbSchema(siteConfig, locale, [
       {
-        name: { tr: 'İstatistikler', en: 'Statistics' },
-        path: '/services/consultancy/centers/statistics',
-      },
-      {
         name: { tr: 'Tasarım Merkezleri', en: 'Design Centers' },
         path: '/services/consultancy/centers/statistics/design-centers',
       },
@@ -58,11 +54,7 @@ const CentersStatisticsDesignCenters: React.FC = () => {
       name: locale === 'tr' ? 'Tasarım Merkezleri İstatistikleri' : 'Design Centers Statistics',
       description: seoConfig.description,
       url: siteConfig.href,
-      isPartOf: {
-        '@type': 'WebSite',
-        name: 'ARTEK',
-        url: siteConfig.url,
-      },
+      isPartOf: createWebSiteRef(locale),
       about: {
         '@type': 'Thing',
         name: locale === 'tr' ? 'İstatistikler' : 'Statistics',
@@ -89,6 +81,7 @@ const CentersStatisticsDesignCenters: React.FC = () => {
       },
       publisher: {
         '@type': 'Organization',
+        '@id': `${siteConfig.url}/#organization`,
         name: siteConfig.name,
       },
       license: 'https://creativecommons.org/licenses/by/4.0/',
