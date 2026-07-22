@@ -10,12 +10,15 @@
 		"start": "dotenv -- wrangler dev --port 8788",
 		"cf-typegen": "dotenv -- wrangler types"
 	},
+	"overrides": {
+		"sharp": "0.35.3"
+	},
 	"devDependencies": {
-		"dotenv-cli": "^11.0.0",
-		"typescript": "^5.5.2",
-		"wrangler": "^4.49.0"
+		"dotenv-cli": "11.0.0",
+		"typescript": "5.9.3",
+		"wrangler": "4.112.0"
 	},
 	"dependencies": {
-		"resend": "^6.5.2"
+		"resend": "6.18.0"
 	}
 }

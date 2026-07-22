@@ -52,7 +52,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: workers/mail-worker
-        run: npm install
+        run: npm ci
 
       - name: Generate TypeScript types
         working-directory: workers/mail-worker
