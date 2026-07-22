@@ -1,7 +1,7 @@
 import {Button} from "@carbon/react";
 import { Link } from "react-router-dom";
 import SimpleFaq from "@shared/components/ui/SimpleFaq";
-import FlowChart from './_components/FlowChart';
+import Mermaid from "@shared/components/visualization/Mermaid";
 import InlineNotificationWrapper from "@shared/components/ui/InlineNotificationWrapper";
 
 import faqData from "./data/faq/tr/data.json";
@@ -95,7 +95,16 @@ başvuru dosyasını birlikte hazırlıyoruz. Başvuru sonrası süreci takip ed
     hideCloseButton
 />
 
-<FlowChart />
+<Mermaid chart={`flowchart TB
+A[Proje Fikri] --> B[Program Eşleştirme]
+B --> C[Proje Yazımı]
+C --> D[Başvuru]
+D --> E{Sonuç}
+E -->|Kabul| F[Proje Yönetimi]
+E -->|Red| G[Revizyon]
+G --> C
+F --> H[Raporlama]
+H --> I[Kapanış]`} />
 
 Her destek programının kendine özgü değerlendirme kriterleri, bütçe limitleri ve raporlama gereksinimleri bulunmaktadır.
 Bu nedenle başvuru öncesinde doğru program seçimi ve proje içeriğinin programa uygun şekilde kurgulanması kritik önem taşır.

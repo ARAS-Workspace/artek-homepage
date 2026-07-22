@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import SurveyRD from './_components/SurveyRD';
 import SurveyDesign from './_components/SurveyDesign';
-import FlowChart from './_components/FlowChart';
+import Mermaid from "@shared/components/visualization/Mermaid";
 import SimpleFaq from "@shared/components/ui/SimpleFaq";
 import InlineNotificationWrapper from "@shared/components/ui/InlineNotificationWrapper";
 
@@ -31,7 +31,20 @@ The flow diagram below illustrates the main steps from application to operation.
     hideCloseButton
 />
 
-<FlowChart />
+<Mermaid chart={`flowchart TB
+    Start[Start] --> Analysis[Needs Analysis]
+    Analysis --> Feasibility[Feasibility Study]
+    Feasibility --> Planning[Project Planning]
+    Planning --> Preparation[Application Preparation]
+    Preparation --> Application[Ministry Application]
+    Application --> Tracking[Application Tracking]
+    Tracking --> Decision{Approval?}
+    Decision -->|Yes| Setup[R&D / Design Center Setup]
+    Decision -->|No| Revision[Revision]
+    Revision --> Application
+    Setup --> Operation[Operation Launch]
+    Operation --> Support[Continuous Consulting]
+    Support --> End[Completed]`} />
 
 ---
 

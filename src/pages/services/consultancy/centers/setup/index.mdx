@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import SurveyRD from './_components/SurveyRD';
 import SurveyDesign from './_components/SurveyDesign';
-import FlowChart from './_components/FlowChart';
+import Mermaid from "@shared/components/visualization/Mermaid";
 import SimpleFaq from "@shared/components/ui/SimpleFaq";
 import InlineNotificationWrapper from "@shared/components/ui/InlineNotificationWrapper";
 
@@ -31,7 +31,20 @@ Aşağıdaki akış diyagramı, başvurudan operasyona kadar geçen sürecin ana
     hideCloseButton
 />
 
-<FlowChart />
+<Mermaid chart={`flowchart TB
+    Start[Başlangıç] --> Analysis[İhtiyaç Analizi]
+    Analysis --> Feasibility[Fizibilite Çalışması]
+    Feasibility --> Planning[Proje Planlama]
+    Planning --> Preparation[Başvuru Hazırlığı]
+    Preparation --> Application[Bakanlık Başvurusu]
+    Application --> Tracking[Başvuru Takibi]
+    Tracking --> Decision{Onay?}
+    Decision -->|Evet| Setup[Ar-Ge / Tasarım Merkezi Kurulumu]
+    Decision -->|Hayır| Revision[Revizyon]
+    Revision --> Application
+    Setup --> Operation[Operasyon Başlangıcı]
+    Operation --> Support[Sürekli Danışmanlık]
+    Support --> End[Tamamlandı]`} />
 
 ---
 

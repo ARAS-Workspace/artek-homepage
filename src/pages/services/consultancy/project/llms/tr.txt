@@ -93,18 +93,18 @@ başvuru dosyasını birlikte hazırlıyoruz. Başvuru sonrası süreci takip ed
 > [!NOTE]
 > Proje danışmanlığı sürecimiz, fikir aşamasından proje kapanışına kadar tüm adımlarda yanınızda olmak üzere tasarlanmıştır. Her aşamada teknik rehberlik ve profesyonel destek sağlıyoruz.
 
-Süreç şu adımlardan oluşur:
-
-1. Süreç, Proje Fikri aşamasıyla başlar.
-2. Proje Fikri aşamasından sonra Program Eşleştirme aşamasına geçilir.
-3. Program Eşleştirme aşamasından sonra Proje Yazımı aşamasına geçilir.
-4. Proje Yazımı aşamasından sonra Başvuru aşamasına geçilir.
-5. Başvuru aşamasından sonra Sonuç değerlendirmesi yapılır.
-6. Sonuç değerlendirmesi Kabul durumunda, Proje Yönetimi aşamasına geçilir.
-7. Sonuç değerlendirmesi Red durumunda, Revizyon aşamasına geri dönülür.
-8. Revizyon aşamasından sonra tekrar Proje Yazımı aşamasına geçilir.
-9. Proje Yönetimi aşamasından sonra Raporlama aşamasına geçilir.
-10. Raporlama aşamasından sonra Kapanış aşamasına ulaşılır ve süreç tamamlanır.
+```mermaid
+flowchart TB
+A[Proje Fikri] --> B[Program Eşleştirme]
+B --> C[Proje Yazımı]
+C --> D[Başvuru]
+D --> E{Sonuç}
+E -->|Kabul| F[Proje Yönetimi]
+E -->|Red| G[Revizyon]
+G --> C
+F --> H[Raporlama]
+H --> I[Kapanış]
+```
 
 Her destek programının kendine özgü değerlendirme kriterleri, bütçe limitleri ve raporlama gereksinimleri bulunmaktadır.
 Bu nedenle başvuru öncesinde doğru program seçimi ve proje içeriğinin programa uygun şekilde kurgulanması kritik önem taşır.

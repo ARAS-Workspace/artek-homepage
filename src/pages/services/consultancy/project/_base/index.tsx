@@ -20,8 +20,6 @@ import { createBreadcrumbSchema, createProfessionalServiceSchema } from '../../_
 import type { SimpleFaqItem } from '@shared/components/ui/SimpleFaq.tsx';
 import faqContentTr from '@pages/services/consultancy/project/data/faq/tr/data.json';
 import faqContentEn from '@pages/services/consultancy/project/data/faq/en/data.json';
-import flowChartTr from '../data/flow-chart/tr/data.prose.md?raw';
-import flowChartEn from '../data/flow-chart/en/data.prose.md?raw';
 
 const SEO_MAP = {
   tr: seoConfigTr,
@@ -35,16 +33,11 @@ const FAQ_CONTENT_MAP: Record<'tr' | 'en', SimpleFaqItem[]> = {
   tr: faqContentTr as SimpleFaqItem[],
   en: faqContentEn as SimpleFaqItem[],
 };
-const FLOW_CHART_MAP: Record<'tr' | 'en', string> = {
-  tr: flowChartTr,
-  en: flowChartEn,
-};
 const ProjectConsultancy: React.FC = () => {
   const { locale } = useLocale();
   const siteConfig = getSiteConfig(locale);
 
   const faqContent = useMemo(() => FAQ_CONTENT_MAP[locale], [locale]);
-  const flowChartContent = useMemo(() => FLOW_CHART_MAP[locale], [locale]);
   const Content = CONTENT_MAP[locale] || CONTENT_MAP.tr;
 
   const seoConfig = useMemo(
@@ -97,7 +90,7 @@ const ProjectConsultancy: React.FC = () => {
       professionalServiceSchema,
       faqPageSchema,
     ];
-  }, [faqContent, flowChartContent, locale, siteConfig, seoConfig.description]);
+  }, [faqContent, locale, siteConfig, seoConfig.description]);
 
   return (
     <>

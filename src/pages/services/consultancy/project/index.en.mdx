@@ -1,7 +1,7 @@
 import {Button} from "@carbon/react";
 import { Link } from "react-router-dom";
 import SimpleFaq from "@shared/components/ui/SimpleFaq";
-import FlowChart from './_components/FlowChart';
+import Mermaid from "@shared/components/visualization/Mermaid";
 import InlineNotificationWrapper from "@shared/components/ui/InlineNotificationWrapper";
 
 import faqData from "./data/faq/en/data.json";
@@ -94,7 +94,16 @@ application file together. We monitor the post-application process and continue 
     hideCloseButton
 />
 
-<FlowChart />
+<Mermaid chart={`flowchart TB
+A[Project Idea] --> B[Program Matching]
+B --> C[Project Writing]
+C --> D[Application]
+D --> E{Result}
+E -->|Approved| F[Project Management]
+E -->|Rejected| G[Revision]
+G --> C
+F --> H[Reporting]
+H --> I[Closure]`} />
 
 Each support program has its own evaluation criteria, budget limits, and reporting requirements.
 Therefore, selecting the right program and structuring the project content appropriately before application is critically important.

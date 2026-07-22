@@ -35,7 +35,6 @@ import { rule as CarbonIcons } from './rules/CarbonIcons.js';
 import { rule as ArtekBilingualLogo } from './rules/ArtekBilingualLogo.js';
 import { rule as TeamMember } from './rules/TeamMember.js';
 import { rule as SimpleFaq } from './rules/SimpleFaq.js';
-import { rule as FlowChart } from './rules/FlowChart.js';
 import { rule as CenterStatistics } from './rules/CenterStatistics.js';
 import { rule as Surveys } from './rules/Surveys.js';
 
@@ -69,7 +68,6 @@ const REGISTRY = {
   ArtekBilingualLogo,
   TeamMember,
   SimpleFaq,
-  FlowChart,
   // Centre-statistics widgets — one name-dispatched directive rule.
   CenterStatistics,
   CentersDataTable: CenterStatistics,

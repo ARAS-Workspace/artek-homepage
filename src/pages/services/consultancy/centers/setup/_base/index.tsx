@@ -19,8 +19,6 @@ import { createDefaultSiteSchemas } from '@shared/utils/schema-helpers';
 import type { SimpleFaqItem } from '@shared/components/ui/SimpleFaq.tsx';
 import faqContentTr from '../data/faq/tr/data.json';
 import faqContentEn from '../data/faq/en/data.json';
-import flowChartTr from '../data/flow-chart/tr/data.prose.md?raw';
-import flowChartEn from '../data/flow-chart/en/data.prose.md?raw';
 import surveyDesignTr from '../data/survey-design/tr/questions.json';
 import surveyDesignEn from '../data/survey-design/en/questions.json';
 import surveyRdTr from '../data/survey-rd/tr/questions.json';
@@ -42,10 +40,6 @@ const FAQ_CONTENT_MAP: Record<'tr' | 'en', SimpleFaqItem[]> = {
   tr: faqContentTr as SimpleFaqItem[],
   en: faqContentEn as SimpleFaqItem[],
 };
-const FLOW_CHART_MAP: Record<'tr' | 'en', string> = {
-  tr: flowChartTr,
-  en: flowChartEn,
-};
 const SURVEY_DESIGN_MAP: Record<'tr' | 'en', string[]> = {
   tr: surveyDesignTr as string[],
   en: surveyDesignEn as string[],
@@ -59,7 +53,6 @@ const CentersSetup: React.FC = () => {
   const siteConfig = getSiteConfig(locale);
 
   const faqContent = useMemo(() => FAQ_CONTENT_MAP[locale], [locale]);
-  const flowChartContent = useMemo(() => FLOW_CHART_MAP[locale], [locale]);
   const surveyDesignContent = useMemo(
     () => SURVEY_DESIGN_MAP[locale].map((q) => ({ criteria: q })),
     [locale]
@@ -124,7 +117,6 @@ const CentersSetup: React.FC = () => {
     ];
   }, [
     faqContent,
-    flowChartContent,
     surveyDesignContent,
     surveyRdContent,
     locale,
