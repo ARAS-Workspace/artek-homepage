@@ -64,7 +64,7 @@ export default defineConfig({
       : undefined,
   },
   preview: {
-    port: 4173,
+    port: 5175,
     // HTTPS with custom certificate for www.artek.tc
     https: fs.existsSync(path.resolve(__dirname, './certs/cert.pem'))
       ? {

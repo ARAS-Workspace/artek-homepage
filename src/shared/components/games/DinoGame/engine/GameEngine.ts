@@ -27,7 +27,7 @@
 
 import type { GameConfig, GameMessages } from '../types';
 import { GameState } from '../types';
-import { GAME_AREA, CLOUD, GAME_CONFIG, OBSTACLE } from '../constants';
+import { GAME_AREA, CLOUD, GAME_CONFIG, LOOP, OBSTACLE } from '../constants';
 import { Dino } from './Dino';
 import { Obstacle } from './Obstacle';
 import { Cloud } from './Cloud';
@@ -58,6 +58,8 @@ export class GameEngine {
   private speed: number;
   private readonly messages: GameMessages;
   private readonly variantCounts: VariantCounts;
+  private lastTime: number | null = null;
+  private accumulator: number = 0;
 
   constructor(messages: GameMessages, variantCounts: VariantCounts) {
     this.messages = messages;
@@ -93,6 +95,7 @@ export class GameEngine {
     this.distanceMeter = 0;
     this.speed = this.config.speed;
     this.obstacles = [];
+    this.accumulator = 0;
     this.dino.reset();
   }
 
@@ -109,8 +112,29 @@ export class GameEngine {
   }
 
   update(): void {
+    // Fixed-timestep loop: advance physics in constant STEP_MS increments so the
+    // simulation runs at the same speed on any display refresh rate. The caller
+    // invokes update() once per animation frame; the wall-clock delta is measured
+    // here and consumed in fixed steps.
+    const now = performance.now();
+    if (this.lastTime === null) this.lastTime = now;
+    let delta = now - this.lastTime;
+    this.lastTime = now;
+
     if (this.state !== GameState.RUNNING) return;
 
+    // Clamp so a long pause (e.g. backgrounded tab) can't fast-forward the game.
+    if (delta > LOOP.STEP_MS * LOOP.MAX_STEPS) delta = LOOP.STEP_MS * LOOP.MAX_STEPS;
+    this.accumulator += delta;
+    let steps = 0;
+    while (this.accumulator >= LOOP.STEP_MS && steps < LOOP.MAX_STEPS) {
+      this.step();
+      this.accumulator -= LOOP.STEP_MS;
+      steps++;
+    }
+  }
+
+  private step(): void {
     // Update dino
     this.dino.update(this.config.gravity);
 

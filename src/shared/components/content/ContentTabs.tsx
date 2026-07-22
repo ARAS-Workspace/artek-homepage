@@ -31,6 +31,8 @@ import React from 'react';
 // External libraries
 import { Tabs, TabList, Tab, TabPanels, TabPanel } from '@carbon/react';
 
+// Internal modules
+import { useIsClient } from '@shared/hooks';
 
 // Styles
 import './styles/ContentTabs.scss';
@@ -60,9 +62,27 @@ interface ContentTabsProps {
  * />
  */
 const ContentTabs: React.FC<ContentTabsProps> = ({ tabs, contained = true, className = '' }) => {
+  const isClient = useIsClient();
+
   if (!tabs || tabs.length === 0) {
     console.warn('ContentTabs: No tabs provided');
     return null;
+  }
+
+  // Prerender: render all tab contents stacked so Playwright captures full content
+  if (!isClient) {
+    return (
+      <div className="content-tabs__prerender">
+        {tabs.map((tab, index) => {
+          const ContentComponent = tab.content;
+          return (
+            <div key={index}>
+              <ContentComponent />
+            </div>
+          );
+        })}
+      </div>
+    );
   }
 
   return (

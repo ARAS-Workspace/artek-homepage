@@ -96,6 +96,18 @@ const MermaidInner: React.FC<MermaidProps> = ({ chart }) => {
   const MAX_ZOOM = 2;
   const MIN_ZOOM = 0.5;
   const MAX_PAN = 300;
+  const MOBILE_BREAKPOINT = 672;
+
+  // Mobile detection for touch guard (pan/zoom disabled on mobile)
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT}px)`);
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
 
   const getCurrentTheme = useCallback((): 'neutral' | 'dark' => {
     const carbonTheme = document.documentElement.getAttribute('data-carbon-theme');
@@ -551,11 +563,13 @@ const MermaidInner: React.FC<MermaidProps> = ({ chart }) => {
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseLeave}
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
+            {...(!isMobile && {
+              onTouchStart: handleTouchStart,
+              onTouchMove: handleTouchMove,
+              onTouchEnd: handleTouchEnd,
+            })}
             style={{
-              cursor: loadingState === 'success' ? (isDragging ? 'grabbing' : 'grab') : 'default',
+              cursor: loadingState === 'success' && !isMobile ? (isDragging ? 'grabbing' : 'grab') : 'default',
               display: loadingState === 'success' ? 'flex' : 'none',
               ...(containerHeight && {
                 height: `${containerHeight}px`,

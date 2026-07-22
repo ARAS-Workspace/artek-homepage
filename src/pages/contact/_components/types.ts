@@ -2,6 +2,30 @@
  * Contact form types
  */
 
+/**
+ * Cloudflare Turnstile browser API, injected by
+ * https://challenges.cloudflare.com/turnstile/v0/api.js
+ */
+export interface TurnstileRenderOptions {
+  sitekey: string;
+  theme?: 'light' | 'dark' | 'auto';
+  callback?: (token: string) => void;
+  'error-callback'?: () => void;
+}
+
+export interface TurnstileAPI {
+  render: (container: HTMLElement | string, options: TurnstileRenderOptions) => string;
+  reset: (widgetId?: string) => void;
+  remove: (widgetId: string) => void;
+}
+
+declare global {
+  interface Window {
+    turnstile?: TurnstileAPI;
+    onTurnstileLoadCallback?: () => void;
+  }
+}
+
 export interface ContactFormData {
   name: string;
   email: string;

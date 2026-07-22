@@ -50,7 +50,7 @@ const ErrorPage: React.FC = () => {
   }
   return (
     <>
-      <GenericErrorPage error={error} />;
+      <GenericErrorPage error={error} />
     </>
   );
 };

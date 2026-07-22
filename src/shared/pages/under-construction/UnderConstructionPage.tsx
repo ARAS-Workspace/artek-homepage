@@ -66,7 +66,7 @@ const UnderConstructionPage: React.FC = () => {
 
   return (
     <>
-      <SEO {...seoConfig} schemas={schemas} />
+      <SEO {...seoConfig} noIndex schemas={schemas} />
       <div className="under-construction-container">
         <div className="under-construction-content">
           <div className="under-construction-icon-wrapper">

@@ -41,6 +41,14 @@ export const GAME_AREA = {
   HEIGHT: 200, // Game viewport height (px)
 };
 
+export const LOOP = {
+  // Physics are authored per-frame at 60 Hz. The engine advances the simulation in
+  // fixed STEP_MS increments (decoupled from display refresh) so speed is identical
+  // on 60/120/144 Hz monitors and on phones.
+  STEP_MS: 1000 / 60, // Fixed physics step duration (ms)
+  MAX_STEPS: 5, // Max catch-up steps per update — prevents fast-forward after a backgrounded tab
+};
+
 export const DINO = {
   WIDTH: 48, // Dino sprite width (px)
   HEIGHT: 48, // Dino sprite height (px)

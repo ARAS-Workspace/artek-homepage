@@ -50,7 +50,7 @@ const TechnicalEducation: React.FC = () => {
   const schemas = useMemo(() => {
     const breadcrumbListSchema = createBreadcrumbSchema(siteConfig, locale, [
       {
-        name: { tr: 'Technical Education', en: 'Teknik Eğitim' },
+        name: { tr: 'Teknik Eğitim', en: 'Technical Education' },
         path: '/services/consultancy/technical-education',
       },
     ]);

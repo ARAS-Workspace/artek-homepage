@@ -34,6 +34,10 @@
   transition: background 0.25s ease;
   position: relative;
   z-index: 8001; // Higher than SideNav (8000) to appear above it
+
+  @include bp.breakpoint-down(lg) {
+    z-index: 7999; // Lower than SideNav (8000) so it slides underneath on mobile
+  }
 }
 
 .footer-separator {

@@ -25,6 +25,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 
 import App from './App';
@@ -42,4 +43,8 @@ if (!rootElement) {
 }
 const root = ReactDOM.createRoot(rootElement);
 
-root.render(<App />);
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);

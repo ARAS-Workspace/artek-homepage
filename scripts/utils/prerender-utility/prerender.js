@@ -294,7 +294,7 @@ async function prerenderAll(config) {
   log.info(`DNS Override: ${prodDomain} → localhost:${config.preview_port}`);
 
   const browser = await chromium.launch({
-    headless: config.playwright?.headless ?? false,
+    headless: config.playwright?.headless ?? true,
     args: [
       `--host-resolver-rules=MAP ${prodDomain}:443 localhost:${config.preview_port}`,
       '--ignore-certificate-errors',
