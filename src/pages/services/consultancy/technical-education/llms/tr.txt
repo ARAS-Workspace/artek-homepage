@@ -1,0 +1,174 @@
+> **ARTEK — makine-okunur sayfa içeriği.**
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+
+**path:** /services/consultancy/technical-education · **locale:** tr · **en:** https://www.artek.tc/services/consultancy/technical-education/llms.txt?locale=en
+
+# Teknik Eğitim
+
+Akademik birikimimiz ve sektörel deneyimimizi işletmenizin teknik ekipleriyle paylaşıyoruz. Resmi sertifikasyon programları sunmuyoruz; amacımız bilgi transferi ve pratik yetkinlik kazandırmaktır.
+
+**Sertifikasyon değil, bilgi transferi. Teori değil, uygulama.**
+
+---
+
+## Eğitim Yaklaşımımız
+
+ARTEK olarak sunduğumuz eğitimler, akademik geçmişimiz ve sektörel deneyimimizden beslenen pratik odaklı bilgi aktarımına dayanmaktadır.
+
+Eğitimlerimizin temel özellikleri:
+
+- **Bilgi Transferi Odaklı:** Teorik bilgiyi pratik uygulamalarla birleştiren, iş süreçlerinize doğrudan katkı sağlayan içerikler
+- **Özelleştirilmiş Program:** İşletmenizin sektörüne, mevcut yetkinlik düzeyine ve ihtiyaçlarına göre tasarlanan eğitim programları
+- **Uygulama Ağırlıklı:** Kendi projeleriniz ve gerçek senaryolar üzerinden yürütülen atölye çalışmaları
+- **Mentorluk Desteği:** Eğitim sonrasında da sorularınıza yanıt bulabileceğiniz sürekli iletişim imkanı
+
+> **Not:** Resmi sertifikasyon gerektiren eğitimler (ISO belgelendirme, mevzuat zorunlu eğitimler vb.) için yetkili kuruluşlara yönlendirme yapıyoruz.
+
+---
+
+## Eğitim Alanlarımız
+
+### Ar-Ge ve Proje Yönetimi
+
+Ar-Ge ve tasarım projelerinin planlanması, yürütülmesi ve raporlanması konularında ekiplerinizin yetkinliğini artırıyoruz.
+
+- Ar-Ge proje döngüsü ve metodolojileri
+- TÜBİTAK ve KOSGEB proje yazım teknikleri
+- Proje bütçeleme ve maliyet yönetimi
+- Dönemsel raporlama ve denetim hazırlığı
+- Fikri mülkiyet farkındalığı
+
+### Teknik Dokümantasyon
+
+Proje dokümanları, teknik raporlar ve başvuru dosyalarının hazırlanması konusunda sistematik yaklaşımlar aktarıyoruz.
+
+- Teknik rapor yazım standartları
+- Proje dosyası hazırlama teknikleri
+- Bilimsel ve teknik içerik kurgusu
+- Görselleştirme ve sunum teknikleri
+- Versiyon kontrolü ve doküman yönetimi
+
+### Mühendislik Süreçleri
+
+Mühendislik projelerinin sistematik yürütülmesi ve kalite yönetimi konularında bilgi aktarımı sağlıyoruz.
+
+- Ar-Ge ve yenilik süreç yönetimi
+- Teknolojik fizibilite değerlendirmesi
+- Risk analizi ve yönetimi
+- Kalite kontrol yaklaşımları
+- Süreç optimizasyonu temelleri
+
+---
+
+## Eğitim Formatlarımız
+
+İşletmenizin ihtiyaçlarına ve çalışma düzenine uygun esnek formatlar sunuyoruz.
+
+### Kurum İçi Eğitimler
+
+Ekibinizin tamamına veya belirli birimlerine yönelik, işletmenizde gerçekleştirilen toplu eğitim programları. Kendi ortamınızda, kendi projeleriniz üzerinden uygulamalı öğrenme imkanı.
+
+### Atölye Çalışmaları
+
+Belirli bir konu veya beceri üzerine yoğunlaşan, yoğun ve interaktif çalışma oturumları. Gerçek projeler üzerinde uygulamalı deneyim kazanma fırsatı.
+
+### Birebir Mentorluk
+
+Proje yöneticileri veya teknik liderler için kişiselleştirilmiş mentorluk programları. Karşılaştığınız spesifik sorunlara odaklanan, esnek tempolu bilgi aktarımı.
+
+### Uzaktan Eğitim
+
+Online platformlar üzerinden gerçekleştirilen canlı eğitim oturumları. Coğrafi kısıtlama olmaksızın, esnek zamanlama ile katılım imkanı.
+
+---
+
+## Kimler İçin Uygun?
+
+Eğitimlerimiz, teknik bilgi ve becerilerini geliştirmek isteyen profesyonellere yöneliktir.
+
+### Ar-Ge ve Tasarım Merkezi Ekipleri
+
+Merkez yöneticileri, proje liderleri ve Ar-Ge personeli için proje yönetimi, raporlama ve dokümantasyon eğitimleri.
+
+### Proje Yöneticileri
+
+TÜBİTAK, KOSGEB ve diğer destekli projeleri yöneten profesyoneller için proje yazımı, bütçeleme ve yürütme eğitimleri.
+
+### Teknik Personel
+
+Mühendisler, tasarımcılar ve araştırmacılar için teknik dokümantasyon, dijital araçlar ve süreç yönetimi eğitimleri.
+
+### Yeni Mezunlar ve Stajyerler
+
+Ar-Ge ekiplerine yeni katılan çalışanlar için temel yetkinlik kazandırma ve oryantasyon programları.
+
+---
+
+## Süreç Nasıl İşler?
+
+> [!NOTE]
+> Her eğitim programı, işletmenizin spesifik ihtiyaçlarına göre özelleştirilir. Hazır paket programlar yerine, sizinle birlikte tasarladığımız içerikler sunuyoruz.
+
+### 1. İhtiyaç Analizi
+
+İşletmenizin mevcut yetkinlik düzeyini, hedeflerini ve eğitim ihtiyaçlarını birlikte değerlendiriyoruz. Hangi alanlarda gelişim gerektiğini ve öncelikleri belirliyoruz.
+
+### 2. Program Tasarımı
+
+İhtiyaç analizine göre özelleştirilmiş eğitim programı tasarlıyoruz. İçerik, format, süre ve zamanlama konularında sizin tercihlerinizi dikkate alıyoruz.
+
+### 3. Eğitim Uygulaması
+
+Belirlenen program dahilinde eğitimleri gerçekleştiriyoruz. Teorik bilgiyi pratik uygulamalarla pekiştiriyor, gerçek projeler üzerinde çalışıyoruz.
+
+### 4. Değerlendirme ve Takip
+
+Eğitim sonrasında kazanımları değerlendiriyor, gerekirse ek oturumlar planlıyoruz. Sorularınız için mentorluk desteği sağlıyoruz.
+
+> [!WARNING]
+> Eğitimlerimiz sonunda resmi sertifika verilmemektedir. Talep halinde katılım belgesi düzenleyebiliriz ancak bu belge resmi bir sertifikasyon yerine geçmez.
+
+---
+
+Teknik eğitim ihtiyaçlarınızı konuşmak ve size uygun bir program tasarlamak için bizimle iletişime geçin.
+
+[İletişime Geçin](/contact)
+
+---
+
+## Sıkça Sorulan Sorular
+
+### Eğitimler sonunda sertifika veriliyor mu?
+
+Hayır, eğitimlerimiz sonunda resmi sertifika verilmemektedir. Biz resmi bir sertifikasyon kurumu veya sürekli eğitim merkezi değiliz. Talep halinde katılım belgesi düzenleyebiliriz ancak bu belge resmi bir sertifikasyon yerine geçmez. Resmi sertifikasyon gerektiren eğitimler için yetkili kuruluşlara yönlendirme yapıyoruz.
+
+### Eğitimleriniz mevzuat zorunlu eğitimler mi?
+
+Hayır, sunduğumuz eğitimler yasal zorunluluk kapsamındaki eğitimler değildir. İş sağlığı ve güvenliği, çevre mevzuatı gibi zorunlu eğitimler için yetkili kuruluşlarla çalışmanız gerekmektedir. Bizim eğitimlerimiz tamamen gönüllü katılıma dayalı, yetkinlik geliştirme amaçlı programlardır.
+
+### Eğitim programları hazır paketler mi?
+
+Hayır, her eğitim programı işletmenizin spesifik ihtiyaçlarına göre özelleştirilir. Ön görüşmede ihtiyaçlarınızı, mevcut yetkinlik düzeyinizi ve hedeflerinizi değerlendirdikten sonra size özel bir program tasarlıyoruz. Bu sayede gerçekten ihtiyaç duyduğunuz konulara odaklanıyoruz.
+
+### Uzaktan eğitim mümkün mü?
+
+Evet, eğitimlerimizin büyük bölümünü online platformlar üzerinden gerçekleştirebiliyoruz. Canlı oturumlar, ekran paylaşımı ve interaktif uygulamalarla uzaktan da etkili bir öğrenme deneyimi sunuyoruz. Atölye çalışmaları ve uygulamalı eğitimler için gerektiğinde yüz yüze oturumlar planlayabiliriz.
+
+### Minimum katılımcı sayısı var mı?
+
+Kurum içi eğitimler ve atölye çalışmaları için minimum katılımcı sayısı önerilmekle birlikte zorunlu değildir. Birebir mentorluk programlarımız tek kişiyle de yürütülebilir. Katılımcı sayısına göre eğitim formatını ve içeriğini uyarlıyoruz.
+
+### Eğitim içerikleri hangi kaynaklara dayanıyor?
+
+Eğitim içeriklerimiz akademik birikimimiz, sektörel deneyimimiz ve güncel uygulamalara dayanmaktadır. TÜBİTAK, KOSGEB gibi kurumların güncel mevzuat ve kılavuzlarını takip ediyoruz. Ayrıca kendi proje deneyimlerimizden ve danışmanlık süreçlerimizden edindiğimiz pratik bilgileri aktarıyoruz.
+
+### Eğitim ücretlendirmesi nasıl yapılıyor?
+
+Ücretlendirme eğitimin formatına, süresine, katılımcı sayısına ve içerik kapsamına göre belirlenir. İhtiyaç analizi sonrasında size özel bir teklif sunuyoruz. İlk tanışma görüşmemiz ücretsizdir ve bu görüşmede ihtiyaçlarınızı detaylı şekilde değerlendiriyoruz.

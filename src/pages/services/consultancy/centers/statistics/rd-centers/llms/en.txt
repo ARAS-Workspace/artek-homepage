@@ -1,0 +1,77 @@
+> **ARTEK — machine-readable page content.**
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+
+**path:** /services/consultancy/centers/statistics/rd-centers · **locale:** en · **tr:** https://www.artek.tc/services/consultancy/centers/statistics/rd-centers/llms.txt?locale=tr
+
+# R\&D Centers Statistics
+
+---
+
+## General Information
+
+With Law No. 5746, it is aimed to increase our country's international competitiveness, develop its innovation capacity,
+and establish an industrial infrastructure suitable for global developments by creating an economic environment focused
+on innovation, with developed qualified employment, producing high value-added products, and with high efficiency and
+competitiveness; and also to enable foreign capital companies to develop new technologies in our country by structuring
+their R\&D units in our country.
+
+Private Sector R\&D Centers are established and operate within the scope of Law No. 5746, which was prepared with the
+understanding that investments made in R\&D, technology and human resources return as technological advancement, high
+competitiveness and high welfare level.
+
+For detailed information, please visit [here](http://agtm.sanayi.gov.tr).
+
+---
+
+## Key Statistics
+
+> [CenterStatistics] Interactive dashboard of headline figures (total centres and personnel, education levels, completed/ongoing projects, patents, foreign partnerships). Raw data: https://www.artek.tc/data/center-statistics/rd-centers/center_statistics.json
+
+---
+
+## Sectoral Distribution of R\&D Centers
+
+**Tab: Graphical View**
+
+> [SectoralDistribution] Interactive treemap chart of the centres' sectoral distribution. Raw data: https://www.artek.tc/data/center-statistics/rd-centers/sectoral_distribution_data.en.json
+
+---
+
+**Tab: Table View**
+
+> [SectoralDistribution] Interactive table of the centres' sectoral distribution. Raw data: https://www.artek.tc/data/center-statistics/rd-centers/sectoral_distribution_data.en.json
+
+---
+
+## Regional Distribution of R\&D Centers
+
+**Tab: Graphical View**
+
+> [RegionalDistribution] Interactive choropleth map of the centres' distribution by province. Raw data: https://www.artek.tc/data/center-statistics/rd-centers/regional_distribution_raw_data.json
+
+---
+
+**Tab: Table View**
+
+> [RegionalDistribution] Interactive table of the centres' distribution by province. Raw data: https://www.artek.tc/data/center-statistics/rd-centers/regional_distribution_raw_data.json
+
+---
+
+## List of R\&D Centers
+
+> [CentersDataTable] Interactive searchable table listing every centre (name, city, sector). Raw data: https://www.artek.tc/data/center-statistics/rd-centers/centers.json. English sector names: https://www.artek.tc/data/center-statistics/rd-centers/sector_names_map.json.
+
+---
+
+## Data Sources
+
+**Statistics Data:** [R&D Center Statistics 2025 (PDF)](https://www.sanayi.gov.tr/assets/pdf/istatistik/ArGeMerkeziIstatistik2025.pdf) - Ministry of Industry and Technology of the Republic of Turkey (_Statistics are compiled as of October 31, 2025._)
+
+**Map Data:** [District Boundaries (GeoJSON)](https://ulasav.csb.gov.tr/dataset/ilce-sinirlari/resource/72485e20-b3a1-4513-9e43-9419c3eb05d6) - Ministry of Environment, Urbanization and Climate Change of the Republic of Turkey ([License](https://ulasav.csb.gov.tr/license))

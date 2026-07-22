@@ -1,0 +1,42 @@
+> **ARTEK — makine-okunur sayfa içeriği.**
+>
+> **TR:** Kök site indeksi (llms.txt) — LLM ajanları için ARTEK web sitesinin makine-okunur haritası. Her giriş ilgili sayfanın `llms.txt`'sine bağlanır. Varsayılan dil Türkçe (parametresiz URL veya `?locale=tr`); İngilizce için `?locale=en` ekleyin.
+>
+> **EN:** Root site index (llms.txt) — a machine-readable map of the ARTEK website for LLM agents. Each entry links to that page's `llms.txt`. Turkish is the default (the bare URL, or `?locale=tr`); append `?locale=en` for English.
+
+**path:** / · **locale:** tr · **en:** https://www.artek.tc/llms.txt?locale=en
+
+# ARTEK İnovasyon
+
+ARTEK İnovasyon Ar-Ge Sanayi ve Ticaret Limited Şirketi — sektörel danışmanlık hizmetlerinden özel yazılım geliştirme çözümlerine, işletmelerin dijital dönüşüm ve inovasyon yolculuğunda mühendislik vizyonuyla bütünsel çözümler sunar. Merkez: Kütahya / Türkiye.
+
+**Tek dosyada her şey:** [llms-full.txt](https://www.artek.tc/llms-full.txt) — aşağıda listelenen tüm sayfalar tek belgede birleştirilmiş (İngilizce için `?locale=en` ekleyin).
+
+## Hizmetler
+
+- **Merkez Kurulum Danışmanlığı** — 5746 sayılı Kanun kapsamında Ar-Ge/Tasarım Merkezi kuruluş başvurusu, altyapı ve belge alım sürecinde uçtan uca danışmanlık.
+- **Proje Danışmanlığı** — TÜBİTAK, KOSGEB, Kalkınma Ajansları ve uluslararası fonlara yönelik proje hazırlama, başvuru ve yönetim desteği.
+- **Teknik Eğitim** — Ar-Ge yönetimi, proje dokümantasyonu, teknik yazım ve mühendislik süreçlerinde kurumsal eğitim programları.
+- **Kurumsal Yazılım Çözümleri** — operasyonel süreçleri dijitalleştiren özel kurumsal yazılım geliştirme.
+- **Web & Mobil Uygulamalar** — modern teknolojilerle geliştirilen ölçeklenebilir web ve mobil uygulama çözümleri.
+- **Veri Analitiği & Yapay Zeka** — iş zekâsı ve yapay zeka destekli, veri odaklı karar süreçlerini güçlendiren analitik çözümler.
+
+## Sık Sorulan Sorular
+
+- **Hangi hizmetleri sunuyorsunuz?** İki ana kategori: danışmanlık (Ar-Ge/Tasarım Merkezi kurulumu, TÜBİTAK/KOSGEB/Kalkınma Ajansı proje danışmanlığı, teknik eğitim) ve yazılım geliştirme (kurumsal yazılım, web/mobil uygulamalar, veri analitiği ve yapay zeka).
+- **Hizmet almak için nasıl bir süreç izlenir?** Ücretsiz ön görüşme → ihtiyaç ve teknik gereksinim analizi → özel çözüm ve teklif → onay sonrası birlikte yürütülen proje.
+- **Danışmanlık ve yazılım hizmetleri birlikte alınabilir mi?** Evet; hizmetler birbirini tamamlayıcı tasarlanmıştır (örn. Ar-Ge Merkezi kurulumuyla birlikte proje yönetim sistemi veya veri analitiği altyapısı geliştirilebilir).
+- **Uzaktan hizmet veriyor musunuz?** Evet; değerlendirme, danışmanlık, yazılım geliştirme ve eğitimler online yürütülebilir; gerektiğinde saha ziyareti planlanır.
+- **Ücretlendirme nasıl işliyor?** Proje bazlı veya süre bazlı esnek modeller; ilk tanışma görüşmesi ücretsizdir.
+
+## Site Haritası
+
+- [Kurumsal Bilgiler](https://www.artek.tc/company/llms.txt): ticaret unvanı, vergi/MERSİS bilgileri, adres ve ekip.
+- [İletişim](https://www.artek.tc/contact/llms.txt): telefon, e-posta, adres ve iletişim formu.
+- [KVKK](https://www.artek.tc/kvkk/llms.txt): kişisel verilerin korunması aydınlatma metni.
+- [Danışmanlık Hizmetleri](https://www.artek.tc/services/consultancy/llms.txt): danışmanlık ana sayfası — hizmet alanlarına genel bakış.
+- [Proje Danışmanlığı](https://www.artek.tc/services/consultancy/project/llms.txt): destek programları, proje yazımı/başvurusu, yönetim ve raporlama.
+- [Teknik Eğitim](https://www.artek.tc/services/consultancy/technical-education/llms.txt): yetkinlik haritalaması ve kurumsal teknik eğitim programları.
+- [Merkez Kurulumu](https://www.artek.tc/services/consultancy/centers/setup/llms.txt): Ar-Ge/Tasarım Merkezi kuruluş süreci, akış ve öz-değerlendirme anketleri.
+- [Ar-Ge Merkezleri İstatistikleri](https://www.artek.tc/services/consultancy/centers/statistics/rd-centers/llms.txt): Türkiye Ar-Ge merkezlerinin bölgesel/sektörel dağılım verileri.
+- [Tasarım Merkezleri İstatistikleri](https://www.artek.tc/services/consultancy/centers/statistics/design-centers/llms.txt): Türkiye tasarım merkezlerinin bölgesel/sektörel dağılım verileri.

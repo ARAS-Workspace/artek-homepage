@@ -47,6 +47,24 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Verify llms.txt is up to date
+        run: |
+          npm --prefix tools/agentic-data-builder ci
+          node scripts/generate-llms.js
+          if ! git diff --quiet -- ':(glob)src/pages/**/llms/*.txt'; then
+            echo "::error::llms.txt is out of date — run 'npm run generate-llms' and commit the result."
+            git diff --stat -- ':(glob)src/pages/**/llms/*.txt'
+            exit 1
+          fi
+          # git diff only sees tracked files — a NEW page's generated llms would
+          # be untracked and slip through silently, so check those explicitly.
+          UNTRACKED=$(git ls-files --others --exclude-standard -- ':(glob)src/pages/**/llms/*.txt')
+          if [ -n "$UNTRACKED" ]; then
+            echo "::error::new llms.txt files are not committed — run 'npm run generate-llms' and commit the result."
+            echo "$UNTRACKED"
+            exit 1
+          fi
+
       - name: Generate Development Certificate
         run: node scripts/generate_development_certificate.js
 

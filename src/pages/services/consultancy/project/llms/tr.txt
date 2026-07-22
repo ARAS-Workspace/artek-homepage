@@ -1,0 +1,164 @@
+> **ARTEK — makine-okunur sayfa içeriği.**
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+
+**path:** /services/consultancy/project · **locale:** tr · **en:** https://www.artek.tc/services/consultancy/project/llms.txt?locale=en
+
+# Proje Danışmanlığı
+
+## Hangi Projelerde Destek Veriyoruz?
+
+Ar-Ge, yenilik ve tasarım içerikli projeleriniz için ulusal ve uluslararası destek programlarına başvuru süreçlerinde teknik danışmanlık sağlıyoruz. İşletmenizin büyüklüğü, sektörü ve proje kapsamına göre en uygun programı birlikte belirliyoruz.
+
+| Program                                      | Kurum                                              | Hedef Kitle            |
+| -------------------------------------------- | -------------------------------------------------- | ---------------------- |
+| TEYDEB 1501 - Sanayi Ar-Ge Projeleri         | [TÜBİTAK](https://www.tubitak.gov.tr)              | Sanayi Kuruluşları     |
+| TEYDEB 1507 - KOBİ Ar-Ge Başlangıç           | [TÜBİTAK](https://www.tubitak.gov.tr)              | KOBİ'ler               |
+| TEYDEB 1509 - Uluslararası Sanayi Ar-Ge      | [TÜBİTAK](https://www.tubitak.gov.tr)              | Uluslararası İşbirliği |
+| TEYDEB 1511 - Öncelikli Alanlar Ar-Ge        | [TÜBİTAK](https://www.tubitak.gov.tr)              | Öncelikli Sektörler    |
+| Ar-Ge ve İnovasyon Destek Programı           | [KOSGEB](https://www.kosgeb.gov.tr)                | KOBİ'ler               |
+| KOBİ Teknolojik Ürün Yatırım Destek Programı | [KOSGEB](https://www.kosgeb.gov.tr)                | KOBİ'ler               |
+| Stratejik Ürün Destek Programı               | [KOSGEB](https://www.kosgeb.gov.tr)                | KOBİ'ler               |
+| Yeşil Sanayi Destek Programı                 | [KOSGEB](https://www.kosgeb.gov.tr)                | KOBİ'ler               |
+| KOBİ Gelişim Destek Programı                 | [KOSGEB](https://www.kosgeb.gov.tr)                | KOBİ'ler               |
+| Horizon Europe                               | [AB](https://research-and-innovation.ec.europa.eu) | Tüm İşletmeler         |
+| EUREKA Network                               | [EUREKA](https://www.eurekanetwork.org)            | Teknoloji Firmaları    |
+| Eurostars                                    | [EUREKA](https://www.eurekanetwork.org)            | KOBİ'ler               |
+| Mali Destek Programları                      | Kalkınma Ajansları                                 | Bölgesel İşletmeler    |
+
+> **İpucu:** Ar-Ge veya Tasarım Merkezi belgesi olmayan işletmeler de bu programlara başvurabilir. Proje bazlı destekler, merkez kurulum şartlarını henüz karşılayamayan firmalar için güçlü bir alternatiftir.
+
+---
+
+## Hizmet Kapsamımız
+
+Proje danışmanlığı hizmetimiz, fikir aşamasından proje kapanışına kadar tüm süreçleri kapsayan bütünsel bir yaklaşım sunar.
+Her aşamada mühendislik perspektifimiz ve sektörel deneyimimizle yanınızdayız.
+
+### Proje Fikri Değerlendirme
+
+Proje fikrinizin teknik fizibilitesini, yenilik unsurunu ve desteklenebilirlik potansiyelini analiz ediyoruz.
+Fikrin Ar-Ge veya tasarım niteliği taşıyıp taşımadığını, teknolojik belirsizlik içerip içermediğini ve hangi destek programlarına uygun olduğunu birlikte değerlendiriyoruz.
+
+- Teknolojik yenilik ve özgünlük analizi
+- Pazar ihtiyacı ve rekabet avantajı değerlendirmesi
+- Teknik risklerin ve belirsizliklerin tespiti
+- Uygun destek programı ön eşleştirmesi
+
+### Proje Yazımı ve Başvuru
+
+Seçilen destek programının gereksinimlerine uygun şekilde proje dokümanlarını hazırlıyoruz. Teknik içerik, iş paketleri,
+çıktılar, zaman planı ve başarı kriterlerini programa özgü formatlarda kurguluyor, başvuru dosyasını eksiksiz oluşturuyoruz.
+
+- Proje amaç ve hedeflerinin tanımlanması
+- İş paketleri ve faaliyet planlaması
+- Teknik ve bilimsel içerik yazımı
+- Çıktılar ve başarı göstergelerinin belirlenmesi
+- Başvuru formlarının doldurulması ve dosya teslimi
+
+### Bütçe Planlaması
+
+Proje faaliyetlerine uygun, gerçekçi ve desteklenebilir bir bütçe oluşturuyoruz. Personel, malzeme, hizmet alımı, seyahat
+ve diğer gider kalemlerini program kurallarına uygun şekilde planlıyor, maliyet gerekçelendirmelerini hazırlıyoruz.
+
+- Gider kalemlerinin belirlenmesi ve sınıflandırması
+- Program bütçe limitlerinin kontrolü
+- Maliyet gerekçelendirme dokümanları
+- Eş finansman ve nakdi katkı planlaması
+
+### Proje Yönetimi ve Raporlama
+
+Kabul edilen projelerde yürütme sürecinde teknik destek sağlıyoruz. Dönemsel raporların hazırlanması, değişiklik taleplerinin
+yönetimi, denetim süreçlerine hazırlık ve proje kapanış işlemlerinde rehberlik ediyoruz.
+
+- Proje ilerleme takibi ve koordinasyonu
+- Dönem raporları ve teknik raporların hazırlanması
+- Bütçe revizyon ve değişiklik talepleri
+- Denetim süreçlerine hazırlık desteği
+- Proje kapanış ve sonuç raporlaması
+
+---
+
+## Süreç Nasıl İşler?
+
+Proje fikrinizi değerlendirerek en uygun destek programını belirliyoruz. Ardından teknik içerik, bütçe planlaması ve
+başvuru dosyasını birlikte hazırlıyoruz. Başvuru sonrası süreci takip ediyor, kabul durumunda proje yönetimi ve raporlama aşamalarında da desteğimizi sürdürüyoruz.
+
+> [!NOTE]
+> Proje danışmanlığı sürecimiz, fikir aşamasından proje kapanışına kadar tüm adımlarda yanınızda olmak üzere tasarlanmıştır. Her aşamada teknik rehberlik ve profesyonel destek sağlıyoruz.
+
+Süreç şu adımlardan oluşur:
+
+1. Süreç, Proje Fikri aşamasıyla başlar.
+2. Proje Fikri aşamasından sonra Program Eşleştirme aşamasına geçilir.
+3. Program Eşleştirme aşamasından sonra Proje Yazımı aşamasına geçilir.
+4. Proje Yazımı aşamasından sonra Başvuru aşamasına geçilir.
+5. Başvuru aşamasından sonra Sonuç değerlendirmesi yapılır.
+6. Sonuç değerlendirmesi Kabul durumunda, Proje Yönetimi aşamasına geçilir.
+7. Sonuç değerlendirmesi Red durumunda, Revizyon aşamasına geri dönülür.
+8. Revizyon aşamasından sonra tekrar Proje Yazımı aşamasına geçilir.
+9. Proje Yönetimi aşamasından sonra Raporlama aşamasına geçilir.
+10. Raporlama aşamasından sonra Kapanış aşamasına ulaşılır ve süreç tamamlanır.
+
+Her destek programının kendine özgü değerlendirme kriterleri, bütçe limitleri ve raporlama gereksinimleri bulunmaktadır.
+Bu nedenle başvuru öncesinde doğru program seçimi ve proje içeriğinin programa uygun şekilde kurgulanması kritik önem taşır.
+
+> [!WARNING]
+> Başvuru reddedilse bile süreç bitmez. Hakem değerlendirmelerini analiz eder, projenizi güçlendirerek bir sonraki çağrı döneminde yeniden başvuru yapmanızı sağlarız. Başarılı projelerin önemli bir kısmı ikinci veya üçüncü denemede kabul almaktadır.
+
+---
+
+Teknik danışmanlık ihtiyaçlarınızı konuşmak ve size nasıl yardımcı
+olabileceğimizi değerlendirmek için bizimle iletişime geçin.
+
+[İletişime Geçin](/contact)
+
+---
+
+## Sıkça Sorulan Sorular
+
+### Hangi destek programlarına başvurabiliriz?
+
+TÜBİTAK TEYDEB programları (1501, 1507, 1509, 1505, 1511), KOSGEB destekleri (Ar-Ge ve İnovasyon, Stratejik Ürün, Yeşil Sanayi, KOBİ Teknolojik Ürün Yatırım), Kalkınma Ajansları mali destek programları ve Horizon Europe, EUREKA, Eurostars gibi uluslararası fonlara başvuru süreçlerinde danışmanlık veriyoruz.
+
+### Ar-Ge veya Tasarım Merkezi olmadan da proje desteği alabilir miyiz?
+
+Evet, Ar-Ge veya Tasarım Merkezi belgesi olmayan işletmeler de TÜBİTAK, KOSGEB ve diğer destek programlarına başvurabilir. Proje bazlı destekler, merkez kurulum şartlarını henüz karşılayamayan firmalar için güçlü bir alternatiftir. Hatta bu projeler, ileride merkez kurulumu için gerekli altyapı ve deneyimi oluşturmanıza yardımcı olur.
+
+### Proje yazım süreci ne kadar sürer?
+
+Proje yazım süresi, projenin kapsamına ve başvurulacak programa göre değişmekle birlikte ortalama 4-8 hafta arasındadır. Bu süre; proje fikrinin netleştirilmesi, teknik içeriğin oluşturulması, bütçe planlaması ve başvuru dokümanlarının hazırlanmasını kapsar. Acil çağrılarda bu süreç hızlandırılabilir.
+
+### Başvuru reddedilirse ne olur?
+
+Başvuru reddedilse bile süreç bitmez. Hakem değerlendirme raporlarını detaylı analiz eder, eksik veya zayıf görülen noktaları tespit ederiz. Projenizi güçlendirerek bir sonraki çağrı döneminde yeniden başvuru yapmanızı sağlarız. Başarılı projelerin önemli bir kısmı ikinci veya üçüncü denemede kabul almaktadır.
+
+### Proje kabul edildikten sonra da destek veriyor musunuz?
+
+Evet, kabul edilen projelerde yürütme sürecinde de teknik destek sağlıyoruz. Dönemsel raporların hazırlanması, bütçe revizyonları, değişiklik taleplerinin yönetimi, denetim süreçlerine hazırlık ve proje kapanış işlemlerinde rehberlik ediyoruz.
+
+### Hangi maliyetler desteklenir?
+
+Destek programlarına göre değişmekle birlikte genel olarak personel giderleri, malzeme ve sarf malzemesi, hizmet alımları (test, analiz, danışmanlık), makine-teçhizat, yazılım, seyahat ve konaklama giderleri desteklenmektedir. Her programın kendine özgü bütçe kalemleri ve limitleri bulunur, başvuru öncesinde bunları detaylı şekilde planlıyoruz.
+
+### Üniversite işbirliği zorunlu mu?
+
+Çoğu program için zorunlu değildir ancak bazı programlarda avantaj sağlar. TÜBİTAK 1505 programı özellikle üniversite-sanayi işbirliğine yöneliktir ve üniversite ortaklığı gerektirir. Diğer programlarda üniversite işbirliği, projenin bilimsel derinliğini artırarak değerlendirmede olumlu etki yaratabilir. Akademik bağlantılarımız sayesinde uygun işbirliği ortakları bulmanıza yardımcı oluyoruz.
+
+### Birden fazla programa aynı anda başvurabilir miyiz?
+
+Evet, farklı projeler için birden fazla programa eş zamanlı başvuru yapılabilir. Ancak aynı proje için mükerrer destek alınamaz. İşletmenizin proje portföyüne göre hangi projenin hangi programa uygun olduğunu belirleyerek, eş zamanlı başvuru stratejisi oluşturuyoruz.
+
+### Uluslararası fonlara da başvurabilir miyiz?
+
+Evet, Horizon Europe, EUREKA ve Eurostars gibi uluslararası programlara başvuru süreçlerinde de danışmanlık veriyoruz. Bu programlar genellikle yurtdışı ortaklık gerektirdiğinden, konsorsiyum oluşturma ve uluslararası partner bulma konularında da destek sağlıyoruz.
+
+### Proje danışmanlığı ücretiniz nasıl belirleniyor?
+
+Ücretlendirme projenin kapsamına, başvurulacak programa ve talep edilen hizmet düzeyine göre belirlenir. Sadece proje yazımı, yazım ve başvuru takibi, veya uçtan uca tam kapsamlı danışmanlık gibi farklı paketler sunuyoruz. İlk görüşmede ihtiyaçlarınızı değerlendirdikten sonra size özel bir teklif sunuyoruz. İlk tanışma görüşmemiz ücretsizdir.

@@ -1,0 +1,80 @@
+> **ARTEK — machine-readable page content.**
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+
+**path:** /services/consultancy/centers/statistics/design-centers · **locale:** en · **tr:** https://www.artek.tc/services/consultancy/centers/statistics/design-centers/llms.txt?locale=tr
+
+# Design Centers Statistics
+
+---
+
+## General Information
+
+With the changes made within the scope of the R\&D Reform Package, which was enacted and published in the Official
+Gazette on February 26, 2016, many regulations have been introduced to develop our country's R\&D and innovation
+ecosystem, primarily Law No. 5746 on Supporting Research, Development and Design Activities.
+
+At the forefront of these regulations is the inclusion of design activities within the scope of support, just like R\&D
+activities. As a result, the production of high value-added technological products will be realized. Within the scope of
+this law, the concept of Design Centers has been introduced into legislation, and many important supports have been
+provided to Design Centers.
+
+Private Sector Design Centers are established and operate within the scope of Law No. 5746, which was prepared with the
+understanding that investments made in design, technology and human resources return as technological advancement, high
+competitiveness and high welfare level.
+
+For detailed information, please visit [here](https://agtm.sanayi.gov.tr/Tasarim/TasarimDetay).
+
+---
+
+# Key Statistics
+
+> [CenterStatistics] Interactive dashboard of headline figures (total centres and personnel, education levels, completed/ongoing projects, patents, foreign partnerships). Raw data: https://www.artek.tc/data/center-statistics/design-centers/center_statistics.json
+
+---
+
+## Sectoral Distribution of Design Centers
+
+**Tab: Graphical View**
+
+> [SectoralDistribution] Interactive treemap chart of the centres' sectoral distribution. Raw data: https://www.artek.tc/data/center-statistics/design-centers/sectoral_distribution_data.en.json
+
+---
+
+**Tab: Table View**
+
+> [SectoralDistribution] Interactive table of the centres' sectoral distribution. Raw data: https://www.artek.tc/data/center-statistics/design-centers/sectoral_distribution_data.en.json
+
+---
+
+## Regional Distribution of Design Centers
+
+**Tab: Graphical View**
+
+> [RegionalDistribution] Interactive choropleth map of the centres' distribution by province. Raw data: https://www.artek.tc/data/center-statistics/design-centers/regional_distribution_raw_data.json
+
+---
+
+**Tab: Table View**
+
+> [RegionalDistribution] Interactive table of the centres' distribution by province. Raw data: https://www.artek.tc/data/center-statistics/design-centers/regional_distribution_raw_data.json
+
+---
+
+## List of Design Centers
+
+> [CentersDataTable] Interactive searchable table listing every centre (name, city, sector). Raw data: https://www.artek.tc/data/center-statistics/design-centers/centers.json. English sector names: https://www.artek.tc/data/center-statistics/design-centers/sector_names_map.json.
+
+---
+
+## Data Sources
+
+**Statistics Data:** [Design Center Statistics 2025 (PDF)](https://www.sanayi.gov.tr/assets/pdf/istatistik/TasarimMerkezi2025.pdf) - Ministry of Industry and Technology of the Republic of Turkey (_Statistics are compiled as of October 31, 2025._)
+
+**Map Data:** [District Boundaries (GeoJSON)](https://ulasav.csb.gov.tr/dataset/ilce-sinirlari/resource/72485e20-b3a1-4513-9e43-9419c3eb05d6) - Ministry of Environment, Urbanization and Climate Change of the Republic of Turkey ([License](https://ulasav.csb.gov.tr/license))

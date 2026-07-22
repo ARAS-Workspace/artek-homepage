@@ -78,72 +78,76 @@ const UnderConstructionPage = lazy(
   () => import('@shared/pages/under-construction/UnderConstructionPage')
 );
 
-const AppRouter: React.FC = () => {
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <MainLayout />,
-      errorElement: <ErrorPage />,
-      children: [
-        {
-          index: true,
-          element: <HomePage />,
-        },
-        {
-          path: '/company',
-          element: <Company />,
-        },
-        {
-          path: '/kvkk',
-          element: <KVKK />,
-        },
-        {
-          path: '/contact',
-          element: <Contact />,
-        },
-      ],
-    },
-    {
-      path: '/services/consultancy',
-      element: <ConsultancyLayout />,
-      children: [
-        {
-          index: true,
-          element: <ConsultancyHome />,
-        },
-        {
-          path: 'project',
-          element: <ProjectConsultancy />,
-        },
-        {
-          path: 'technical-education',
-          element: <TechnicalEducation />,
-        },
-        {
-          path: 'centers/setup',
-          element: <CentersSetup />,
-        },
-        {
-          path: 'centers/statistics/rd-centers',
-          element: <CentersStatisticsRDCenters />,
-        },
-        {
-          path: 'centers/statistics/design-centers',
-          element: <CentersStatisticsDesignCenters />,
-        },
-      ],
-    },
-    {
-      path: '/under-construction',
-      element: <UnderConstructionPage />,
-    },
-  ]);
+// ─────────────────────────────────────────────────────────────
+// Router — module scope: parsed by scripts/lib/route-sources.js
+// and created once, not per render.
+// ─────────────────────────────────────────────────────────────
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: '/company',
+        element: <Company />,
+      },
+      {
+        path: '/kvkk',
+        element: <KVKK />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
+    ],
+  },
+  {
+    path: '/services/consultancy',
+    element: <ConsultancyLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <ConsultancyHome />,
+      },
+      {
+        path: 'project',
+        element: <ProjectConsultancy />,
+      },
+      {
+        path: 'technical-education',
+        element: <TechnicalEducation />,
+      },
+      {
+        path: 'centers/setup',
+        element: <CentersSetup />,
+      },
+      {
+        path: 'centers/statistics/rd-centers',
+        element: <CentersStatisticsRDCenters />,
+      },
+      {
+        path: 'centers/statistics/design-centers',
+        element: <CentersStatisticsDesignCenters />,
+      },
+    ],
+  },
+  {
+    path: '/under-construction',
+    element: <UnderConstructionPage />,
+    errorElement: <ErrorPage />,
+  },
+]);
 
-  return (
-    <Suspense fallback={<LoadingSpinner fullscreen />}>
-      <RouterProvider router={router} />
-    </Suspense>
-  );
-};
+const AppRouter: React.FC = () => (
+  <Suspense fallback={<LoadingSpinner fullscreen />}>
+    <RouterProvider router={router} />
+  </Suspense>
+);
 
 export default AppRouter;

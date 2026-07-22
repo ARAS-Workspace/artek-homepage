@@ -1,0 +1,31 @@
+> **ARTEK — machine-readable page content.**
+>
+> **EN:** Machine-readable summary of the contact page. The on-page contact form is interactive; the channels are listed below in plain text for agents.
+>
+> **TR:** İletişim sayfasının makine-okunur özeti. Sayfadaki iletişim formu interaktiftir; ajanlar için kanallar aşağıda düz metin olarak verilmiştir.
+
+**path:** /contact · **locale:** en · **tr:** https://www.artek.tc/contact/llms.txt?locale=tr
+
+# Contact
+
+Get in touch to learn more about our services. The initial consultation is free.
+
+## Channels
+
+| Channel | Value |
+| --- | --- |
+| **Phone** | +90 (274) 606 0457 |
+| **E-mail** | info@artek.tc |
+| **Address** | Artek İnovasyon Arge San. ve Tic. Ltd. Şti., Çalca OSB Mah. 1 Cad. No:1/3 İç Kapı:218, Merkez — Kütahya / Türkiye |
+
+## Working Hours
+
+- Monday - Friday: 09:00 - 18:00
+- Saturday: 10:00 - 14:00
+- Sunday: Closed
+
+## Contact Form
+
+> [ContactForm] interactive form — available on the live page with name, e-mail, phone, company, subject, and message fields; protected by Cloudflare Turnstile. Equivalent channel for agents: e-mail info@artek.tc.
+
+Personal-data processing disclosure: [KVKK](https://www.artek.tc/kvkk/llms.txt?locale=en)

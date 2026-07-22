@@ -1,0 +1,415 @@
+> **ARTEK — makine-okunur sayfa içeriği.**
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+
+**path:** /kvkk · **locale:** tr · **en:** https://www.artek.tc/kvkk/llms.txt?locale=en
+
+# Kişisel Verilerin İşlenmesine İlişkin Aydınlatma Metni
+
+## Kişisel Verilerin İşlenmesine İlişkin Aydınlatma Metni
+
+Kişisel verilerinizi özel hayatın gizliliği ve kişilerin temel hak ve özgürlüklerinin korunması ilkesine uygun olarak muhafazası, işlenmesi ve mevzuata uygun olarak aktarımı aşamalarında _**Artek İnovasyon Arge San. ve Tic. Ltd. Şti. ("Şirketimiz" veya "Artek")**_ olarak Veri Sorumlusu sıfatı ile gerekli önlemleri alıyoruz.
+
+**Kişisel Verilerin İşlenmesi Aydınlatma Metnimizi** ("Aydınlatma Metni") Kişisel Verilerin Korunması Kanunu (KVKK) ve yasal düzenlemeler çerçevesinde kişisel verilerinizin işlenmesi, saklanması ve aktarılmasına ilişkin veri sahibi ilgili kişileri bilgilendirmek amacıyla hazırladık.Bu sayfa içerisinde veri sorumlusu olarak bilgilerimize, kişisel verilerin hangi amaçla işleneceği, kimlere ve hangi amaçla aktarılabileceğine, kişisel veri toplamanın yöntemi ve hukuki sebebine, KVKK'da sayılı haklarınız hakkında tüm bilgiye ulaşabilirsiniz.
+
+Aydınlatma Metni içerisinde gerekli olduğu takdirde değişiklik yapabiliriz. Yapılacak değişiklikler yayımlanmasıyla birlikte geçerlilik kazanacaktır.
+
+---
+
+## Veri Sorumlusu
+
+Veri sorumlusu, kişisel verilerin işleme amaçlarını ve yöntemlerini belirleyen, veri kayıt sisteminin kurulmasından ve yönetilmesinden sorumlu olan gerçek veya tüzel kişidir. Bu noktada Şirketimiz; müşterilerimiz, web sitesi ziyaretçilerimiz ve kullanıcılarımızın verileri bakımından Veri Sorumlusu'dur.
+
+Aşağıda Veri Sorumlusu sıfatıyla hareket eden Şirketimiz hakkında bilgi edinebilirsiniz.
+
+| Bilgi                 | Detay                                                               |
+| --------------------- | ------------------------------------------------------------------- |
+| **Unvanı**            | Artek İnovasyon Arge San. ve Tic. Ltd. Şti.                         |
+| **Adres**             | Çalca Osb Mah. 1 Cad. No:1/3 İç Kapı:218 Merkez - Kütahya / Türkiye |
+| **E-posta**           | [info@artek.tc](mailto:info@artek.tc)                               |
+| **Telefon**           | 02746060457                                                         |
+| **Web Sitesi**        | [https://www.artek.tc](https://www.artek.tc)                        |
+| **KEP Adresi**        | [artekinovasyon@hs01.kep.tr](mailto:artekinovasyon@hs01.kep.tr)     |
+| **Mersis No**         | 0085140824800001                                                    |
+| **Vergi  Dairesi/No** | ÇİNİLİ VERGİ DAİRESİ / 0851408248                                   |
+
+---
+
+## Kişisel Verilerinizi İşleme Amaçlarımız ve Hukuka Uygunluk Sebepleri
+
+_**Artek**_ olarak web sitemiz ve dijital hizmetlerimiz kapsamında gerçekleştirdiğimiz faaliyetlerimiz çerçevesinde kişisel verilerinizin işlenmesi, saklanması ve aktarılmasına ilişkin olarak işleme amaçlarımızı aşağıda yer alan tablolarda gruplandırılarak listeledik.
+
+Web sitemiz ile aramızda bulunan ilişkiye göre ilgili bölümü seçerek işlediğimiz kişisel veriler, amaçlarımız ve hukuka uygunluk nedenleri hakkında bilgi edinebilirsiniz.
+
+### İletişim Formu Süreçleri
+
+Bu bölüm web sitemiz üzerinden bizimle iletişime geçmeniz halinde işlediğimiz kişisel veriler hakkında sizleri bilgilendirmek amacıyla hazırlanmıştır.
+
+| Kişisel Veri Kategorisi                                                      | İşlenme Amaçları                                                                                                    | Hukuka Uygunluk Sebebi                                                                                                                                                                                     |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Kimlik (Ad, Soyad), İletişim (E-posta, Telefon), Müşteri İşlem (Konu, Mesaj) | İletişim taleplerinin alınması ve cevaplanması, Talep ve şikayetlerinizin takibi, Müşteri memnuniyetinin sağlanması | Sözleşme öncesi talep ile ilgili olması (KVKK m.5/2-c), İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla meşru menfaatimiz için verilerinizin işlenmesinin zorunlu olması (KVKK m.5/2-f) |
+| İşlem Güvenliği (IP Adresi - geçici)                                         | Bot ve spam koruması için güvenlik doğrulaması (Turnstile), Otomatik isteklerin engellenmesi                        | Hukuki yükümlülüğümüzü yerine getirebilmesi için zorunlu olması (KVKK m.5/2-ç), Meşru menfaat (KVKK m.5/2-f)                                                                                               |
+
+### Yapay Zeka Ajanı Hizmetleri
+
+Bu bölüm web sitemiz üzerinden sunduğumuz yapay zeka asistan hizmeti kapsamında işlediğimiz kişisel veriler hakkında sizleri bilgilendirmek amacıyla hazırlanmıştır.
+
+| Kişisel Veri Kategorisi                                                                                                                               | İşlenme Amaçları                                                                                                                                                                                     | Hukuka Uygunluk Sebebi                                                                                                                             | Saklama Yöntemi ve Süresi                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| İşlem Güvenliği (IP Adresi - Geçici)                                                                                                                  | Hizmetin kötüye kullanımının önlenmesi, Rate limiting (dakika/saat/gün bazlı) ile güvenliğin sağlanması, Spam ve otomatik isteklerin engellenmesi, Aşırı kullanımın tespiti                          | Hukuki yükümlülüğümüzü yerine getirebilmesi için zorunlu olması (KVKK m.5/2-ç), Meşru menfaat (KVKK m.5/2-f)                                       | **Cloudflare KV (Geçici):** Rate limiting için IP adresi: Belirli zaman kurallarında TTL ile otomatik silinir. Kalıcı olarak tutulmaz.               |
+| Risk Yönetimi (IP Adresi - Kalıcı (Geri Döndürülemez `Hash` formatında), Müşteri İşlem (Konuşma Mesajları), Sistem Verileri (Dil, Model, Token, Süre) | Yapay zeka hizmet kalitesinin analizi ve iyileştirilmesi, Sistem performans takibi, İstatistiksel analiz yapılması, Hizmet geliştirme çalışmaları, Güvenlik amacıyla konuşma bütünlüğünün sağlanması | İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla meşru menfaatimiz için verilerinizin işlenmesinin zorunlu olması (KVKK m.5/2-f) | **Cloudflare D1 (Kalıcı):** IP adresi Hash Yapısında saklanır, konuşma mesajları ve meta veriler: Veri sahibinin silme talebi yapana kadar saklanır. |
+
+#### Yapay Zeka Ajanı Veri İşleme Detayları
+
+**IP Adresi İşleme:**
+
+> **Geçici Saklama (Rate Limiting):** IP adresiniz, hizmetin kötüye kullanımını önlemek amacıyla Cloudflare KV üzerinde geçici olarak saklanır. Bu veriler dakika, saat ve gün bazlı TTL (Time To Live) ile otomatik olarak silinir. Kalıcı bir kayıt oluşturulmaz.
+
+**Kalıcı Saklama (Analiz):**
+
+> IP adresiniz SHA-256 hash algoritması kullanılarak pseudonymization (takma ad ile işleme) yöntemi ile işlenir ve sadece hash değeri Cloudflare D1 veritabanında saklanır. Ham IP adresi saklanmaz. Bu hash değeri, silme talebi yapmanız durumunda ilgili konuşma kayıtlarını bulabilmek için kullanılır.
+
+**Konuşma Geçmişi:**
+
+> Yapay zeka ajanı ile yaptığınız konuşmalar, hizmet kalitesinin analizi ve geliştirilmesi amacıyla saklanır.
+
+---
+
+## Kişisel Verileriniz ve Toplama Yöntemleri
+
+Şirketimizce işlenen kişisel veriler aşağıda yer alan tabloda gruplandırılarak listelenmiştir. Böylelikle işlediğimiz kişisel veriler hakkında bilgi edinebilirsiniz.
+
+### Kişisel Verileriniz
+
+| Kişisel Veri Kategorisi   | Kişisel Veri                                                                                                               | İşlendiği Hizmet                         |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| Kimlik Bilgileri          | Ad, Soyad                                                                                                                  | İletişim Formu                           |
+| İletişim Bilgileri        | E-posta adresi, Telefon numarası (opsiyonel)                                                                               | İletişim Formu                           |
+| Müşteri İşlem Bilgileri   | İletişim konusu, Mesaj içeriği, Konuşma mesajları (AI ajanı)                                                               | İletişim Formu, AI Ajanı                 |
+| İşlem Güvenliği Bilgileri | IP adresi (geçici)                                                                                                         | İletişim Formu, AI Ajanı (Rate Limiting) |
+| Risk Yönetimi Bilgileri   | IP adresi hash'i (SHA-256, kalıcı)                                                                                         | AI Ajanı (Analiz)                        |
+| Sistem Verileri           | Dil tercihi (Türkçe/İngilizce), Kullanılan AI modeli, Token kullanımı, Yanıt süresi (latency), Araç çağrıları (tool calls) | AI Ajanı                                 |
+
+### Özel Nitelikli Kişisel Verileriniz
+
+**Web sitemiz ve hizmetlerimiz kapsamında özel nitelikli kişisel veri (KVKK madde 6: ırk, etnik köken, siyasi düşünce, felsefi inanç, din, mezhep, kılık-kıyafet, dernek/vakıf/sendika üyeliği, sağlık, cinsel hayat, ceza mahkumiyeti, güvenlik tedbirleri, biyometrik ve genetik veriler) işlenmemektedir.**
+
+### Toplama Yöntemlerimiz
+
+Artek olarak kişisel verilerinizi yazılı ve elektronik formatta otomatik veya otomatik olmayan yollarla toplamaktayız.
+
+**Otomatik olmayan yöntemlerle elde ettiğimiz kişisel verileriniz:**
+
+- Web sitesi iletişim formu üzerinden bizimle paylaştığınız bilgiler (ad, soyad, e-posta, telefon, konu, mesaj)
+- Yapay zeka ajanı ile etkileşim sırasında gönderdiğiniz mesajlar
+
+**Otomatik olan yöntemlerle, teknik destek ile hakkınızda bilgi edinebilmekteyiz:**
+
+- IP adresi bilginiz Cloudflare altyapısı tarafından otomatik olarak tespit edilir (CF-Connecting-IP header)
+- Dil tercihiniz (tr/en) tarayıcı ayarlarınız veya site üzerindeki seçiminize göre belirlenir
+- Sistem performans verileri (yanıt süresi, token kullanımı) otomatik olarak kaydedilir
+
+---
+
+## Aktarım Yapılan Alıcılar
+
+Kişisel verileriniz; hizmetlerimizi yürütmek üzere tabi olduğumuz mevzuat hükümlerine ilişkin yükümlülüklerimiz gereği
+aşağıda ilettiğimiz işleme amaçlarının yerine getirilmesiyle bağlantılı, sınırlı ve ölçülü bir şekilde aktarılabilecektir.
+
+Bu bölümde aktarım yaptığımız organizasyon yapılarını ve aktarım amaçlarımızı listelemekteyiz.
+
+### Yurt İçi ve Yurt Dışı Aktarımlar
+
+| Alıcı Kategori                  | Firma/Hizmet                            | Konum                            | Aktarım Amacı                                                                                                           |
+| ------------------------------- | --------------------------------------- | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| E-posta hizmet sağlayıcısı      | Resend                                  | ABD                              | İletişim formundan gelen mesajların e-posta ile iletilmesi, Otomatik yanıt e-postalarının gönderilmesi                  |
+| Yapay zeka hizmet sağlayıcısı   | Anthropic (Claude API)                  | ABD                              | Yapay zeka asistan hizmetinin sunulması                                                                                 |
+| Altyapı ve güvenlik sağlayıcısı | Cloudflare (Workers, KV, D1, AI Search) | Küresel Altyapı (Edge Computing) | Web sitesi barındırma (Pages & Worker), Rate limiting için geçici veri saklama (KV), Konuşma loglarının saklanması (D1) |
+| Güvenlik doğrulama hizmeti      | Cloudflare Turnstile                    | Küresel Altyapı (Edge Computing) | Bot koruması, CAPTCHA doğrulaması, Spam önleme                                                                          |
+
+#### Yurt Dışı Veri Aktarımı Hakkında
+
+Web sitemiz ve hizmetlerimiz, global teknoloji altyapıları üzerinde çalışmaktadır. Bu kapsamda kişisel verileriniz, hizmet
+sağlayıcılarımızın bulunduğu ülkelere (özellikle Amerika Birleşik Devletleri) aktarılabilmektedir. Daha detaylı bilgi almak için
+hizmet sağlayıcılarının kendi veri politikaları incelenebilir.
+
+**Hizmet Sağlayıcılarımızın Kendi Veri Politikaları:**
+
+- Resend: [https://resend.com/legal/privacy-policy](https://resend.com/legal/privacy-policy)
+- Anthropic: [https://www.anthropic.com/privacy](https://www.anthropic.com/privacy)
+- Cloudflare: [https://www.cloudflare.com/privacypolicy/](https://www.cloudflare.com/privacypolicy/)
+
+---
+
+## Kişisel Verilerin Saklanma Süreleri
+
+Kişisel veriler Şirketimiz bünyesinde, ilgili yasal saklama süreleri müddetince veya bu verilerle ilişkili faaliyetlerin ve işleme amaçlarının gerçekleştirilmesi için gerekli süre boyunca saklanmaktadır.
+
+### İletişim Formu Verileri
+
+| Veri                               | Saklama Yöntemi                | Saklama Süresi            | Açıklama                                                                                                                       |
+| ---------------------------------- | ------------------------------ | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Ad, Soyad, E-posta, Telefon, Mesaj | E-posta (Resend API)           | Kalıcı saklama yapılmıyor | İletişim formu verileri e-posta olarak iletildikten sonra sistemimizde saklanmaz. Resend'in kendi kayıt politikası geçerlidir. |
+| IP Adresi (Turnstile doğrulaması)  | Geçici (sadece doğrulama için) | Doğrulama sonrası silinir | IP adresi sadece güvenlik doğrulaması için kullanılır, saklanmaz.                                                              |
+
+### Yapay Zeka Ajanı Verileri
+
+| Veri                          | Saklama Yöntemi        | Saklama Süresi                                          | Silinme Koşulu                                                                |
+| ----------------------------- | ---------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| IP Adresi (Rate Limiting)     | Cloudflare KV (Geçici) | Dakika: 60 saniye, Saat: 3600 saniye, Gün: 86400 saniye | TTL (Time To Live) sonunda **otomatik silinir**. Manuel müdahale gerektirmez. |
+| IP Adresi Hash (SHA-256)      | Cloudflare D1 (Kalıcı) | Veri sahibi talebi gelene kadar                         | **Veri sahibinin silme talebi** ile silinir. Talep yoksa süresiz saklanır.    |
+| Konuşma Mesajları ve Metadata | Cloudflare D1 (Kalıcı) | Veri sahibi talebi gelene kadar                         | **Veri sahibinin silme talebi** ile silinir. Talep yoksa süresiz saklanır.    |
+
+> **Önemli Not:** Yapay zeka ajanı ile yapılan konuşma kayıtlarınız, silme talebinde bulunmanız durumunda tamamen silinir. Silme talebi sürecini aşağıdaki "İlgili Kişinin Hakları" bölümünde detaylı olarak bulabilirsiniz.
+
+---
+
+## İlgili Kişinin Hakları
+
+### KVKK 11. Maddesinde Sayılan Haklarınız
+
+KVKK hükümleri uyarınca, _**Artek İnovasyon Arge San. ve Tic. Ltd. Şti.'ye**_ başvurarak aşağıdaki haklarınızı kullanabilirsiniz:
+
+- **Bilgi Alma Hakkı:** Kişisel veri işlenip işlenmediğini öğrenme
+- **Bilgilendirme Hakkı:** Kişisel verileri işlenmişse buna ilişkin bilgi talep etme
+- **Amaç Öğrenme Hakkı:** Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme
+- **Aktarım Bilgisi Hakkı:** Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme
+- **Düzeltme Hakkı:** Kişisel verilerin eksik veya yanlış işlenmiş olması halinde bunların düzeltilmesini isteme
+- **Silme ve Yok Etme Hakkı:** Kişisel verilerin silinmesini veya yok edilmesini isteme
+- **Bildirim Hakkı:** Kişisel verilerin düzeltilmesi, silinmesi ya da yok edilmesi halinde bu işlemlerin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme
+- **İtiraz Hakkı:** İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme
+- **Tazminat Hakkı:** Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması halinde zararın giderilmesini talep etme
+
+### Yapay Zeka Ajanı Verilerinin Silinmesi İçin Özel Prosedür
+
+Yapay zeka ajanımız ile yaptığınız konuşma verilerinizin silinmesini talep etmek için aşağıdaki adımları takip ediniz:
+
+#### 1. IP Adresinizi Tespit Edin
+
+Konuşma kayıtlarınız, IP adresinizin SHA-256 hash'i ile ilişkilendirilmiştir. Bu nedenle silme talebinizde **IP adresinizi belirtmeniz zorunludur.**
+
+**Önemli Detaylar**
+
+- Yapay zeka ajanı ile konuşma yaptığınız esnada farklı bir ağ (mobil data, farklı Wi-Fi) kullandıysanız, o ağın IP adresini belirtmelisiniz. Birden fazla IP adresinden konuşma yaptıysanız, tüm IP adreslerini belirtmelisiniz.
+
+**Önemli Uyarı:** IP adresiniz değişmişse (örneğin farklı bir Wi-Fi ağına bağlandıysanız), eski IP adresinizi hatırlamanız veya internet servis sağlayacınızdan öğrenmeniz gerekebilir.
+
+#### 2. Başvuru Yöntemleri
+
+**A. KEP (Kayıtlı Elektronik Posta) ile Başvuru (Önerilen):**
+
+- KEP Adresi: [artekinovasyon@hs01.kep.tr](mailto:artekinovasyon@hs01.kep.tr)
+
+- Konu: "KVKK Kapsamında Veri Silme Talebi - Yapay Zeka Ajanı"
+
+- İçerik:
+
+```
+
+Ad Soyad: [Adınız Soyadınız]
+İletişim E-posta: [E-posta adresiniz]
+Telefon: [Telefon numaranız]
+
+IP Adresi: [Konuşma yaptığınız IP adresi]
+(Birden fazla IP adresi varsa hepsini listeleyin)
+
+Talep: Belirtilen IP adresi/adreslerine ait tüm yapay zeka ajanı konuşma kayıtlarımın KVKK kapsamında silinmesini talep ediyorum.
+
+Tarih: [Başvuru tarihi]
+İmza: [KEP imzası]
+
+```
+
+**B. Fiziki Başvuru:**
+
+- Adres: Artek İnovasyon Arge San. ve Tic. Ltd. Şti., Çalca Osb Mah. 1 Cad. No:1/3 İç Kapı:218 Merkez - Kütahya / Türkiye
+- Başvuru formunu yazdırarak imzalayıp posta yoluyla veya elden teslim edebilirsiniz
+- Kimlik belgesi fotokopisi eklemeyi unutmayın
+
+**C. Noter Kanalıyla:**
+
+- Yukarıdaki fiziki adrese noter kanalıyla talebi iletebilirsiniz
+
+#### 3. Başvuruda Bulunması Gereken Bilgiler
+
+- **Zorunlu:**
+
+- Ad, Soyad
+
+- İletişim bilgileri (e-posta, telefon)
+
+- T.C. Kimlik Numarası veya Kimlik Belgesi fotokopisi
+
+- **IP Adresi/Adresleri** (mutlaka belirtilmelidir)
+
+- Talep konusu ve açıklaması
+
+- **Opsiyonel:**
+
+- Konuşma tarihleri (hatırlıyorsanız)
+
+- Ek açıklamalar
+
+#### 4. İşlem Süreci
+
+1. **Başvuru Alındı (0-3 gün):**
+   - Başvurunuz tarafımıza ulaştıktan sonra kimlik doğrulaması yapılır
+   - Başvurunun alındığına dair bilgilendirme e-postası gönderilir
+
+2. **İnceleme ve Sorgulama (3-15 gün):**
+   - Belirtilen IP adresi SHA-256 algoritması ile hash'lenir
+   - Cloudflare D1 veritabanında bu hash değerine sahip kayıtlar sorgulanır
+   - Eşleşen tüm konuşma logları tespit edilir
+
+3. **Silme İşlemi (15-25 gün):**
+   - Tespit edilen tüm kayıtlar Cloudflare D1 veritabanından **kalıcı olarak silinir**
+   - Silme işlemi geri alınamaz
+   - Yedek sistemlerden de silinme sağlanır
+
+4. **Bildirim (25-30 gün):**
+   - Silme işlemi tamamlandıktan sonra tarafınıza bilgilendirme yapılır
+   - Silinen kayıt sayısı ve işlem detayları paylaşılır
+
+**Not:** KV'de tutulan rate limiting verileri zaten geçicidir ve TTL (Time To Live) sonunda otomatik olarak silinir. Bu veriler için ayrı bir silme talebi yapmanıza gerek yoktur.
+
+#### 5. Yanıt Süresi ve Ücret
+
+- **Yanıt Süresi:** Başvurular en geç **30 gün** içinde ücretsiz olarak sonuçlandırılır.
+- **Ücret:** İşlem ücretsizdir. Ancak, işlemin ayrıca bir maliyeti gerektirmesi halinde (örneğin büyük hacimli veri çıktıları),
+- Kişisel Verileri Koruma Kurulu tarafından belirlenen tarifedeki ücret alınabilir.
+
+### Diğer KVKK Hakları İçin Başvuru
+
+Silme hakkı dışındaki diğer KVKK haklarınızı (bilgi alma, düzeltme, itiraz vb.) kullanmak için yukarıdaki başvuru yöntemlerini
+kullanabilirsiniz. Bu talepler için IP adresi belirtmeniz gerekmeyebilir.
+
+---
+
+## Veri Güvenliği
+
+Artek olarak kişisel verilerinizin gizliliğini ve güvenliğini korumaya önem veriyoruz. Bu doğrultuda, kişisel verileri
+yetkisiz erişim, zarar, kayıp veya ifşaya karşı korumak için gerekli teknik ve idari güvenlik önlemlerini alıyoruz.
+
+### Teknik Güvenlik Önlemleri
+
+- **Cloudflare Edge Computing ile Küresel Altyapı Güvenliği**
+- **Rate Limiting ve Suistimal Önleme**
+- **Bot ve Spam Koruması**
+- **Veri Bütünlüğü**
+- **Pseudonymization (Takma Ad veya Hash değeri ile İşleme)**
+- **Güvenli Veri Saklama**
+
+### İdari Güvenlik Önlemleri
+
+- Veritabanlarına erişim yetkilendirmesi
+- En az yetki prensibi (Principle of Least Privilege)
+- Veri ihlali müdahale planı
+- Kişisel Verileri Koruma Kurulu'na bildirim prosedürü
+- İlgili kişilere bilgilendirme mekanizması
+
+> _**Principle of Least Privilege (En Az Yetki İlkesi)**_, bir kullanıcı, uygulama veya sistemin yalnızca görevini yerine
+> getirmek için gereken minimum düzeyde erişim yetkisine sahip olması gerektiğini belirten güvenlik prensibidir.
+
+---
+
+## Çerez Politikası
+
+Web sitemizde kullanılan çerez türleri, çerezlerin kullanım amaçları ve bu çerezlerin ayarları, yönetilmesi ve silinmesi
+hakkında sizleri bilgilendirmek isteriz.
+
+### Çerez Nedir?
+
+Çerez, bir web sitesini ziyaret ettiğinizde tarayıcınız aracılığıyla bilgisayarınıza veya mobil cihazınıza kaydedilen
+küçük boyutlu bir metin içeren yapıdır. Çerezler bir sitenin daha verimli çalışmasının yanı sıra kişisel ihtiyaçlarınıza
+daha uygun ve hızlı bir ziyaret deneyimi yaşatmak için kişiselleştirilmiş sayfaların sunulabilmesine olanak vermektedir.
+
+### Web Sitemizde Kullanılan Çerezler
+
+| Çerez Türü                | Açıklama                                                                           | Kullanım Amacı                                                                |
+| ------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Zorunlu Çerezler**      | Web sitemizin doğru biçimde çalışması için zorunludur.                             | Turnstile güvenlik çerezi (Cloudflare), Oturum yönetimi, Güvenlik doğrulaması |
+| **İşlevsellik Çerezleri** | Web sitemizi ziyaret eden kullanıcıların tercihlerini hatırlamasına olanak sağlar. | Dil tercihi (Türkçe/İngilizce), Kullanıcı arayüz tercihleri                   |
+
+### Local Storage Kullanımı
+
+Web sitemizde yapay zeka ajanı hizmeti için _**local storage**_ (tarayıcı üzerinde yerel depolama) kullanılmaktadır:
+
+- **Amaç:** Konuşma geçmişinin tarayıcınızda saklanması (istemci tarafı)
+- **Veri:** Yapay zeka ile yaptığınız konuşma mesajları
+- **Konum:** Cihazınızda depolanır, ilgili sohbet oturumu boyunca kullanışlı bir oturum sağlamak amacıyla sorgu içerisinde gönderilir.
+- **Kontrol:** Tarayıcınızın ayarlarından veya sohbet penceresindeki sıfırlama butonu ile temizleyebilirsiniz.
+
+### Çerezleri Nasıl Kontrol Edebilirsiniz?
+
+Bilgisayarınızda halihazırda bulunan çerezleri silebilir ve internet gezgininize çerez kaydedilmesini/yerleştirilmesini engelleyebilirsiniz.
+
+**Uyarı:** Çerezleri tamamen engellerseniz, web sitemizin bazı özellikleri (dil seçimi, güvenlik doğrulaması) düzgün çalışmayabilir.
+
+---
+
+## Kişisel Verilerin Korunması Kanunu (KVKK) Hakkında
+
+### KVKK Nedir?
+
+KVKK (Kişisel Verilerin Korunması Kanunu), 24 Mart 2016 tarihinde Türkiye Büyük Millet Meclisi'nde kabul edilmiş ve
+7 Nisan 2016 tarihli 29677 sayılı Resmi Gazete'de yayınlanarak yürürlüğe girmiştir.
+
+Kanun, kişisel verilerin gizliliğinin sağlanması, korunması ve izinsiz kullanımının önüne geçilmesi gibi temel amaçlar
+çerçevesinde tüm veri işleyen kişi ve kurumların uyumluluğunu esas almıştır. Şirketimiz de, tüm kuruluşlar gibi bu Kanuna
+uymakla yükümlüdür ve Şirketimizin tüm süreçlerinde işlenen kişisel veriler bu kapsamdadır.
+
+### Kişisel Veri Nedir?
+
+Kişiyi doğrudan veya dolaylı olarak belirlenebilir kılan tüm veriler veya veri kümeleri kişisel veri olarak kabul edilir.
+İsim, soy isim, doğum yeri/tarihi, telefon numarası, e-posta adresi, IP adresi, fotoğraf, ses kaydı gibi direkt kişiye ait
+veya kişi adına oluşturulmuş tanımlayıcı bilgiler örnek olarak verilebilir.
+
+### Veri İşleme Nedir?
+
+Kişisel veriler üzerinde gerçekleştirilen her türlü işlem "veri işleme" olarak kabul edilmektedir. Dolayısıyla, verilerin
+kaydedilmesi, saklanması, değiştirilmesi, yeniden düzenlenmesi, açıklanması, aktarılması, analiz edilmesi ve sınıflandırılması
+veri işleme kapsamına girer.
+
+### KVKK Uyarınca Kişisel Veri İşleme Şartları
+
+KVKK'nın 5. maddesinin 2. fıkrasında yer alan hukuka uygunluk nedenleri oluştuğunda veya ilgili kişi açık rıza verdiğinde veri işleme hakkı doğar:
+
+- **KVKK m.5/2-a:** Kanunlarda açıkça öngörülmesi
+- **KVKK m.5/2-b:** Fiili imkansızlık nedeniyle rızasını açıklayamayacak durumda bulunan kişinin hayatı veya beden bütünlüğünün korunması için zorunlu olması
+- **KVKK m.5/2-c:** Bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması
+- **KVKK m.5/2-ç:** Veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi için zorunlu olması
+- **KVKK m.5/2-d:** İlgili kişinin kendisi tarafından alenileştirilmiş olması
+- **KVKK m.5/2-e:** Bir hakkın tesisi, kullanılması veya korunması için veri işlemenin zorunlu olması
+- **KVKK m.5/2-f:** İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması
+
+---
+
+## İletişim
+
+Kişisel verilerinizin işlenmesi hakkında sorularınız veya talepleriniz için bizimle iletişime geçebilirsiniz:
+
+**Artek İnovasyon Arge San. ve Tic. Ltd. Şti.**
+Çalca Osb Mah. 1 Cad. No:1/3 İç Kapı:218
+Merkez - Kütahya / Türkiye
+
+**E-posta:** [info@artek.tc](mailto:info@artek.tc)
+
+**Telefon:** 0274 606 0457
+
+**Web:** [https://www.artek.tc](https://www.artek.tc) , [https://www.artekarge.com](https://www.artekarge.com)
+
+**KEP:** [artekinovasyon@hs01.kep.tr](mailto:artekinovasyon@hs01.kep.tr)
+
+---
+
+## Değişiklikler
+
+Bu Aydınlatma Metni, yasal düzenlemelere uyum sağlamak veya hizmetlerimizde yapılan değişiklikleri yansıtmak amacıyla zaman
+zaman güncellenebilir. Güncellemeler bu sayfada yayımlandığı anda yürürlüğe girer. Önemli değişiklikler olması durumunda kullanıcılarımızı
+bu aydınlatma metni üzerinden bilgilendiririz.

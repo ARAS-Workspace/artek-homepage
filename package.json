@@ -18,7 +18,9 @@
     "preview": "vite preview",
     "routes": "node scripts/build_routes.js",
     "prerender": "node scripts/utils/prerender-utility/prerender.js",
-    "prod": "npm run build && npm run routes && npm run prerender"
+    "generate-llms": "node scripts/generate-llms.js",
+    "llms": "node scripts/build-llms.js",
+    "prod": "npm run build && npm run routes && npm run prerender && npm run llms"
   },
   "dependencies": {
     "@carbon/charts-react": "1.27.2",

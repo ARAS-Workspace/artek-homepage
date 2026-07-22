@@ -1,0 +1,101 @@
+> **ARTEK — machine-readable page content.**
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+
+**path:** /kvkk · **locale:** en · **tr:** https://www.artek.tc/kvkk/llms.txt?locale=tr
+
+# Privacy Notice
+
+> This is a simplified overview of how we handle your data. This English version is provided for informational purposes only. The legally binding full disclosure text is available in Turkish ("KVKK Aydınlatma Metni") on the Turkish version of our website.
+
+---
+
+## Who We Are
+
+**Artek İnovasyon Arge San. ve Tic. Ltd. Şti.** is an consultancy & software company based in Kütahya, Turkey. We act as the Data Controller for all personal data collected through our website and services.
+
+| Key       | Value                                 |
+| --------- | ------------------------------------- |
+| **Email** | [info@artek.tc](mailto:info@artek.tc) |
+| **Phone** | +90 274 606 0457                      |
+| **Web**   | [artek.tc](https://www.artek.tc)      |
+
+---
+
+## What Data We Collect
+
+| Service          | Data Collected                             | Purpose                            |
+| ---------------- | ------------------------------------------ | ---------------------------------- |
+| **Contact Form** | Name, email, phone (optional), message     | To respond to your inquiries       |
+| **AI Assistant** | Conversation messages, IP address (hashed) | To provide and improve the service |
+| **All Services** | IP address (temporary)                     | Security and rate limiting         |
+
+> **We do not collect** sensitive personal data such as health information, biometric data, or political opinions.
+
+---
+
+## How We Use Your Data
+
+- Responding to your contact requests
+- Providing AI assistant services
+- Protecting our website from abuse and spam
+- Improving service quality through analytics
+
+---
+
+## Who We Share Data With
+
+| Provider       | Location | Purpose                                 |
+| -------------- | -------- | --------------------------------------- |
+| **Cloudflare** | Global   | Website hosting, security, data storage |
+| **Anthropic**  | USA      | AI assistant service (Claude API)       |
+| **Resend**     | USA      | Email delivery                          |
+
+> All providers maintain their own privacy policies and data protection measures.
+
+---
+
+## Data Retention
+
+- **Contact form data:** Not stored permanently (delivered via email only)
+- **AI conversations:** Stored until you request deletion
+- **IP addresses for rate limiting:** Automatically deleted within 24 hours
+- **IP address hashes:** Stored until you request deletion
+
+---
+
+## Your Rights
+
+Under Turkish KVKK, you have the right to:
+
+- Know if your data is being processed
+- Access your personal data
+- Request correction of inaccurate data
+- Request deletion of your data
+- Object to automated decision-making
+
+> To exercise these rights, contact us at **[info@artek.tc](mailto:info@artek.tc)** or via registered mail (KEP): **[artekinovasyon@hs01.kep.tr](mailto:artekinovasyon@hs01.kep.tr)**
+
+---
+
+## Cookies
+
+We use only essential cookies for security verification and functionality (language preference). No tracking or advertising cookies are used.
+
+---
+
+## Changes
+
+This notice may be updated periodically. Significant changes will be communicated on this page.
+
+---
+
+## Full Legal Disclosure
+
+This summary is provided for convenience. The complete legal text, including specific KVKK article references, detailed data processing procedures, and formal deletion request processes, is available in Turkish ("KVKK Aydınlatma Metni") on the Turkish version of our website. In case of any discrepancy, the Turkish version shall prevail.

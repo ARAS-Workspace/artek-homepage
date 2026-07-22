@@ -1,0 +1,79 @@
+> **ARTEK — makine-okunur sayfa içeriği.**
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+
+**path:** /services/consultancy/centers/statistics/design-centers · **locale:** tr · **en:** https://www.artek.tc/services/consultancy/centers/statistics/design-centers/llms.txt?locale=en
+
+# Tasarım Merkezleri İstatistikleri
+
+---
+
+## Genel Bilgiler
+
+26 Şubat 2016 tarihinde Resmi Gazete'de yayınlanarak yasalaşan Ar-Ge Reform Paketi kapsamında yapılan değişiklikler
+ile başta 5746 sayılı Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında Kanun olmak üzere
+ülkemiz Ar-Ge ve yenilik ekosistemini geliştirecek pek çok düzenleme getirilmiştir.
+
+Bu düzenlemelerin başında tasarım faaliyetlerinin de Ar-Ge faaliyetleri gibi destek kapsamına alınması gelmektedir.
+Bu sayede, yüksek katma değerli teknolojik ürünlerin üretimi söz konusu olacaktır. Yine bu kanun kapsamında Tasarım
+Merkezleri kavramı mevzuata girmiş ve Tasarım merkezlerine de birçok önemli destekler getirilmiştir.
+
+Özel Sektör Tasarım Merkezleri; Tasarım, teknoloji ve insan kaynaklarına yapılan yatırımların, teknolojik gelişmişlik,
+yüksek rekabet gücü ve yüksek refah seviyesi olarak geri döndüğü anlayışıyla hazırlanan 5746 sayılı Kanun kapsamında
+kurulmakta ve faaliyet göstermektedir.
+
+Ayrıntılı bilgilere [buradan](https://agtm.sanayi.gov.tr/Tasarim/TasarimDetay) ulaşabilirsiniz.
+
+---
+
+# Temel İstatistikler
+
+> [CenterStatistics] Başlıca göstergelerin interaktif panosu (toplam merkez ve personel, eğitim seviyeleri, tamamlanan/devam eden projeler, patentler, yabancı ortaklıklar). Ham veri: https://www.artek.tc/data/center-statistics/design-centers/center_statistics.json
+
+---
+
+## Tasarım Merkezlerinin Sektörel Dağılımı
+
+**Tab: Grafik Gösterimi**
+
+> [SectoralDistribution] Merkezlerin sektörel dağılımının interaktif treemap grafiği. Ham veri: https://www.artek.tc/data/center-statistics/design-centers/sectoral_distribution_data.tr.json
+
+---
+
+**Tab: Tablo Gösterimi**
+
+> [SectoralDistribution] Merkezlerin sektörel dağılımının interaktif tablosu. Ham veri: https://www.artek.tc/data/center-statistics/design-centers/sectoral_distribution_data.tr.json
+
+---
+
+## Tasarım Merkezlerinin Bölgesel Dağılımı
+
+**Tab: Grafik Gösterimi**
+
+> [RegionalDistribution] Merkezlerin illere göre dağılımının interaktif koroplet haritası. Ham veri: https://www.artek.tc/data/center-statistics/design-centers/regional_distribution_raw_data.json
+
+---
+
+**Tab: Tablo Gösterimi**
+
+> [RegionalDistribution] Merkezlerin illere göre dağılımının interaktif tablosu. Ham veri: https://www.artek.tc/data/center-statistics/design-centers/regional_distribution_raw_data.json
+
+---
+
+## Tasarım Merkezleri Listesi
+
+> [CentersDataTable] Tüm merkezleri listeleyen aranabilir interaktif tablo (ad, şehir, sektör). Ham veri: https://www.artek.tc/data/center-statistics/design-centers/centers.json
+
+---
+
+## Veri Kaynakları
+
+**İstatistik Verisi:** [Tasarım Merkezi İstatistik 2025 (PDF)](https://www.sanayi.gov.tr/assets/pdf/istatistik/TasarimMerkezi2025.pdf) - T.C. Sanayi ve Teknoloji Bakanlığı (_İstatistikler 31 Ekim 2025 tarihi itibarıyla derlenmiştir._)
+
+**Harita Verisi:** [İlçe Sınırları (GeoJSON)](https://ulasav.csb.gov.tr/dataset/ilce-sinirlari/resource/72485e20-b3a1-4513-9e43-9419c3eb05d6) - T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı ([Lisans](https://ulasav.csb.gov.tr/license))

@@ -1,0 +1,172 @@
+> **ARTEK — machine-readable page content.**
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+
+**path:** /services/consultancy/project · **locale:** en · **tr:** https://www.artek.tc/services/consultancy/project/llms.txt?locale=tr
+
+# Project Consultancy
+
+## Which Projects Do We Support?
+
+We provide technical consultancy for application processes to national and international support programs for your R\&D, innovation, and design projects. We determine the most suitable program together based on your enterprise's size, sector, and project scope.
+
+| Program                                      | Institution                                        | Target Audience           |
+| -------------------------------------------- | -------------------------------------------------- | ------------------------- |
+| TEYDEB 1501 - Industrial R\&D Projects       | [TÜBİTAK](https://www.tubitak.gov.tr)              | Industrial Enterprises    |
+| TEYDEB 1507 - SME R\&D Startup               | [TÜBİTAK](https://www.tubitak.gov.tr)              | SMEs                      |
+| TEYDEB 1509 - International Industrial R\&D  | [TÜBİTAK](https://www.tubitak.gov.tr)              | International Cooperation |
+| TEYDEB 1511 - Priority Areas R\&D            | [TÜBİTAK](https://www.tubitak.gov.tr)              | Priority Sectors          |
+| R\&D and Innovation Support Program          | [KOSGEB](https://www.kosgeb.gov.tr)                | SMEs                      |
+| SME Technological Product Investment Program | [KOSGEB](https://www.kosgeb.gov.tr)                | SMEs                      |
+| Strategic Product Support Program            | [KOSGEB](https://www.kosgeb.gov.tr)                | SMEs                      |
+| Green Industry Support Program               | [KOSGEB](https://www.kosgeb.gov.tr)                | SMEs                      |
+| SME Development Support Program              | [KOSGEB](https://www.kosgeb.gov.tr)                | SMEs                      |
+| Horizon Europe                               | [EU](https://research-and-innovation.ec.europa.eu) | All Enterprises           |
+| EUREKA Network                               | [EUREKA](https://www.eurekanetwork.org)            | Technology Companies      |
+| Eurostars                                    | [EUREKA](https://www.eurekanetwork.org)            | SMEs                      |
+| Financial Support Programs                   | Development Agencies                               | Regional Enterprises      |
+
+> **Tip:** Enterprises without R\&D or Design Center certification can also apply to these programs. Project-based supports are a strong alternative for companies that do not yet meet center establishment requirements.
+
+---
+
+## Our Service Scope
+
+Our project consultancy service offers a holistic approach covering all processes from the idea stage to project closure.
+We are by your side at every stage with our engineering perspective and sectoral experience.
+
+### Project Idea Evaluation
+
+We analyze the technical feasibility, innovation aspect, and funding potential of your project idea.
+We evaluate together whether the idea qualifies as R\&D or design, whether it contains technological uncertainty, and which support programs it is suitable for.
+
+- Technological innovation and originality analysis
+- Market need and competitive advantage assessment
+- Identification of technical risks and uncertainties
+- Preliminary matching with suitable support programs
+
+### Project Writing and Application
+
+We prepare project documents in accordance with the requirements of the selected support program. We structure technical content, work packages,
+deliverables, timeline, and success criteria in program-specific formats, creating a complete application file.
+
+- Definition of project objectives and goals
+- Work packages and activity planning
+- Technical and scientific content writing
+- Determination of deliverables and success indicators
+- Completion of application forms and file submission
+
+### Budget Planning
+
+We create a realistic and fundable budget suitable for project activities. We plan personnel, materials, service procurement, travel,
+and other expense items in accordance with program rules and prepare cost justifications.
+
+- Identification and classification of expense items
+- Control of program budget limits
+- Cost justification documents
+- Co-financing and cash contribution planning
+
+### Project Management and Reporting
+
+We provide technical support during the execution of approved projects. We guide in preparing periodic reports, managing change requests,
+preparing for audit processes, and project closure procedures.
+
+- Project progress tracking and coordination
+- Preparation of periodic and technical reports
+- Budget revision and change requests
+- Audit process preparation support
+- Project closure and final reporting
+
+---
+
+## How Does the Process Work?
+
+We evaluate your project idea and identify the most suitable support program. Then we prepare the technical content, budget planning, and
+application file together. We monitor the post-application process and continue our support during project management and reporting phases upon approval.
+
+> [!NOTE]
+> Our project consultancy process is designed to support you at every step, from the idea stage to project closure. We provide technical guidance and professional support at each phase.
+
+The process consists of the following steps:
+
+1. The process begins with the Project Idea phase.
+
+2. After the Project Idea phase, the process moves to the Program Matching phase.
+
+3. Following the Program Matching phase, the process advances to the Project Writing phase.
+
+4. After the Project Writing phase, the process proceeds to the Application phase.
+
+5. The Application phase leads to a Result evaluation where the application outcome is determined.
+
+6. If the Result evaluation is Approved, the process moves to the Project Management phase.
+
+7. If the Result evaluation is Rejected, the process returns to the Revision phase.
+
+8. After the Revision phase, the process goes back to the Project Writing phase to incorporate changes.
+
+9. When the application is approved and Project Management begins, the process continues to the Reporting phase.
+
+10. After the Reporting phase, the process reaches the Closure phase and the project lifecycle is completed.
+
+Each support program has its own evaluation criteria, budget limits, and reporting requirements.
+Therefore, selecting the right program and structuring the project content appropriately before application is critically important.
+
+> [!WARNING]
+> The process doesn't end if your application is rejected. We analyze the reviewer evaluations, strengthen your project, and help you reapply in the next call period. A significant portion of successful projects are approved on their second or third attempt.
+
+---
+
+To discuss your technical consultancy needs and evaluate how we can assist you, please contact us.
+
+[Contact Us](/contact)
+
+---
+
+## Frequently Asked Questions
+
+### Which support programs can we apply to?
+
+We provide consultancy for TÜBİTAK TEYDEB programs (1501, 1507, 1509, 1505, 1511), KOSGEB supports (R&D and Innovation, Strategic Product, Green Industry, SME Technological Product Investment), Development Agencies financial support programs, and international funds such as Horizon Europe, EUREKA, and Eurostars.
+
+### Can we receive project support without an R&D or Design Center?
+
+Yes, enterprises without R&D or Design Center certification can also apply to TÜBİTAK, KOSGEB, and other support programs. Project-based supports are a strong alternative for companies that do not yet meet center establishment requirements. In fact, these projects help you build the necessary infrastructure and experience for future center establishment.
+
+### How long does the project writing process take?
+
+The project writing duration varies depending on the project scope and the program to be applied for, averaging between 4-8 weeks. This period covers clarification of the project idea, creation of technical content, budget planning, and preparation of application documents. This process can be accelerated for urgent calls.
+
+### What happens if our application is rejected?
+
+The process doesn't end if your application is rejected. We analyze the reviewer evaluation reports in detail and identify the missing or weak points. We strengthen your project and help you reapply in the next call period. A significant portion of successful projects are approved on their second or third attempt.
+
+### Do you provide support after the project is approved?
+
+Yes, we provide technical support during the execution of approved projects. We guide in preparing periodic reports, budget revisions, managing change requests, preparing for audit processes, and project closure procedures.
+
+### Which costs are supported?
+
+Although it varies by support program, generally personnel expenses, materials and consumables, service procurements (testing, analysis, consultancy), machinery-equipment, software, travel and accommodation expenses are supported. Each program has its own budget items and limits, which we plan in detail before application.
+
+### Is university collaboration mandatory?
+
+It is not mandatory for most programs but provides advantages in some. The TÜBİTAK 1505 program is specifically oriented towards university-industry collaboration and requires university partnership. In other programs, university collaboration can create a positive impact in evaluation by increasing the scientific depth of the project. We help you find suitable collaboration partners through our academic connections.
+
+### Can we apply to multiple programs simultaneously?
+
+Yes, simultaneous applications can be made to multiple programs for different projects. However, duplicate support cannot be received for the same project. Based on your enterprise's project portfolio, we determine which project is suitable for which program and create a simultaneous application strategy.
+
+### Can we also apply to international funds?
+
+Yes, we also provide consultancy for application processes to international programs such as Horizon Europe, EUREKA, and Eurostars. Since these programs generally require international partnership, we also provide support in consortium building and finding international partners.
+
+### How is your project consultancy fee determined?
+
+Pricing is determined according to the project scope, the program to be applied for, and the level of service requested. We offer different packages such as project writing only, writing and application follow-up, or end-to-end comprehensive consultancy. After evaluating your needs in the initial meeting, we provide you with a customized proposal. Our initial consultation is free of charge.

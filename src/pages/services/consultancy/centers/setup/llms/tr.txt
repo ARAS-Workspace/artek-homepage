@@ -1,0 +1,156 @@
+> **ARTEK — makine-okunur sayfa içeriği.**
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+
+**path:** /services/consultancy/centers/setup · **locale:** tr · **en:** https://www.artek.tc/services/consultancy/centers/setup/llms.txt?locale=en
+
+# Merkez Kurulum Danışmanlığı
+
+5746 sayılı kanun kapsamında Ar-Ge veya Tasarım Merkezi kurmak, yalnızca başvuru formu
+doldurmaktan ibaret değildir. Gerçek bir merkez; doğru tanımlanmış projeler, yetkin personel
+yapısı, uygun fiziksel altyapı ve sürdürülebilir bir yönetim sistemi gerektirir.
+
+**Mühendislik perspektifiyle kurulum, akademik güvenceyle danışmanlık.**
+
+## Kurulum Süreci Akış Diyagramı
+
+Ar-Ge veya Tasarım Merkezi kurulumu, sistematik bir planlama ve uygulama süreci gerektirir.
+Aşağıdaki akış diyagramı, başvurudan operasyona kadar geçen sürecin ana adımlarını göstermektedir.
+
+> [!NOTE]
+> Her aşamada teknik ve idari gereksinimlerin eksiksiz karşılanması, başvurunuzun onay sürecini hızlandırır ve olası revizyonları minimize eder.
+
+Süreç şu adımlardan oluşur:
+
+1. Süreç, Başlangıç aşamasıyla başlar.
+2. Başlangıç aşamasından sonra İhtiyaç Analizi aşamasına geçilir.
+3. İhtiyaç Analizi aşamasından sonra Fizibilite Çalışması aşamasına geçilir.
+4. Fizibilite Çalışması aşamasından sonra Proje Planlama aşamasına geçilir.
+5. Proje Planlama aşamasından sonra Başvuru Hazırlığı aşamasına geçilir.
+6. Başvuru Hazırlığı aşamasından sonra Bakanlık Başvurusu aşamasına geçilir.
+7. Bakanlık Başvurusu aşamasından sonra Başvuru Takibi aşamasına geçilir.
+8. Başvuru Takibi aşamasında Onay değerlendirmesi yapılır.
+9. Onay değerlendirmesi olumlu ise (Evet), Ar-Ge / Tasarım Merkezi Kurulumu aşamasına geçilir.
+10. Onay değerlendirmesi olumsuz ise (Hayır), Revizyon aşamasına geri dönülür.
+11. Revizyon aşamasından sonra tekrar Bakanlık Başvurusu aşamasına geçilir.
+12. Ar-Ge / Tasarım Merkezi Kurulumu aşamasından sonra Operasyon Başlangıcı aşamasına geçilir.
+13. Operasyon Başlangıcı aşamasından sonra Sürekli Danışmanlık aşamasına geçilir.
+14. Sürekli Danışmanlık aşamasından sonra Tamamlandı aşamasına ulaşılır ve süreç tamamlanır.
+
+---
+
+## Ar-Ge / Tasarım Merkezi İstatistikleri
+
+T.C. Sanayi ve Teknoloji Bakanlığı'nın resmi raporlarına dayanan kapsamlı veri analizlerinden oluşan Türkiye'deki
+Ar-Ge ve Tasarım merkezlerinin güncel istatistiklerini keşfedin. İl bazlı coğrafi dağılım, sektörel yoğunluk
+analizleri ve detaylı grafik gösterimler ile sektörünüzde öne çıkabileceğiniz bölgeleri ve fırsatları belirleyin.
+
+[Ar-Ge Merkezleri](/services/consultancy/centers/statistics/rd-centers)
+
+[Tasarım Merkezleri](/services/consultancy/centers/statistics/design-centers)
+
+---
+
+## İşletmenizi Değerlendirin
+
+İşletmenizin _Ar-Ge_ veya _Tasarım_ merkezi olma kriterlerine uygun olup olmadığını **T.C. Sanayi ve Teknoloji
+Bakanlığı** tarafından hazırlanmış 6 sorudan oluşan kısa anket ile değerlendirin.
+
+**Tab: Ar-Ge**
+
+> [SurveyRD] 6 soruluk Ar-Ge Merkezi uygunluk öz-değerlendirme anketi (Sanayi ve Teknoloji Bakanlığı kriterleri) — canlı sayfada doldurulabilir.
+
+---
+
+**Tab: Tasarım**
+
+> [SurveyDesign] 6 soruluk Tasarım Merkezi uygunluk öz-değerlendirme anketi (Sanayi ve Teknoloji Bakanlığı kriterleri) — canlı sayfada doldurulabilir.
+
+---
+
+Teknik danışmanlık ihtiyaçlarınızı konuşmak ve size nasıl yardımcı
+olabileceğimizi değerlendirmek için bizimle iletişime geçin.
+
+[İletişime Geçin](/contact)
+
+---
+
+## Sıkça Sorulan Sorular
+
+### Ar-Ge Merkezi nedir?
+
+Ar-Ge Merkezi, işletmenin organizasyon yapısı içinde ayrı bir birim şeklinde örgütlenmiş, münhasıran yurtiçinde araştırma ve geliştirme faaliyetlerinde bulunan ve en az 15 tam zaman eşdeğer Ar-Ge personeli istihdam eden, yeterli Ar-Ge birikimi ve yeteneği olan, aynı bina veya aynı yerleşke içinde yer alan birimlerdir.
+
+### Tasarım Merkezi nedir?
+
+Tasarım Merkezi, tasarım projelerini veya sözleşme çerçevesinde siparişe dayalı olarak yürütülen tasarım faaliyetlerini gerçekleştirmek üzere kurulan, organizasyon yapısı içinde ayrı bir birim şeklinde örgütlenmiş, münhasıran yurtiçinde tasarım faaliyetlerinde bulunan ve en az 10 tam zaman eşdeğer tasarım personeli istihdam eden birimlerdir.
+
+### Ar-Ge Merkezi başvurusunda aranan temel şartlar nelerdir?
+
+Ar-Ge Merkezi başvurusu için en az 15 tam zaman eşdeğer Ar-Ge personeli istihdam edilmesi, faaliyetlerin yurt içinde gerçekleştirilmesi, yeterli Ar-Ge yönetimi ve teknolojik varlıkların bulunması, personelin fiziki kontrolünü yapacak mekanizmaların olması, tanımlanmış Ar-Ge projelerin bulunması ve merkezin ayrı bir birim olarak tek bir yerleşke içinde yer alması gerekmektedir.
+
+### Tasarım Merkezi başvurusunda aranan temel şartlar nelerdir?
+
+Tasarım Merkezi başvurusu için en az 10 tam zaman eşdeğer tasarım personeli istihdam edilmesi, faaliyetlerin yurt içinde gerçekleştirilmesi, yeterli tasarım yönetimi ve teknolojik varlıkların bulunması, personelin fiziki kontrolünü yapacak mekanizmaların olması, tanımlanmış tasarım projelerinin bulunması ve merkezin ayrı bir birim olarak tek bir yerleşke içinde yer alması gerekmektedir.
+
+### Tam zaman eşdeğer (TZE) personel sayısı nasıl hesaplanır?
+
+Tam zaman eşdeğer personel sayısı, çalışan personelin çalışma sürelerine göre üçer aylık dönemler itibarıyla toplam çalışma süresinin, bir kişinin üç aylık tam zamanlı çalışma süresine bölünmesiyle hesaplanır. Haftada 45 saatin üzerindeki ve ek çalışma süreleri bu hesaplamada dikkate alınmaz.
+
+### Araştırmacı kimdir?
+
+Araştırmacı, Ar-Ge faaliyetleri ile yenilik tanımı kapsamındaki projelerde yeni bilgi, ürün, süreç, yöntem ve sistemlerin tasarım veya oluşturulması ve ilgili projelerin yönetilmesi süreçlerinde yer alan en az lisans mezunu uzmanlardır.
+
+### Tasarımcı kimdir?
+
+Tasarımcı, tasarım faaliyetleri kapsamındaki projelerin gerçekleştirilmesi ve yönetilmesi süreçlerinde yer alan, üniversitelerin mühendislik, mimarlık veya tasarım ile ilgili bölümlerinden mezun en az lisans derecesine sahip kişiler ile tasarım alanlarından herhangi birinde en az lisansüstü eğitim derecesine sahip diğer kişilerdir.
+
+### Teknisyen kimdir?
+
+Teknisyen, meslek lisesi veya meslek yüksekokullarının tasarım, teknik, fen veya sağlık bölümlerinden mezun, teknik bilgi ve deneyim sahibi kişilerdir.
+
+### Destek personeli kimdir?
+
+Destek personeli, Ar-Ge ve yenilik veya tasarım faaliyetlerine katılan veya bu faaliyetlerle doğrudan ilişkili yönetici, teknik eleman, laborant, sekreter, işçi ve benzeri personeldir.
+
+### 5746 sayılı Kanun kapsamında sağlanan teşvik ve destekler nelerdir?
+
+Kanun kapsamında; Ar-Ge harcamalarının %100'ü için vergi indirimi, Ar-Ge personeli ücretleri üzerinden gelir vergisi stopajı teşviki, sigorta primi işveren hissesinin yarısı için destek, damga vergisi istisnası, gümrük vergisi istisnası, desteklenecek programlar desteği ve yeni makine-teçhizat alımlarında KDV istisnası sağlanmaktadır.
+
+### Ar-Ge ve yenilik sayılmayan faaliyetler nelerdir?
+
+Pazarlama faaliyetleri, kalite kontrol, sosyal bilimlerdeki araştırmalar, maden arama ve sondaj faaliyetleri, Ar-Ge projesi kapsamında olmayan mevcut süreçlerin kullanımı, estetik ve görsel değişiklikler, mevcut yazılımlarla yapılan web sitesi geliştirme, üretim altyapısına yönelik yatırımlar ve reklam amaçlı tüketici testleri Ar-Ge sayılmaz.
+
+### Tasarım sayılmayan faaliyetler nelerdir?
+
+Pazarlama faaliyetleri, kalite kontrol, tasarım projesi kapsamında olmayan mevcut süreçlerin kullanımı, kuruluş ve örgütlenme araştırma giderleri, üretim altyapısına yönelik yatırımlar, reklam amaçlı tüketici testleri, kamu düzenine veya genel ahlaka aykırı tasarım faaliyetleri tasarım kapsamında değerlendirilmez.
+
+### Siparişe dayalı Ar-Ge ve tasarım faaliyetleri nedir?
+
+Ar-Ge veya tasarım merkezlerinin sözleşme çerçevesinde siparişe dayalı olarak yürüttükleri faaliyetlerdir. Bu faaliyetlere ilişkin harcamaların %50'si merkez tarafından, kalan %50'si siparişi veren mükellef tarafından Ar-Ge ve tasarım indirimi olarak dikkate alınabilir.
+
+### Desteklenecek program desteğinden kimler yararlanabilir?
+
+Yükseköğretim kurumlarının matematik, fizik, kimya, biyoloji lisans programları ile biyokimya, biyoteknoloji, endüstriyel tasarım, endüstriyel tasarım mühendisliği, metalurji ve malzeme mühendisliği, moleküler biyoloji ve genetik programlarından mezun Ar-Ge personeli bu destekten yararlanabilir.
+
+### Öğretim elemanları Ar-Ge merkezlerinde görev yapabilir mi?
+
+Evet, öğretim elemanları Ar-Ge veya tasarım merkezlerinde araştırmacı, tasarımcı ya da idari personel olarak üniversite yönetim kurullarının izniyle tam zamanlı veya yarı zamanlı olarak görevlendirilebilirler.
+
+### Ar-Ge projesi nedir?
+
+Ar-Ge projesi; amacı, kapsamı, genel ve teknik tanımı, süresi, bütçesi, özel şartları, destek tutarları ve fikri mülkiyet haklarının paylaşım esasları tespit edilmiş, Ar-Ge faaliyetlerinin her safhasını belirleyecek mahiyette bilimsel esaslar çerçevesinde araştırmacı tarafından yürütülen projelerdir.
+
+### Tasarım projesi nedir?
+
+Tasarım projesi; amacı, kapsamı, genel ve teknik tanımı, süresi, bütçesi, özel şartları, destek tutarları ve fikri mülkiyet haklarının paylaşım esasları tespit edilmiş, tasarım faaliyetlerinin her safhasını belirleyecek mahiyette bilimsel esaslar çerçevesinde tasarımcı tarafından yürütülen projelerdir.
+
+### Tasarım faaliyeti nedir?
+
+Tasarım faaliyeti, sanayi alanında ve Cumhurbaşkanının uygun göreceği diğer alanlarda katma değer ve rekabet avantajı yaratma potansiyelini haiz, ürün veya ürünlerin işlevselliğini artırma, geliştirme, iyileştirme ve farklılaştırmaya yönelik yenilikçi faaliyetlerin tümüdür.

@@ -1,0 +1,195 @@
+> **ARTEK — makine-okunur sayfa içeriği.**
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+
+**path:** /services/consultancy · **locale:** tr · **en:** https://www.artek.tc/services/consultancy/llms.txt?locale=en
+
+# Giriş
+
+Mühendislik vizyonuyla, sanayi işletmelerinin teknik danışmanlık ihtiyaçlarına çözümler sunuyoruz. Ar-Ge ve inovasyon
+süreçlerinden proje yönetimine, dijital dönüşümden kamu destekli projelere kadar geniş bir yelpazede
+**teknik odaklı danışmanlık** hizmeti veriyoruz.
+
+**Akademik derinlik. Mühendislik hassasiyeti. Bağımsız perspektif.**
+
+---
+
+**ARTEK** — *Yenilik, Strateji, Sonuç.*
+
+---
+
+> [İnteraktif] Oynanabilir bir mini oyun (Chrome-dino tarzı). Metinsel karşılığı olmayan görsel/interaktif içerik.
+
+---
+
+## Hizmet Yaklaşımımız
+
+ARTEK olarak, mühendislik vizyonumuzla teknik danışmanlık ihtiyacınızı karşılıyoruz.
+
+_Makine mühendisliği_, _endüstri mühendisliği_ ve _bilgisayar mühendisliği_ uzmanlığımızı akademik birikimle
+harmanlayarak, sanayi işletmelerine teknik konularda rehberlik ediyoruz. Mali müşavirlik, hukuki danışmanlık
+veya denetim hizmeti vermiyoruz — **mühendislik bilgisi gerektiren teknik süreçlere** odaklanıyoruz.
+
+Bu yaklaşımın sağladığı **odaklanmış uzmanlık** kritik avantajı ile mühendislik bilgisi gerektiren teknik konularda
+derinlemesine hizmet veririz.
+
+---
+
+## Ne Yaparız?
+
+### ✓ Teknik Proje Değerlendirmesi
+
+Projelerinizin teknik fizibilitesini, Ar-Ge niteliğini ve yenilik unsurunu
+mühendislik perspektifinden analiz ederiz. Teknolojik belirsizlik, özgünlük
+ve uygulanabilirlik kriterlerini değerlendiririz.
+
+### ✓ Kamu Destekli Proje Danışmanlığı
+
+TÜBİTAK, KOSGEB, Kalkınma Ajansları ve diğer kamu kurumlarının destek
+programlarına yönelik proje hazırlama, başvuru ve yönetim süreçlerinde
+teknik rehberlik sağlarız.
+
+### ✓ Ar-Ge ve Tasarım Merkezi Danışmanlığı
+
+5746 sayılı Kanun kapsamında Ar-Ge veya Tasarım Merkezi kurulum sürecinin
+teknik boyutunda danışmanlık veririz. Proje portföyü, personel yetkinliği
+ve fiziksel altyapı planlaması yaparız.
+
+### ✓ Süreç ve Sistem Tasarımı
+
+Üretim süreçleri, kalite yönetim sistemleri, proje yönetim altyapısı ve
+teknik dokümantasyon sistemlerinin tasarımı ve optimizasyonunda
+mühendislik desteği sağlarız.
+
+### ✓ Teknik Eğitim ve Kapasite Geliştirme
+
+Ar-Ge yönetimi, proje dokümantasyonu, teknik yazım, mühendislik süreçleri
+ve dijital araçlar konularında kurumsal eğitim programları düzenleriz.
+
+### ✓ Üniversite-Sanayi İşbirliği Koordinasyonu
+
+Akademik bağlantılarımız sayesinde projelerinize akademik destek sağlayacak
+ortaklarla tanışmanızı, ortak Ar-Ge projeleri geliştirmenizi ve
+araştırma altyapılarından yararlanmanızı kolaylaştırırız.
+
+### ✓ Teknik Fizibilite ve Ön Değerlendirme
+
+Yeni ürün, süreç veya yatırım fikirlerinizin teknik fizibilitesini
+değerlendirir, risk analizleri yapar ve karar süreçlerinize
+mühendislik girdisi sağlarız.
+
+---
+
+## Ne Yapmayız?
+
+### ✗ Mali Müşavirlik ve Muhasebe
+
+Ar-Ge harcamalarının muhasebeleştirilmesi, maliyet hesaplamaları, mali
+tablolar veya vergi beyannameleri konularında danışmanlık vermeyiz.
+
+### ✗ Vergi Hesaplamaları ve Teşvik Uygulamaları
+
+Ar-Ge indirimi, gelir vergisi stopajı teşviki, sigorta primi desteği
+hesaplamaları veya vergisel optimizasyon konuları uzmanlık alanımız değildir.
+
+### ✗ YMM Tasdik Raporları ve Denetim
+
+Yeminli mali müşavir tasdik raporu düzenlemeyiz. Bağımsız denetim veya
+finansal tablo denetimi hizmeti vermeyiz.
+
+### ✗ Hukuki Danışmanlık
+
+Fikri mülkiyet hakları, sözleşme hukuku, iş hukuku veya ticaret hukuku
+konularında hukuki danışmanlık vermeyiz.
+
+### ✗ İnsan Kaynakları Yönetimi
+
+Personel işe alım süreçleri, bordro yönetimi, özlük işleri veya
+performans değerlendirme sistemleri kurmayız.
+
+### ✗ Üretim ve İmalat Operasyonları
+
+Fabrika işletmeciliği, üretim planlama operasyonları veya tedarik
+zinciri yönetimi gibi operasyonel süreçleri yürütmeyiz.
+
+---
+
+## Kimlere hizmet veriyoruz?
+
+### Sanayi İşletmeleri
+
+Üretim yapan, Ar-Ge faaliyetleri yürüten veya yürütmeyi planlayan
+her ölçekten sanayi kuruluşu.
+
+### Ar-Ge ve Tasarım Merkezleri
+
+5746 sayılı Kanun kapsamında faaliyet gösteren veya merkez kurmayı
+hedefleyen işletmeler.
+
+### Teknoloji Girişimleri
+
+Teknoloji odaklı ürün veya hizmet geliştiren, kamu desteklerinden
+yararlanmak isteyen start-up ve scale-up'lar.
+
+### Teknokent Firmaları
+
+Teknoloji geliştirme bölgelerinde faaliyet gösteren, Ar-Ge ve
+yenilik projeleri yürüten işletmeler.
+
+---
+
+## Neden ARTEK?
+
+### Mühendislik Perspektifi
+
+Makine mühendisliği, endüstri mühendisliği ve bilgisayar mühendisliği uzmanlığımızla, projelerinizin
+ve süreçlerinizin teknik boyutunu değerlendiriyoruz. Teorik bilgiyi pratik
+uygulamalarla birleştiriyoruz.
+
+### Akademik Meşruiyet
+
+Akademik geçmişimiz, projelerinizin bilimsel temellerinin değerlendirilmesinde
+ve üniversite-sanayi işbirliklerinin kurulmasında size güçlü bir dayanak sağlıyor.
+
+### Ekosistem Deneyimi
+
+Teknoloji geliştirme bölgesinde faaliyet gösteren bir şirket olarak, Ar-Ge ve
+inovasyon ekosisteminin içinden bakıyoruz. Kamu destek mekanizmalarını ve
+sektörün dinamiklerini birinci elden biliyoruz.
+
+---
+
+Teknik danışmanlık ihtiyaçlarınızı konuşmak ve size nasıl yardımcı
+olabileceğimizi değerlendirmek için bizimle iletişime geçin.
+
+[İletişime Geçin](/contact)
+
+---
+
+## Sıkça Sorulan Sorular
+
+### Ar-Ge veya Tasarım Merkezi kurmak için danışmanlık hizmeti almak zorunlu mu?
+
+Hayır, Ar-Ge veya Tasarım Merkezi başvurusu için herhangi bir danışmanlık firmasıyla çalışmak zorunlu değildir. Başvuruyu doğrudan Sanayi ve Teknoloji Bakanlığı'na kendiniz yapabilirsiniz. Ancak süreç; proje portföyü oluşturma, personel yetkinlik değerlendirmesi, fiziksel altyapı gereksinimleri ve başvuru dokümantasyonu gibi teknik detaylar içerir. Danışmanlık desteği, bu süreçlerin daha sağlam temellere oturmasını ve olası eksikliklerin önceden tespit edilmesini sağlar.
+
+### Teknik danışmanlık kapsamınız nedir?
+
+Mühendislik bilgisi ve teknik uzmanlık gerektiren tüm süreçlerde danışmanlık veriyoruz. Bu kapsamda Ar-Ge ve Tasarım Merkezi kurulum süreçleri, TÜBİTAK/KOSGEB/Kalkınma Ajansı proje hazırlık ve yönetimi, teknik fizibilite çalışmaları, süreç ve sistem tasarımı, proje dokümantasyonu ve kurumsal teknik eğitimler yer alıyor. Mali müşavirlik, muhasebe, vergi hesaplamaları, hukuki danışmanlık veya insan kaynakları yönetimi gibi konular ise kapsamımız dışındadır — bu alanlarda mevcut danışmanlarınızla tamamlayıcı şekilde çalışıyoruz.
+
+### Akademik meşruiyet ne demek?
+
+Ar-Ge ve inovasyon kavramları tanımları gereği bilimsel yöntemlere dayanan faaliyetlerdir. Projelerinizin teknolojik belirsizliği ve yenilik unsurunu tespit etmek akademik bakış açısı gerektirir. ARTEK olarak akademik geçmişimiz ve bilgi birikimimiz sayesinde, projelerinizi bilimsel temelleri üzerinden değerlendirebiliyor, üniversite-sanayi işbirliği fırsatlarını daha etkin koordine edebiliyoruz. Bu perspektif, özellikle denetim süreçlerinde ve proje değerlendirmelerinde projenizin teknik tutarlılığını güçlendirir.
+
+### Uzaktan çalışabiliyor musunuz?
+
+Evet, hizmetlerimizin büyük bölümünü uzaktan yürütebiliyoruz. Proje değerlendirme, dokümantasyon desteği ve eğitimler online yapılabiliyor. Fiziksel altyapı değerlendirmesi veya yerinde eğitim gibi durumlar için gerektiğinde saha ziyareti planlıyoruz.
+
+### Hizmet ücretlendirmeniz nasıl işliyor?
+
+Proje bazlı veya danışmanlık süresi bazlı çalışıyoruz. İlk görüşmede ihtiyaçlarınızı değerlendirdikten sonra kapsamı ve ücreti netleştiriyoruz. İlk tanışma görüşmemiz ücretsizdir.

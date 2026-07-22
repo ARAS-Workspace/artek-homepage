@@ -1,0 +1,174 @@
+> **ARTEK — machine-readable page content.**
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+
+**path:** /services/consultancy/technical-education · **locale:** en · **tr:** https://www.artek.tc/services/consultancy/technical-education/llms.txt?locale=tr
+
+# Technical Training
+
+We share our academic expertise and industry experience with your organization's technical teams. We do not offer formal certification programs; our goal is knowledge transfer and practical competency development.
+
+**Not certification, knowledge transfer. Not theory, practice.**
+
+---
+
+## Our Training Approach
+
+As ARTEK, our training programs are based on practice-oriented knowledge transfer, drawing from our academic background and industry experience.
+
+Key characteristics of our training:
+
+- **Knowledge Transfer Focused:** Content that combines theoretical knowledge with practical applications, directly contributing to your business processes
+- **Customized Programs:** Training programs designed according to your organization's sector, current competency level, and specific needs
+- **Application-Oriented:** Workshop sessions conducted through your own projects and real-world scenarios
+- **Mentoring Support:** Continuous communication opportunity where you can get answers to your questions even after the training
+
+> **Note:** For training requiring formal certification (ISO certification, mandatory regulatory training, etc.), we provide referrals to authorized institutions.
+
+---
+
+## Our Training Areas
+
+### R\&D and Project Management
+
+We enhance your teams' competencies in planning, executing, and reporting R\&D and design projects.
+
+- R\&D project cycle and methodologies
+- TÜBİTAK and KOSGEB project writing techniques
+- Project budgeting and cost management
+- Periodic reporting and audit preparation
+- Intellectual property awareness
+
+### Technical Documentation
+
+We transfer systematic approaches for preparing project documents, technical reports, and application files.
+
+- Technical report writing standards
+- Project file preparation techniques
+- Scientific and technical content structuring
+- Visualization and presentation techniques
+- Version control and document management
+
+### Engineering Processes
+
+We provide knowledge transfer on systematic execution and quality management of engineering projects.
+
+- R\&D and innovation process management
+- Technological feasibility assessment
+- Risk analysis and management
+- Quality control approaches
+- Process optimization fundamentals
+
+---
+
+## Our Training Formats
+
+We offer flexible formats suitable for your organization's needs and working arrangements.
+
+### In-House Training
+
+Group training programs conducted at your organization for your entire team or specific departments. Hands-on learning opportunity in your own environment, working on your own projects.
+
+### Workshop Sessions
+
+Intensive and interactive working sessions focused on a specific topic or skill. Opportunity to gain hands-on experience working on real projects.
+
+### One-on-One Mentoring
+
+Personalized mentoring programs for project managers or technical leaders. Knowledge transfer at a flexible pace, focusing on specific challenges you face.
+
+### Remote Training
+
+Live training sessions conducted through online platforms. Participation opportunity with flexible scheduling, without geographical constraints.
+
+---
+
+## Who Is It For?
+
+Our training is designed for professionals seeking to develop their technical knowledge and skills.
+
+### R\&D and Design Center Teams
+
+Project management, reporting, and documentation training for center managers, project leaders, and R\&D personnel.
+
+### Project Managers
+
+Project writing, budgeting, and execution training for professionals managing TÜBİTAK, KOSGEB, and other grant-funded projects.
+
+### Technical Personnel
+
+Technical documentation, digital tools, and process management training for engineers, designers, and researchers.
+
+### Recent Graduates and Interns
+
+Basic competency development and orientation programs for new employees joining R\&D teams.
+
+---
+
+## How Does the Process Work?
+
+> [!NOTE]
+> Each training program is customized according to your organization's specific needs. Instead of ready-made package programs, we offer content designed together with you.
+
+### 1. Needs Analysis
+
+We assess your organization's current competency level, goals, and training needs together. We identify which areas require development and set priorities.
+
+### 2. Program Design
+
+We design a customized training program based on the needs analysis. We consider your preferences regarding content, format, duration, and scheduling.
+
+### 3. Training Implementation
+
+We conduct training according to the established program. We reinforce theoretical knowledge with practical applications and work on real projects.
+
+### 4. Evaluation and Follow-up
+
+After training, we evaluate the outcomes and plan additional sessions if necessary. We provide mentoring support for your questions.
+
+> [!WARNING]
+> No formal certificate is awarded at the end of our training. We can issue a certificate of attendance upon request, but this certificate does not substitute for formal certification.
+
+---
+
+To discuss your technical training needs and design a program suitable for you, please contact us.
+
+[Contact Us](/contact)
+
+---
+
+## Frequently Asked Questions
+
+### Are certificates provided at the end of training?
+
+No, official certificates are not provided at the end of our training programs. We are not an official certification body or continuing education center. Upon request, we can issue a participation certificate, but this document does not replace official certification. We provide referrals to authorized organizations for training that requires official certification.
+
+### Are your training programs regulatory mandatory training?
+
+No, the training we offer is not within the scope of legally mandatory training. You need to work with authorized organizations for mandatory training such as occupational health and safety or environmental regulations. Our training programs are entirely voluntary participation-based, aimed at competency development.
+
+### Are training programs ready-made packages?
+
+No, each training program is customized according to your enterprise's specific needs. After evaluating your needs, current competency level, and goals in the preliminary meeting, we design a program specifically for you. This way, we focus on the topics you truly need.
+
+### Is remote training possible?
+
+Yes, we can conduct most of our training through online platforms. We offer an effective learning experience remotely with live sessions, screen sharing, and interactive applications. For workshops and hands-on training, we can plan face-to-face sessions when necessary.
+
+### Is there a minimum number of participants?
+
+While a minimum number of participants is recommended for in-house training and workshops, it is not mandatory. Our one-on-one mentorship programs can be conducted with a single person. We adapt the training format and content according to the number of participants.
+
+### What sources are the training contents based on?
+
+Our training contents are based on our academic background, sectoral experience, and current practices. We follow the current regulations and guidelines of institutions such as TÜBİTAK and KOSGEB. We also share practical knowledge gained from our own project experiences and consultancy processes.
+
+### How is training pricing done?
+
+Pricing is determined according to the training format, duration, number of participants, and content scope. We provide you with a customized proposal after the needs analysis. Our initial consultation is free of charge, and we evaluate your needs in detail during this meeting.

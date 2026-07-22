@@ -1,0 +1,55 @@
+> **ARTEK — makine-okunur sayfa içeriği.**
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+
+**path:** /company · **locale:** tr · **en:** https://www.artek.tc/company/llms.txt?locale=en
+
+# Kurumsal Bilgiler
+
+**ARTEK** — *Yenilik, Strateji, Sonuç.*
+
+---
+
+## Şirket Bilgileri
+
+| Bilgi                       | Detay                                                               |
+| --------------------------- | ------------------------------------------------------------------- |
+| **Ticaret Unvanı**          | ARTEK İnovasyon Ar-Ge Sanayi ve Ticaret Limited Şirketi             |
+| **Faaliyet Adresi**         | Çalca Osb Mah. 1 Cad. No:1/3 İç Kapı:218 Merkez - Kütahya / Türkiye |
+| **Vergi Numarası**          | 0851408248                                                          |
+| **Vergi Dairesi**           | ÇİNİLİ VERGİ DAİRESİ                                                |
+| **Mersis No**               | 0085140824800001                                                    |
+| **Ticaret Sicil Müdürlüğü** | Kütahya Ticaret Sicil Müdürlüğü                                     |
+| **KEP Adresi**              | [artekinovasyon@hs01.kep.tr](mailto:artekinovasyon@hs01.kep.tr)     |
+
+### Banka Hesap Bilgileri
+
+| Bilgi            | Detay                                                  |
+| ---------------- | ------------------------------------------------------ |
+| **Banka**        | Türkiye Halk Bankası A.Ş.                              |
+| **Hesap Sahibi** | Artek İnovasyon Arge Sanayi ve Ticaret Limited Şirketi |
+| **TL**           | TR80 0001 2009 5270 0010 2626 09                       |
+| **USD**          | TR20 0001 2009 5270 0053 0008 22                       |
+| **EUR**          | TR95 0001 2009 5270 0058 0005 01                       |
+
+---
+
+## Ekibimiz
+
+- **Prof. Dr. Haydar ARAS** — Genel Müdür · [LinkedIn](https://tr.linkedin.com/in/haydararas) · [Google Scholar](https://scholar.google.com/citations?user=wIm8ZRcAAAAJ) · [ORCID](https://orcid.org/0000-0001-8131-6426) · [Medium](https://medium.com/@profdrharas)
+
+- **Rıza Emre ARAS** — Ar-Ge Müdürü · [LinkedIn](https://www.linkedin.com/) · [Github](https://github.com/remrearas)
+
+---
+
+## İletişime Geçin
+
+Projeleriniz ve iş birliği fırsatları hakkında görüşmek için bizimle iletişime geçin.
+
+[İletişime Geçin](/contact)

@@ -1,0 +1,77 @@
+> **ARTEK — makine-okunur sayfa içeriği.**
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+
+**path:** /services/consultancy/centers/statistics/rd-centers · **locale:** tr · **en:** https://www.artek.tc/services/consultancy/centers/statistics/rd-centers/llms.txt?locale=en
+
+# Ar-Ge Merkezleri İstatistikleri
+
+---
+
+## Genel Bilgiler
+
+5746 sayılı Kanun ile, yenilikçiliğe odaklanmış, nitelikli istihdamı gelişmiş, katma değeri yüksek ürünler üreten,
+verimliliği ve rekabet gücü yüksek bir ekonomik ortamın oluşturulması sağlanarak; ülkemizin, uluslararası rekabet
+gücünün artırılması, yenilikçilik kapasitesinin geliştirilmesi ve dünyadaki gelişmelere uygun bir sanayi altyapısının
+oluşturulması ve ayrıca yabancı sermaye şirketlerinin Ar-Ge birimlerini ülkemizde yapılandırarak yeni teknolojileri
+ülkemizde geliştirmelerine imkan sağlanması amaçlanmaktadır.
+
+Özel Sektör Ar-Ge Merkezleri; Ar-Ge, teknoloji ve insan kaynaklarına yapılan yatırımların, teknolojik gelişmişlik,
+yüksek rekabet gücü ve yüksek refah seviyesi olarak geri döndüğü anlayışıyla hazırlanan 5746 sayılı Kanun kapsamında
+kurulmakta ve faaliyet göstermektedir.
+
+Ayrıntılı bilgilere [buradan](http://agtm.sanayi.gov.tr) ulaşabilirsiniz.
+
+---
+
+## Temel İstatistikler
+
+> [CenterStatistics] Başlıca göstergelerin interaktif panosu (toplam merkez ve personel, eğitim seviyeleri, tamamlanan/devam eden projeler, patentler, yabancı ortaklıklar). Ham veri: https://www.artek.tc/data/center-statistics/rd-centers/center_statistics.json
+
+---
+
+## Ar-Ge Merkezlerinin Sektörel Dağılımı
+
+**Tab: Grafik Gösterimi**
+
+> [SectoralDistribution] Merkezlerin sektörel dağılımının interaktif treemap grafiği. Ham veri: https://www.artek.tc/data/center-statistics/rd-centers/sectoral_distribution_data.tr.json
+
+---
+
+**Tab: Tablo Gösterimi**
+
+> [SectoralDistribution] Merkezlerin sektörel dağılımının interaktif tablosu. Ham veri: https://www.artek.tc/data/center-statistics/rd-centers/sectoral_distribution_data.tr.json
+
+---
+
+## Ar-Ge Merkezlerinin Bölgesel Dağılımı
+
+**Tab: Grafik Gösterimi**
+
+> [RegionalDistribution] Merkezlerin illere göre dağılımının interaktif koroplet haritası. Ham veri: https://www.artek.tc/data/center-statistics/rd-centers/regional_distribution_raw_data.json
+
+---
+
+**Tab: Tablo Gösterimi**
+
+> [RegionalDistribution] Merkezlerin illere göre dağılımının interaktif tablosu. Ham veri: https://www.artek.tc/data/center-statistics/rd-centers/regional_distribution_raw_data.json
+
+---
+
+## Ar-Ge Merkezleri Listesi
+
+> [CentersDataTable] Tüm merkezleri listeleyen aranabilir interaktif tablo (ad, şehir, sektör). Ham veri: https://www.artek.tc/data/center-statistics/rd-centers/centers.json
+
+---
+
+## Veri Kaynakları
+
+**İstatistik Verisi:** [Ar-Ge Merkezi İstatistik 2025 (PDF)](https://www.sanayi.gov.tr/assets/pdf/istatistik/ArGeMerkeziIstatistik2025.pdf) - T.C. Sanayi ve Teknoloji Bakanlığı (_İstatistikler 31 Ekim 2025 tarihi itibarıyla derlenmiştir._)
+
+**Harita Verisi:** [İlçe Sınırları (GeoJSON)](https://ulasav.csb.gov.tr/dataset/ilce-sinirlari/resource/72485e20-b3a1-4513-9e43-9419c3eb05d6) - T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı ([Lisans](https://ulasav.csb.gov.tr/license))

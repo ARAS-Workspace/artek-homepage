@@ -1,0 +1,161 @@
+> **ARTEK — machine-readable page content.**
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+
+**path:** /services/consultancy · **locale:** en · **tr:** https://www.artek.tc/services/consultancy/llms.txt?locale=tr
+
+# Introduction
+
+With our engineering vision, we provide solutions for the technical consultancy needs of industrial enterprises. We offer **technically focused consultancy** services across a wide spectrum, from R\&D and innovation processes to project management, and from digital transformation to publicly funded projects.
+
+**Academic depth. Engineering precision. Independent perspective.**
+
+---
+
+**ARTEK** — *Innovation, Strategy, Results.*
+
+---
+
+> [Interactive] A playable mini-game (Chrome-dino style). Visual/interactive content with no textual equivalent.
+
+---
+
+## Our Service Approach
+
+At ARTEK, we address your technical consultancy needs with our engineering vision.
+
+We guide industrial enterprises on technical matters by combining our expertise in _mechanical engineering_, _industrial engineering_, and _computer engineering_ with academic experience. We do not provide financial advisory, legal consultancy, or auditing services — we focus on **technical processes that require engineering knowledge**.
+
+With the critical advantage of **focused expertise** that this approach provides, we deliver in-depth services on technical matters requiring engineering knowledge.
+
+---
+
+## What We Do
+
+### ✓ Technical Project Evaluation
+
+We analyze the technical feasibility, R\&D characteristics, and innovation aspects of your projects from an engineering perspective. We evaluate technological uncertainty, originality, and applicability criteria.
+
+### ✓ Publicly Funded Project Consultancy
+
+We provide technical guidance for project preparation, application, and management processes for support programs from TÜBİTAK, KOSGEB, Development Agencies, and other public institutions.
+
+### ✓ R\&D and Design Center Consultancy
+
+We provide consultancy on the technical aspects of establishing R\&D or Design Centers under Law No. 5746. We assist with project portfolio, personnel competency, and physical infrastructure planning.
+
+### ✓ Process and System Design
+
+We provide engineering support for the design and optimization of production processes, quality management systems, project management infrastructure, and technical documentation systems.
+
+### ✓ Technical Training and Capacity Building
+
+We organize corporate training programs on R\&D management, project documentation, technical writing, engineering processes, and digital tools.
+
+### ✓ University-Industry Collaboration Coordination
+
+Through our academic connections, we facilitate your introduction to partners who can provide academic support for your projects, help you develop joint R\&D projects, and enable you to benefit from research infrastructures.
+
+### ✓ Technical Feasibility and Preliminary Assessment
+
+We evaluate the technical feasibility of your new product, process, or investment ideas, conduct risk analyses, and provide engineering input to your decision-making processes.
+
+---
+
+## What We Don't Do
+
+### ✗ Financial Advisory and Accounting
+
+We do not provide consultancy on accounting for R\&D expenditures, cost calculations, financial statements, or tax declarations.
+
+### ✗ Tax Calculations and Incentive Applications
+
+R\&D deductions, income tax withholding incentives, social security premium support calculations, or tax optimization are not within our area of expertise.
+
+### ✗ Certified Public Accountant Reports and Auditing
+
+We do not prepare certified public accountant attestation reports. We do not provide independent auditing or financial statement auditing services.
+
+### ✗ Legal Consultancy
+
+We do not provide legal consultancy on intellectual property rights, contract law, labor law, or commercial law.
+
+### ✗ Human Resources Management
+
+We do not establish personnel recruitment processes, payroll management, personnel affairs, or performance evaluation systems.
+
+### ✗ Production and Manufacturing Operations
+
+We do not manage operational processes such as factory management, production planning operations, or supply chain management.
+
+---
+
+## Who Do We Serve?
+
+### Industrial Enterprises
+
+Industrial organizations of all sizes that manufacture, conduct R\&D activities, or plan to do so.
+
+### R\&D and Design Centers
+
+Enterprises operating under Law No. 5746 or aiming to establish a center.
+
+### Technology Ventures
+
+Start-ups and scale-ups developing technology-focused products or services and seeking to benefit from public support.
+
+### Technopark Companies
+
+Enterprises operating in technology development zones and conducting R\&D and innovation projects.
+
+---
+
+## Why ARTEK?
+
+### Engineering Perspective
+
+With our expertise in mechanical engineering, industrial engineering, and computer engineering, we evaluate the technical aspects of your projects and processes. We combine theoretical knowledge with practical applications.
+
+### Academic Credibility
+
+Our academic background provides you with a strong foundation for evaluating the scientific basis of your projects and establishing university-industry collaborations.
+
+### Ecosystem Experience
+
+As a company operating in a technology development zone, we view things from within the R\&D and innovation ecosystem. We have firsthand knowledge of public support mechanisms and sector dynamics.
+
+---
+
+To discuss your technical consultancy needs and evaluate how we can assist you, please contact us.
+
+[Contact Us](/contact)
+
+---
+
+## Frequently Asked Questions
+
+### Is it mandatory to use a consultancy service to establish an R&D or Design Center?
+
+No, working with any consultancy firm is not mandatory for R&D or Design Center applications. You can submit your application directly to the Ministry of Industry and Technology yourself. However, the process involves technical details such as building a project portfolio, personnel competency assessment, physical infrastructure requirements, and application documentation. Consultancy support ensures these processes are built on solid foundations and potential deficiencies are identified in advance.
+
+### What is the scope of your technical consultancy?
+
+We provide consultancy for all processes requiring engineering knowledge and technical expertise. This includes R&D and Design Center establishment processes, TÜBİTAK/KOSGEB/Development Agency project preparation and management, technical feasibility studies, process and system design, project documentation, and corporate technical training. Financial advisory, accounting, tax calculations, legal consultancy, or human resources management are outside our scope — we work complementarily with your existing advisors in these areas.
+
+### What does academic credibility mean?
+
+R&D and innovation are, by definition, activities based on scientific methods. Identifying the technological uncertainty and innovation aspects of your projects requires an academic perspective. At ARTEK, thanks to our academic background and knowledge base, we can evaluate your projects on their scientific foundations and coordinate university-industry collaboration opportunities more effectively. This perspective strengthens the technical consistency of your projects, especially during audit processes and project evaluations.
+
+### Can you work remotely?
+
+Yes, we can conduct most of our services remotely. Project evaluation, documentation support, and training can be done online. For situations such as physical infrastructure assessment or on-site training, we schedule site visits when necessary.
+
+### How does your service pricing work?
+
+We work on a project basis or consultancy duration basis. After evaluating your needs in the initial meeting, we clarify the scope and fee. Our initial introductory meeting is free of charge.

@@ -1,0 +1,42 @@
+> **ARTEK — machine-readable page content.**
+>
+> **EN:** Root site index (llms.txt) — a machine-readable map of the ARTEK website for LLM agents. Each entry links to that page's `llms.txt`. Turkish is the default (the bare URL, or `?locale=tr`); append `?locale=en` for English.
+>
+> **TR:** Kök site indeksi (llms.txt) — LLM ajanları için ARTEK web sitesinin makine-okunur haritası. Her giriş ilgili sayfanın `llms.txt`'sine bağlanır. Varsayılan dil Türkçe (parametresiz URL veya `?locale=tr`); İngilizce için `?locale=en` ekleyin.
+
+**path:** / · **locale:** en · **tr:** https://www.artek.tc/llms.txt?locale=tr
+
+# ARTEK Innovation
+
+ARTEK İnovasyon Ar-Ge Sanayi ve Ticaret Limited Şirketi — from specialized sectoral consultancy to custom software development, ARTEK delivers comprehensive solutions with an engineering vision throughout enterprises' digital transformation and innovation journey. Based in Kütahya, Türkiye.
+
+**Everything in one file:** [llms-full.txt](https://www.artek.tc/llms-full.txt?locale=en) — every page listed below, concatenated into a single document (Turkish is the bare URL).
+
+## Services
+
+- **Center Establishment Consultancy** — end-to-end consultancy for R&D/Design Center applications under Law No. 5746: infrastructure and certification.
+- **Project Consultancy** — project preparation, application, and management support for TÜBİTAK, KOSGEB, Development Agencies, and international funds.
+- **Technical Training** — corporate training programs in R&D management, project documentation, technical writing, and engineering processes.
+- **Enterprise Software Solutions** — custom enterprise software that digitizes operational processes.
+- **Web & Mobile Applications** — scalable web and mobile solutions built with modern technologies.
+- **Data Analytics & Artificial Intelligence** — BI- and AI-backed analytical solutions that strengthen data-driven decision-making.
+
+## Frequently Asked Questions
+
+- **What services do you offer?** Two main categories: consultancy (R&D/Design Center establishment, TÜBİTAK/KOSGEB/Development Agency project consultancy, technical training) and software development (enterprise software, web/mobile applications, data analytics and AI).
+- **What is the engagement process?** Free initial consultation → needs and technical-requirements analysis → tailored solution and proposal → joint project execution after approval.
+- **Can consultancy and software services be combined?** Yes — the services complement each other (e.g. an R&D Center setup can include building its project-management or data-analytics infrastructure).
+- **Do you work remotely?** Yes; evaluation, consultancy, development, and training can run online, with site visits scheduled when needed.
+- **How does pricing work?** Flexible project-based or duration-based models; the initial consultation is free.
+
+## Site Map
+
+- [Corporate Information](https://www.artek.tc/company/llms.txt?locale=en): trade name, tax/MERSİS details, address, and team.
+- [Contact](https://www.artek.tc/contact/llms.txt?locale=en): phone, e-mail, address, and the contact form.
+- [KVKK](https://www.artek.tc/kvkk/llms.txt?locale=en): personal-data protection disclosure (Turkish DPA).
+- [Consultancy Services](https://www.artek.tc/services/consultancy/llms.txt?locale=en): consultancy home — overview of service areas.
+- [Project Consultancy](https://www.artek.tc/services/consultancy/project/llms.txt?locale=en): funding programs, proposal writing/application, management and reporting.
+- [Technical Training](https://www.artek.tc/services/consultancy/technical-education/llms.txt?locale=en): competency mapping and corporate technical training programs.
+- [Center Establishment](https://www.artek.tc/services/consultancy/centers/setup/llms.txt?locale=en): R&D/Design Center establishment process, flow, and self-assessment surveys.
+- [R&D Center Statistics](https://www.artek.tc/services/consultancy/centers/statistics/rd-centers/llms.txt?locale=en): regional/sectoral distribution data of R&D centers in Türkiye.
+- [Design Center Statistics](https://www.artek.tc/services/consultancy/centers/statistics/design-centers/llms.txt?locale=en): regional/sectoral distribution data of design centers in Türkiye.

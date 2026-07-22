@@ -1,0 +1,171 @@
+> **ARTEK — machine-readable page content.**
+>
+> **EN:** Auto-generated from this page's MDX source. Interactive components
+> (diagrams, charts, surveys, data tables) are replaced by their source
+> data or a short directive — read those as data pointers, not missing content.
+>
+> **TR:** Bu sayfanın MDX kaynağından otomatik üretildi. İnteraktif bileşenler
+> (diyagram, grafik, anket, veri tablosu) kaynak verisiyle veya kısa bir
+> direktifle değiştirildi — eksik içerik değil, veri işaretçisi olarak okuyun.
+
+**path:** /services/consultancy/centers/setup · **locale:** en · **tr:** https://www.artek.tc/services/consultancy/centers/setup/llms.txt?locale=tr
+
+# Center Setup Consultancy
+
+Establishing an R\&D or Design Center under Law No. 5746 is not merely about filling out
+an application form. A genuine center requires properly defined projects, competent personnel
+structure, suitable physical infrastructure, and a sustainable management system.
+
+**Setup with engineering perspective, consultancy with academic assurance.**
+
+## Setup Process Flow Diagram
+
+Establishing an R\&D or Design Center requires a systematic planning and implementation process.
+The flow diagram below illustrates the main steps from application to operation.
+
+> [!NOTE]
+> Ensuring complete fulfillment of technical and administrative requirements at each stage accelerates your application's approval process and minimizes potential revisions.
+
+The process consists of the following steps:
+
+1. The process begins with the Start phase.
+
+2. After the Start phase, the process moves to the Needs Analysis phase.
+
+3. Following the Needs Analysis phase, the process advances to the Feasibility Study phase.
+
+4. After the Feasibility Study phase, the process proceeds to the Project Planning phase.
+
+5. The Project Planning phase is followed by the Application Preparation phase.
+
+6. After the Application Preparation phase, the process moves to the Ministry Application phase.
+
+7. Following the Ministry Application phase, the process enters the Application Tracking phase.
+
+8. During the Application Tracking phase, an Approval evaluation is performed.
+
+9. If the Approval evaluation is positive (Yes), the process proceeds to the R&D / Design Center Setup phase.
+
+10. If the Approval evaluation is negative (No), the process returns to the Revision phase.
+
+11. After the Revision phase, the process returns to the Ministry Application phase.
+
+12. Following the R&D / Design Center Setup phase, the process moves to the Operation Launch phase.
+
+13. After the Operation Launch phase, the process advances to the Continuous Consulting phase.
+
+14. Following the Continuous Consulting phase, the process reaches the Completed phase and the process is completed.
+
+---
+
+## R\&D / Design Center Statistics
+
+Explore the current statistics of R\&D and Design Centers in Turkey, based on comprehensive data
+analyses from official reports by the Republic of Turkey Ministry of Industry and Technology.
+Identify regions and opportunities where you can stand out in your sector through province-based
+geographical distribution, sectoral concentration analyses, and detailed graphical representations.
+
+[R&D Centers](/services/consultancy/centers/statistics/rd-centers)
+
+[Design Centers](/services/consultancy/centers/statistics/design-centers)
+
+---
+
+## Evaluate Your Enterprise
+
+Assess whether your enterprise meets the criteria to become an _R\&D_ or _Design_ center
+through a brief survey consisting of 6 questions prepared by the **Republic of Turkey
+Ministry of Industry and Technology**.
+
+**Tab: R&D**
+
+> [SurveyRD] A 6-question R&D Centre eligibility self-assessment survey (Ministry of Industry and Technology criteria) — take it on the live page.
+
+---
+
+**Tab: Design**
+
+> [SurveyDesign] A 6-question Design Centre eligibility self-assessment survey (Ministry of Industry and Technology criteria) — take it on the live page.
+
+---
+
+Contact us to discuss your technical consultancy needs and evaluate
+how we can assist you.
+
+[Contact Us](/contact)
+
+---
+
+## Frequently Asked Questions
+
+### What is an R&D Center?
+
+An R&D Center is a unit organized as a separate department within the organizational structure of an enterprise, exclusively conducting research and development activities domestically, employing at least 15 full-time equivalent R&D personnel, possessing sufficient R&D knowledge and capability, and located within the same building or campus.
+
+### What is a Design Center?
+
+A Design Center is a unit established to carry out design projects or contract-based design activities, organized as a separate department within the organizational structure, exclusively conducting design activities domestically, and employing at least 10 full-time equivalent design personnel.
+
+### What are the basic requirements for R&D Center applications?
+
+R&D Center applications require employment of at least 15 full-time equivalent R&D personnel, activities conducted domestically, adequate R&D management and technological assets, mechanisms for physical verification of personnel presence, defined R&D projects, and the center being organized as a separate unit within a single location.
+
+### What are the basic requirements for Design Center applications?
+
+Design Center applications require employment of at least 10 full-time equivalent design personnel, activities conducted domestically, adequate design management and technological assets, mechanisms for physical verification of personnel presence, defined design projects, and the center being organized as a separate unit within a single location.
+
+### How is the full-time equivalent (FTE) personnel count calculated?
+
+The full-time equivalent personnel count is calculated by dividing the total working hours of personnel in quarterly periods by the full-time working hours of one person for three months. Working hours exceeding 45 hours per week and overtime are not included in this calculation.
+
+### Who is a researcher?
+
+A researcher is a specialist with at least a bachelor's degree who participates in R&D activities and innovation projects involving the design or creation of new knowledge, products, processes, methods, and systems, as well as the management of related projects.
+
+### Who is a designer?
+
+A designer is a person with at least a bachelor's degree from university departments of engineering, architecture, or design who participates in the execution and management of design projects, or other persons with at least a postgraduate degree in any design field.
+
+### Who is a technician?
+
+A technician is a person with technical knowledge and experience who has graduated from design, technical, science, or health departments of vocational high schools or vocational colleges.
+
+### Who is support personnel?
+
+Support personnel includes managers, technical staff, laboratory technicians, secretaries, workers, and similar personnel who participate in or are directly related to R&D, innovation, or design activities.
+
+### What incentives and supports are provided under Law No. 5746?
+
+The law provides 100% tax deduction for R&D expenditures, income tax withholding incentives for R&D personnel salaries, support for half of the employer's share of social security premiums, stamp duty exemption, customs duty exemption, support for designated programs, and VAT exemption for new machinery and equipment purchases.
+
+### What activities are not considered R&D and innovation?
+
+Marketing activities, quality control, social science research, mining exploration and drilling activities, use of existing processes outside an R&D project scope, aesthetic and visual changes, website development using existing software, production infrastructure investments, and promotional consumer tests are not considered R&D.
+
+### What activities are not considered design?
+
+Marketing activities, quality control, use of existing processes outside a design project scope, establishment and organization research expenses, production infrastructure investments, promotional consumer tests, and design activities contrary to public order or general morality are not considered design activities.
+
+### What are contract-based R&D and design activities?
+
+These are activities conducted by R&D or design centers on a contract basis. 50% of the expenditures related to these activities can be considered as R&D and design deduction by the center, and the remaining 50% by the taxpayer who placed the order.
+
+### Who can benefit from the designated programs support?
+
+R&D personnel who have graduated from mathematics, physics, chemistry, biology undergraduate programs, as well as biochemistry, biotechnology, industrial design, industrial design engineering, metallurgy and materials engineering, and molecular biology and genetics programs can benefit from this support.
+
+### Can academic staff work at R&D centers?
+
+Yes, academic staff can be assigned to work at R&D or design centers as researchers, designers, or administrative personnel on a full-time or part-time basis with the permission of university executive boards.
+
+### What is an R&D project?
+
+An R&D project is a project with defined objectives, scope, general and technical description, duration, budget, special conditions, support amounts, and intellectual property rights sharing principles, conducted by a researcher within scientific principles to determine all phases of R&D activities.
+
+### What is a design project?
+
+A design project is a project with defined objectives, scope, general and technical description, duration, budget, special conditions, support amounts, and intellectual property rights sharing principles, conducted by a designer within scientific principles to determine all phases of design activities.
+
+### What is design activity?
+
+Design activity encompasses all innovative activities in the industrial sector and other areas approved by the President, aimed at increasing, developing, improving, and differentiating the functionality of products with the potential to create added value and competitive advantage.
